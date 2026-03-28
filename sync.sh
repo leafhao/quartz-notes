@@ -12,8 +12,8 @@ echo "🍃 Obsidian → Quartz 同步服务启动"
 echo "   笔记目录: $CONTENT_DIR"
 echo "   Quartz: $QUARTZ_DIR"
 
-# 使用 fswatch 监听变化
-fswatch -o --recursive --include "\.md$" --exclude "\.obsidian" "$CONTENT_DIR" | while read -r event; do
+# 使用 fswatch 监听变化（使用完整路径）
+/opt/homebrew/bin/fswatch -o --recursive --include "\.md$" --exclude "\.obsidian" "$CONTENT_DIR" | while read -r event; do
     echo "📝 检测到变化: $(date '+%Y-%m-%d %H:%M:%S')"
     
     cd "$QUARTZ_DIR"
