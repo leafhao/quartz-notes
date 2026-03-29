@@ -1,5 +1,6 @@
 import matter from "gray-matter"
 import remarkFrontmatter from "remark-frontmatter"
+import path from "path"
 import { QuartzTransformerPlugin } from "../types"
 import yaml from "js-yaml"
 import toml from "toml"
@@ -112,7 +113,15 @@ export const FrontMatter: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
               "last-modified",
             ])
             if (modified) data.modified = modified
-            data.modified ||= created // if modified is not set, use created
+            // Auto-extract date from filename (YYYY-MM-DD pattern)
+            const basename = path.basename(file.data.filePath!)
+            const filenameDateMatch = basename.match(/\d{4}-\d{2}-\d{2}/)
+            if (filenameDateMatch) {
+              const filenameDate = filenameDateMatch[0]
+              if (!data.created) data.created = filenameDate
+              if (!data.date) data.date = filenameDate
+            }
+            // handle the priority chain (frontmatter -> git -> filesystem)
 
             const published = coalesceAliases(data, ["published", "publishDate", "date"])
             if (published) data.published = published

@@ -1,0 +1,36 @@
+views:
+  - type: table
+    name: 表格
+    filters:
+      and:
+        - file.folder == "books"
+    order:
+      - Category
+      - file.name
+      - Status
+      - Rating
+      - Start
+      - Completed
+    sort:
+      - property: Start
+        direction: DESC
+      - property: file.name
+        direction: DESC
+      - property: Completed
+        direction: ASC
+    columnSize:
+      note.Rating: 109
+      note.Start: 136
+  - type: cards
+    name: 视图
+    filters:
+      and:
+        - file.folder == "books"
+        - "!cover.isEmpty()"
+    order:
+      - file.name
+      - Category
+      - Rating
+      - Note
+    image: note.cover
+    imageFit: ""
