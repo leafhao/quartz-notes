@@ -1,10 +1,10 @@
 ---
-Title: "[object Object]"
+Title: "{{title}}"
 Author:
 Category:
 Rating:
 Status:
-Start:
+Start: <% tp.date.now("YYYY-MM-DD") %>
 Completed:
 Note:
 cover:
