@@ -23,6 +23,17 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Restore file modification times
+        run: |
+          # 恢复文件修改时间为 git 提交时间
+          # Quartz 使用 mtime 排序，需要正确的文件时间戳
+          git restore-mtime 2>/dev/null || \
+          git log --pretty=format:%H --name-only | \
+          awk '/^[0-9a-f]/ { commit=$1 } /.*/ { print commit, $0 }' | \
+          while read commit file; do
+            [ -f "$file" ] && touch -d "$(git show -s --format=%ci $commit)" "$file" 2>/dev/null
+          done
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
