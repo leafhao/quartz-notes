@@ -25,14 +25,44 @@ jobs:
 
       - name: Restore file modification times
         run: |
-          # 恢复文件修改时间为 git 提交时间
+          # 使用 Python 恢复文件修改时间为最后一次提交时间
           # Quartz 使用 mtime 排序，需要正确的文件时间戳
-          git restore-mtime 2>/dev/null || \
-          git log --pretty=format:%H --name-only | \
-          awk '/^[0-9a-f]/ { commit=$1 } /.*/ { print commit, $0 }' | \
-          while read commit file; do
-            [ -f "$file" ] && touch -d "$(git show -s --format=%ci $commit)" "$file" 2>/dev/null
-          done
+          python3 << 'EOF'
+          import os
+          import subprocess
+          from datetime import datetime
+          
+          # 获取所有文件的最后提交时间和路径
+          result = subprocess.run(
+            ['git', 'log', '--pretty=format:%H %ct', '--name-only', '-r'],
+            capture_output=True, text=True
+          )
+          
+          file_times = {}
+          current_commit = None
+          current_time = None
+          
+          for line in result.stdout.split('\n'):
+            if not line.strip():
+              continue
+            parts = line.split()
+            if len(parts) >= 2 and len(parts[0]) == 40:  # commit hash
+              current_commit = parts[0]
+              current_time = int(parts[1])
+            elif current_time and len(parts) == 1:
+              filepath = parts[0]
+              if filepath not in file_times:  # 只取最早的提交时间（实际是最后修改时间）
+                file_times[filepath] = current_time
+          
+          # 恢复文件时间戳
+          for filepath, timestamp in file_times.items():
+            if os.path.exists(filepath):
+              mtime = timestamp
+              os.utime(filepath, (mtime, mtime))
+              print(f"Restored: {filepath} -> {datetime.fromtimestamp(mtime)}")
+          
+          print(f"\nTotal files restored: {len(file_times)}")
+          EOF
 
       - name: Setup Node
         uses: actions/setup-node@v4
