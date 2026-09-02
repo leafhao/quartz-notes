@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr"><head><title>AI 厂商动态 | 2026-08-27</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="飞哥的笔记"/><meta property="og:title" content="AI 厂商动态 | 2026-08-27"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="AI 厂商动态 | 2026-08-27"/><meta name="twitter:description" content="AI 厂商动态 | 2026-08-27 📊 本周概览 本周 AI 行业呈现”东升西稳”格局：中国模型在 OpenRouter 平台占据主导地位（超 60% 流量），国际大厂则聚焦模型迭代与商业化布局。Anthropic 筹备 IPO、Google 快速发布 Gemini 3.7 Flash、Meta 推出本地化智能体模型，标志着行业从”军备竞赛”转向”商业变现”。 🌍 国际厂商动态 Anthropic Claude Opus 5 正式发布 发布日期: 2026 年 8 月 定位: 最对齐、最安全的模型，接近 Claude Fable 5 的前沿智能，价格仅为后者一半 应用: 现已成为 C..."/><meta property="og:description" content="AI 厂商动态 | 2026-08-27 📊 本周概览 本周 AI 行业呈现”东升西稳”格局：中国模型在 OpenRouter 平台占据主导地位（超 60% 流量），国际大厂则聚焦模型迭代与商业化布局。Anthropic 筹备 IPO、Google 快速发布 Gemini 3.7 Flash、Meta 推出本地化智能体模型，标志着行业从”军备竞赛”转向”商业变现”。 🌍 国际厂商动态 Anthropic Claude Opus 5 正式发布 发布日期: 2026 年 8 月 定位: 最对齐、最安全的模型，接近 Claude Fable 5 的前沿智能，价格仅为后者一半 应用: 现已成为 C..."/><meta property="og:image:alt" content="AI 厂商动态 | 2026-08-27 📊 本周概览 本周 AI 行业呈现”东升西稳”格局：中国模型在 OpenRouter 平台占据主导地位（超 60% 流量），国际大厂则聚焦模型迭代与商业化布局。Anthropic 筹备 IPO、Google 快速发布 Gemini 3.7 Flash、Meta 推出本地化智能体模型，标志着行业从”军备竞赛”转向”商业变现”。 🌍 国际厂商动态 Anthropic Claude Opus 5 正式发布 发布日期: 2026 年 8 月 定位: 最对齐、最安全的模型，接近 Claude Fable 5 的前沿智能，价格仅为后者一半 应用: 现已成为 C..."/><meta property="twitter:domain" content="notes.leaf.pp.ua"/><meta property="og:url" content="https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-08-27"/><meta property="twitter:url" content="https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-08-27"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="AI 厂商动态 | 2026-08-27 📊 本周概览 本周 AI 行业呈现”东升西稳”格局：中国模型在 OpenRouter 平台占据主导地位（超 60% 流量），国际大厂则聚焦模型迭代与商业化布局。Anthropic 筹备 IPO、Google 快速发布 Gemini 3.7 Flash、Meta 推出本地化智能体模型，标志着行业从”军备竞赛”转向”商业变现”。 🌍 国际厂商动态 Anthropic Claude Opus 5 正式发布 发布日期: 2026 年 8 月 定位: 最对齐、最安全的模型，接近 Claude Fable 5 的前沿智能，价格仅为后者一半 应用: 现已成为 C..."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2xvbmdmZWloYW8vLmhlcm1lcy93b3Jrc3BhY2UvcXVhcnR6LW5vdGVzL3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7O0FBSUY7RUFDRTtFQUNBO0VBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwYW5kLWJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nOiAwLjRyZW07XG4gIG1hcmdpbjogMC4zcmVtO1xuICByaWdodDogMDsgLy8gTk9URTogcmlnaHQgd2lsbCBiZSBzZXQgaW4gbWVybWFpZC5pbmxpbmUudHNcbiAgY29sb3I6IHZhcigtLWdyYXkpO1xuICBib3JkZXItY29sb3I6IHZhcigtLWRhcmspO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gIGJvcmRlcjogMXB4IHNvbGlkO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHRyYW5zaXRpb246IDAuMnM7XG5cbiAgJiA+IHN2ZyB7XG4gICAgZmlsbDogdmFyKC0tbGlnaHQpO1xuICAgIGZpbHRlcjogY29udHJhc3QoMC4zKTtcbiAgfVxuXG4gICY6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItY29sb3I6IHZhcigtLXNlY29uZGFyeSk7XG4gIH1cblxuICAmOmZvY3VzIHtcbiAgICBvdXRsaW5lOiAwO1xuICB9XG59XG5cbnByZSB7XG4gICY6aG92ZXIgPiAuZXhwYW5kLWJ1dHRvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xuICB9XG59XG5cbiNtZXJtYWlkLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29udGFpbjogbGF5b3V0O1xuICB6LWluZGV4OiA5OTk7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoNHB4KTtcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xuXG4gICYuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICAmID4gI21lcm1haWQtc3BhY2Uge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGhlaWdodDogODB2aDtcbiAgICB3aWR0aDogODB2dztcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRlbnQge1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://notes.leaf.pp.ua/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-08-27-og-image.webp"/><meta property="og:image:url" content="https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-08-27-og-image.webp"/><meta name="twitter:image" content="https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-08-27-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="claw_notes/vendor-watch/2026-08-27"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">飞哥的笔记</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>搜索</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="搜索些什么" placeholder="搜索些什么"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="暗色模式"><title>暗色模式</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="亮色模式"><title>亮色模式</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="阅读模式"><title>阅读模式</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1191"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>探索</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1191" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../claw_notes/">Claw Notes</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../claw_notes/vendor-watch/">vendor watch</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>AI 厂商动态 | 2026 08 27</a></div></nav><h1 class="article-title">AI 厂商动态 | 2026-08-27</h1><p show-comma="true" class="content-meta"><time datetime="2026-08-27T04:07:36.000Z">2026年8月27日</time><span>14分钟阅读</span></p><ul class="tags"><li><a href="../../tags/AI" class="internal tag-link">AI</a></li><li><a href="../../tags/厂商动态" class="internal tag-link">厂商动态</a></li><li><a href="../../tags/vendor-watch" class="internal tag-link">vendor-watch</a></li></ul></div></div><article class="popover-hint"><h1 id="ai-厂商动态--2026-08-27">AI 厂商动态 | 2026-08-27<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai-厂商动态--2026-08-27" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="-本周概览">📊 本周概览<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-本周概览" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>本周 AI 行业呈现”东升西稳”格局：中国模型在 OpenRouter 平台占据主导地位（超 60% 流量），国际大厂则聚焦模型迭代与商业化布局。Anthropic 筹备 IPO、Google 快速发布 Gemini 3.7 Flash、Meta 推出本地化智能体模型，标志着行业从”军备竞赛”转向”商业变现”。</p>
+<hr/>
+<h2 id="-国际厂商动态">🌍 国际厂商动态<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-国际厂商动态" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="anthropic">Anthropic<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#anthropic" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Claude Opus 5 正式发布</strong></p>
+<ul>
+<li><strong>发布日期</strong>: 2026 年 8 月</li>
+<li><strong>定位</strong>: 最对齐、最安全的模型，接近 Claude Fable 5 的前沿智能，价格仅为后者一半</li>
+<li><strong>应用</strong>: 现已成为 Claude Max 的默认模型，Pro 用户可用的最强模型</li>
+<li><strong>来源</strong>: <a href="https://www.anthropic.com/news/claude-opus-5" class="external">Anthropic 官方新闻<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>监管与商业化准备</strong></p>
+<ul>
+<li>发布 2026 年 8 月风险报告，强调对自动化评估饱和问题的关注</li>
+<li>IPO 筹备中，估值可能超过 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">30</span><span class="mord mathnormal">t</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.01968em;">ll</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mord cjk_fallback">（如属实将打破</span><span class="mord mathnormal">Sp</span><span class="mord mathnormal">a</span><span class="mord mathnormal">ce</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span><span class="mord cjk_fallback">的</span></span></span></span>75B IPO 记录）</li>
+<li>首次实现季度盈利（Q3 利润超 $1B），S-1 文件即将提交</li>
+<li>IPO 风险因素中将列出”AI 反弹”（公众对 AI 影响就业的担忧）</li>
+<li><strong>来源</strong>: <a href="https://www.cnbc.com/2026/08/21/-anthropic-ipo-filing-will-show-ai-backlash-as-risk-sources-say.html" class="external">CNBC<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://www.aa.com.tr/en/economy/anthropic-prepares-for-potential-record-ipo-with-30t-market-pitch/4037823" class="external">Anadolu Agency<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>技术更新</strong></p>
+<ul>
+<li>Claude Code 新增 <code>/security-review</code> 命令和 GitHub Actions 集成（8 月 6 日）</li>
+<li>Claude Opus 4.1 增量更新（8 月 5 日）</li>
+<li>透明度中心公布 Claude Haiku 4.5 模型卡片</li>
+<li>Claude 平台 API 发布说明更新至 8 月 20 日</li>
+<li><strong>来源</strong>: <a href="https://docs.anthropic.com/en/release-notes/claude-apps" class="external">Anthropic Docs<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="openai">OpenAI<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#openai" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>GPT-5.6 Sol 与 Luna 发布</strong></p>
+<ul>
+<li><strong>发布日期</strong>: 2026 年 8 月 6 日</li>
+<li><strong>核心改进</strong>: 更可靠的事实准确性、更聚焦的回答</li>
+<li><strong>新功能</strong>: Plus 和 Pro 用户可使用”响应思考滑块”（response thought slider）控制推理深度</li>
+<li><strong>模型退役</strong>: GPT-5.4 和 GPT-5.4 mini 从 Codex 签名用户中下线</li>
+<li><strong>来源</strong>: <a href="https://deploymentsafety.openai.com/gpt-5-6-august-update" class="external">OpenAI Deployment Safety Hub<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://developers.openai.com/codex/changelog" class="external">Developers Changelog<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>产品与生态更新</strong></p>
+<ul>
+<li>Codex CLI 0.146.1 发布（8 月 5 日），针对具有网络能力的模型应用更安全的自动审查默认值</li>
+<li>Codex for Linux 桌面应用进入预览阶段（8 月 13 日）</li>
+<li>2000 万+ Codex 用户里程碑，向所有用户提供免费的 banked reset</li>
+<li>Custom Skill 在 8 月 20 日后停止执行（疑似运行时问题）</li>
+<li><strong>来源</strong>: <a href="https://community.openai.com/t/codex-in-chatgpt-desktop-app-for-linux-is-now-in-preview/1390027" class="external">OpenAI Community<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" class="external">Help Center<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>市场竞争</strong></p>
+<ul>
+<li>新数据显示 OpenAI 在企业用户市场中对 Anthropic 的追赶态势加强（尽管趋势可能在季度结束前变化）</li>
+<li><strong>来源</strong>: <a href="https://techcrunch.com/2026/08/20/openai-is-gaining-on-anthropic-with-business-users-new-data-indicates" class="external">TechCrunch<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="google-deepmind">Google DeepMind<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#google-deepmind" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Gemini 3.7 Flash 发布</strong></p>
+<ul>
+<li><strong>发布日期</strong>: 2026 年 8 月 13 日（距 Gemini 3.6 Flash 仅三周）</li>
+<li><strong>核心改进</strong>: 软件工程、知识工作、大幅提升</li>
+<li><strong>驱动因素</strong>: 开发者反馈 + 算法创新</li>
+<li><strong>模型卡片更新</strong>: 8 月 13 日更新</li>
+<li><strong>来源</strong>: <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash" class="external">Google Blog<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://deepmind.google/models/model-cards/gemini-3-7-flash" class="external">DeepMind Model Cards<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>垂直应用突破</strong></p>
+<ul>
+<li><strong>手语 AI</strong>: 发布 sign-language-to-text (SL2T) 模型，为用户提供手语功能（8 月 12 日）</li>
+<li><strong>天气预报</strong>: WeatherNext 模型在气旋预报中取得突破，可提供额外一天预警（8 月 6 日）</li>
+<li><strong>来源</strong>: <a href="https://deepmind.google/blog/putting-sign-language-ai-into-users-hands" class="external">DeepMind Blog - Sign Language<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones" class="external">DeepMind Blog - WeatherNext<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>企业产品</strong></p>
+<ul>
+<li>Google Cloud 宣布 Gemini Enterprise for Financial Services（8 月 25 日），针对资本市场和企业银行</li>
+<li>平台包含四大组件：金融专用技能、安全 MCP 连接、金融数据集成、合规框架</li>
+<li><strong>来源</strong>: <a href="https://futurumgroup.com/insights/google-cloud-targets-finances-ai-gap-with-vertical-platform" class="external">Futurum Group<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="meta-ai">Meta AI<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#meta-ai" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Muse Glimmer 30B 发布</strong></p>
+<ul>
+<li><strong>发布日期</strong>: 2026 年 8 月</li>
+<li><strong>模型规模</strong>: 30B 参数因果语言模型 + 专用感知编码器</li>
+<li><strong>定位</strong>: 从 Muse Spark 蒸馏而来，专为自主智能体任务设计</li>
+<li><strong>特点</strong>: 可完全本地运行，无需云端访问</li>
+<li><strong>许可证</strong>: Apache 2.0 开源</li>
+<li><strong>来源</strong>: <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B" class="external">Hugging Face<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>GGUF 支持</strong></p>
+<ul>
+<li>Hugging Face 提供官方 GGUF 转换版本，包含两种量化文本构建和用于图像理解的感知编码器</li>
+<li><strong>来源</strong>: <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B-GGUF" class="external">Hugging Face GGUF<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>开源生态</strong></p>
+<ul>
+<li>Llama 4 Scout 17B-16E-Instruct GGUF 版本由 Unsloth 维护</li>
+<li>Hugging Face 夏季 2026 开源模型报告指出：大模型家族的实验室很少发布官方 GGUF 转换，但 GGUF 版本是开发者本地运行的主要选择</li>
+<li><strong>来源</strong>: <a href="https://huggingface.co/blog/state-of-open-models-summer-2026" class="external">Hugging Face Blog - State of Open Models<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>开源宣言</strong></p>
+<ul>
+<li>马克·扎克伯格发布 6500 词开源 AI 宣言，警告集中式 AI 控制威胁民主</li>
+<li>与参议员伯尼·桑德斯呼吁暂停 AI 开发形成对比</li>
+<li><strong>来源</strong>: <a href="https://qz.com/zuckerberg-meta-open-ai-muse-glimmer-manifesto-082526" class="external">Quartz<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>内部调整与投资压力</strong></p>
+<ul>
+<li>Meta 原计划将多个团队裁员 60%，5 月被叫停（路透社 8 月 26 日报道）</li>
+<li>资本支出吞噬了此前丰厚的自由现金流，预计明年投资将达到近 $170B</li>
+<li><strong>来源</strong>: <a href="https://www.reuters.com/commentary/breakingviews/metas-ai-dream-reels-more-than-lab-rat-revolt-2026-08-26" class="external">Reuters Breakingviews<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="spacexai-xai">SpaceXAI (xAI)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#spacexai-xai" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Grok 4.6 发布</strong></p>
+<ul>
+<li><strong>发布日期</strong>: 2026 年 8 月 12 日</li>
+<li><strong>定位</strong>: xAI 的前沿模型，用于编码、智能体任务和知识工作</li>
+<li><strong>上下文窗口</strong>: 500k tokens</li>
+<li><strong>知识截止日期</strong>: 2026 年 2 月 1 日</li>
+<li><strong>定价分级</strong>: 提供多种定价层级</li>
+<li><strong>来源</strong>: <a href="https://docs.x.ai/developers/release-notes" class="external">xAI Docs - Release Notes<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://docs.x.ai/developers/grok-4-6" class="external">xAI Docs - Grok 4.6<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>模型别名与迁移</strong></p>
+<ul>
+<li>部分模型提供别名以帮助用户自动迁移到下一版本</li>
+<li>5 月 15 日模型退役指南发布</li>
+<li><strong>来源</strong>: <a href="https://docs.x.ai/developers/models" class="external">xAI Docs - Models<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://docs.x.ai/developers/migration/may-15-retirement" class="external">xAI Docs - Migration<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>产品集成</strong></p>
+<ul>
+<li>Grok Build 0.1 现已通过 xAI API 公开 beta（6 月 1 日）</li>
+<li>SuperGrok 或 X Premium+ 订阅可在 Kilo Code（开源智能体编码编辑器）中使用</li>
+<li><strong>来源</strong>: <a href="https://x.ai/news" class="external">xAI News<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<hr/>
+<h2 id="-国内厂商动态">🇨🇳 国内厂商动态<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-国内厂商动态" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="中国模型主导-openrouter-平台">中国模型主导 OpenRouter 平台<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#中国模型主导-openrouter-平台" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>市场占有率突破</strong></p>
+<ul>
+<li>7 月首次：中国开发的模型占据 OpenRouter 前五名所有位置</li>
+<li>8 月持续主导：超过 60% 的平台流量（每周超 20 trillion tokens）</li>
+<li>领先模型：小米 MiMo V2.5、DeepSeek、MiniMax、阿里 Qwen 家族、月之暗面 Kimi</li>
+<li><strong>来源</strong>: <a href="https://fortune.com/2026/08/21/what-is-ai-death-zone-china-models-open-source/" class="external">Fortune<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="deepseek深度求索">DeepSeek（深度求索）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#deepseek深度求索" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>V4 系列更新</strong></p>
+<ul>
+<li><strong>发布日期</strong>: 2026 年 4 月 24 日（预览版）</li>
+<li><strong>模型</strong>: DeepSeek-V4-Pro 和 V4-Flash</li>
+<li><strong>核心能力</strong>: 多模态（图像理解 + 文本）</li>
+<li><strong>成本优势</strong>: 与 GPT-5.5 等领先美国模型性能相当，但成本仅为其零头</li>
+<li><strong>最新版本</strong>: DeepSeek-V4-Flash-Vision-Exp（8 月报道）</li>
+<li><strong>市场表现</strong>: 在 OpenRouter 上使用量激增 93%（8 月 15 日数据）</li>
+<li><strong>来源</strong>: <a href="https://cryptobriefing.com/deepseek-v4-flash-rivals-anthropic-claude/" class="external">Crypto Briefing - V4-Flash<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://cryptobriefing.com/deepseek-unveils-ai-model-challenging-anthropics-dominance/" class="external">Crypto Briefing - Vision-Exp<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="zai智谱-ai">Z.ai（智谱 AI）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#zai智谱-ai" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>GLM-5.3-Flash 发布</strong></p>
+<ul>
+<li><strong>发布日期</strong>: 2026 年 8 月 14 日</li>
+<li><strong>核心卖点</strong>: 声称<strong>完全</strong>运行在国产芯片上</li>
+<li><strong>市场反应</strong>: 发布后股价上涨 8%</li>
+<li><strong>背景</strong>: 中国加速自主计算能力建设的最新标志</li>
+<li><strong>Ox Alpha 模型身份揭晓</strong>: 此前震惊硅谷的神秘模型 Ox Alpha 被证实出自 Z.ai</li>
+<li><strong>来源</strong>: <a href="https://www.cnbc.com/2026/08/27/zai-shares-surge-new-ai-model-using-chinese-chips.html" class="external">CNBC<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://techcrunch.com/2026/08/26/surprise-z-ai-is-the-ai-lab-behind-the-mysterious-ox-alpha-model/" class="external">TechCrunch<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://www.businessinsider.com/ox-alpha-model-made-by-china-z-ai-2026-8" class="external">Business Insider<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="月之暗面moonshot-ai">月之暗面（Moonshot AI）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#月之暗面moonshot-ai" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Kimi K3 商业化进展</strong></p>
+<ul>
+<li>正在与微软、亚马逊、谷歌谈判收入分成协议</li>
+<li>寻求从 Azure、AWS、Google Cloud 上 K3 相关服务中获得最高 30% 的收入分成</li>
+<li>背景：公司正在筹备 IPO</li>
+<li><strong>来源</strong>: <a href="https://www.jpost.com/business-and-innovation/tech-and-start-ups/article-906633" class="external">The Jerusalem Post<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="minimax">MiniMax<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#minimax" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>财报与竞争态势</strong></p>
+<ul>
+<li>报告显示接近盈亏平衡（具体数据未披露）</li>
+<li>在 Kimi K3 冲击下市场份额承压</li>
+<li><strong>来源</strong>: 间接提及于 <a href="https://www.cnbc.com/2026/08/27/zai-shares-surge-new-ai-model-using-chinese-chips.html" class="external">CNBC - Z.ai 报道<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="行业观察">行业观察<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#行业观察" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>“AI 死亡区”警告</strong></p>
+<ul>
+<li>Fortune 专栏作家 Mark Minevich 警告：中国模型的成本效率优势正在形成”AI 死亡区”</li>
+<li>大多数企业 AI 策略正站在这个死亡区内，面临被低成本高性能模型颠覆的风险</li>
+<li><strong>来源</strong>: <a href="https://fortune.com/2026/08/21/what-is-ai-death-zone-china-models-open-source/" class="external">Fortune<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://finance.yahoo.com/technology/ai/articles/ai-death-zone-most-corporate-090000970.html" class="external">Yahoo Finance<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<hr/>
+<h2 id="-行业趋势">📈 行业趋势<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-行业趋势" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="商业化加速">商业化加速<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#商业化加速" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>IPO 潮起</strong>: Anthropic 筹备创纪录 IPO（估值可能超 $30T）、月之暗面 Kimi K3 筹备 IPO</li>
+<li><strong>盈利能力</strong>: Anthropic 首次季度盈利（Q3 超 $1B）</li>
+<li><strong>云服务分成</strong>: 月之暗面向三大云厂商寻求 30% 收入分成</li>
+<li><strong>企业市场</strong>: OpenAI 对 Anthropic 的企业用户追赶态势加强</li>
+</ol>
+<h3 id="技术路线分化">技术路线分化<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#技术路线分化" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>快速迭代 vs 稳定输出</strong>: Google 三周内发布两代 Flash 模型 vs OpenAI 月度更新节奏</li>
+<li><strong>本地化 vs 云端</strong>: Meta Muse Glimmer 30B 强调完全本地运行 vs 其他厂商的云端为主</li>
+<li><strong>开源 vs 闭源</strong>: Meta 坚持开源（Apache 2.0）vs OpenAI/Anthropic 的闭源商业化路线</li>
+<li><strong>自研芯片</strong>: Z.ai 强调国产芯片 vs 国际厂商的 NVIDIA 依赖</li>
+</ol>
+<h3 id="地缘政治影响">地缘政治影响<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#地缘政治影响" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>中国模型崛起</strong>: 在 OpenRouter 平台占据主导地位（>60% 流量）</li>
+<li><strong>成本竞争</strong>: DeepSeek V4 系列以”零头成本”挑战 GPT-5.5 性能</li>
+<li><strong>自主化推进</strong>: Z.ai GLM-5.3-Flash 声称完全运行在国产芯片上</li>
+<li><strong>开源宣言</strong>: 扎克伯格 6500 词宣言警告 AI 集中化风险，与参议员桑德斯呼吁暂停形成对比</li>
+</ol>
+<h3 id="垂直应用深化">垂直应用深化<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#垂直应用深化" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>金融服务</strong>: Google Cloud Gemini Enterprise 专攻资本市场与企业银行</li>
+<li><strong>手语 AI</strong>: DeepMind 推出 SL2T 模型，拓展无障碍服务</li>
+<li><strong>天气预报</strong>: WeatherNext 气旋预报额外一天预警时间</li>
+<li><strong>机器人智能</strong>: 多位 CEO 预测机器人”ChatGPT 时刻”将在 2027 年底到来</li>
+</ol>
+<hr/>
+<h2 id="️-风险与争议">⚠️ 风险与争议<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-风险与争议" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="监管压力">监管压力<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#监管压力" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>AI 反弹</strong>: Anthropic IPO 文件将”AI 对就业的影响担忧”列为风险因素</li>
+<li><strong>中期选举影响</strong>: 美国中期选举前 AI 监管话题升温</li>
+<li><strong>参议员呼吁</strong>: 伯尼·桑德斯呼吁暂停 AI 开发</li>
+</ul>
+<h3 id="技术验证争议">技术验证争议<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#技术验证争议" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>芯片自主性</strong>: Z.ai 声称 GLM-5.3-Flash “完全运行在国产芯片上”尚需独立验证</li>
+<li><strong>性能基准</strong>: DeepSeek V4 对标 GPT-5.5 的成本效率声称尚需第三方基准测试确认</li>
+</ul>
+<h3 id="商业模式挑战">商业模式挑战<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#商业模式挑战" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>资本密集</strong>: Meta 预计明年 CapEx 达 $170B，自由现金流承压</li>
+<li><strong>收入分成谈判</strong>: 月之暗面向云厂商要求 30% 分成可能遭遇阻力</li>
+<li><strong>裁员暂停</strong>: Meta 原定 60% 团队裁员计划 5 月被叫停，反映内部调整困难</li>
+</ul>
+<hr/>
+<h2 id="-展望">🔮 展望<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-展望" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="短期1-3-个月">短期（1-3 个月）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#短期1-3-个月" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>IPO 密集期</strong>: Anthropic S-1 文件即将提交，月之暗面 IPO 筹备推进</li>
+<li><strong>模型迭代加速</strong>: Google 保持三周发布节奏，OpenAI 可能推出 GPT-5.7</li>
+<li><strong>企业市场争夺</strong>: OpenAI vs Anthropic 企业用户市场竞争白热化</li>
+<li><strong>中国模型出海</strong>: DeepSeek、Kimi、MiniMax 在国际平台渗透率持续提升</li>
+</ol>
+<h3 id="中期6-12-个月">中期（6-12 个月）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#中期6-12-个月" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>盈利能力验证</strong>: 更多大模型公司跟随 Anthropic 实现季度盈利</li>
+<li><strong>垂直应用爆发</strong>: 金融、医疗、法律等行业专用模型批量上线</li>
+<li><strong>机器人 ChatGPT 时刻</strong>: 多位 CEO 预测的具身智能突破可能在 2027 年底实现</li>
+<li><strong>监管框架成型</strong>: 美国 AI 监管立法可能在中期选举后推进</li>
+</ol>
+<h3 id="长期1-2-年">长期（1-2 年）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#长期1-2-年" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>开源 vs 闭源格局确定</strong>: Meta 开源路线与 OpenAI/Anthropic 闭源商业化路线的市场效果将见分晓</li>
+<li><strong>地缘技术分化</strong>: 中美 AI 生态可能形成”平行宇宙”（国产芯片 + 中文数据 vs NVIDIA + 英文数据）</li>
+<li><strong>AI 民主化进程</strong>: 本地化模型（如 Muse Glimmer 30B）能否打破云端垄断</li>
+<li><strong>自主计算能力</strong>: 中国芯片自主化进展将决定国产模型的真正独立性</li>
+</ol>
+<hr/>
+<h2 id="-数据来源">📚 数据来源<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-数据来源" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>本周报告基于以下官方来源与权威媒体：</p>
+<ul>
+<li><strong>官方发布</strong>: Anthropic Docs、OpenAI Help Center、Google DeepMind Blog、xAI Docs、Hugging Face</li>
+<li><strong>财经媒体</strong>: CNBC、Fortune、Reuters、Business Insider、TechCrunch</li>
+<li><strong>技术社区</strong>: OpenAI Community、Hugging Face Forums</li>
+<li><strong>行业分析</strong>: Futurum Group、AI Tools Recap</li>
+</ul>
+<hr/>
+<p><em>报告生成时间: 2026-08-27</em><br/>
+<em>下期更新: 2026-09-03</em></p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>关系图谱</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-664" aria-expanded="true"><h3>目录</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#ai-厂商动态--2026-08-27" data-for="ai-厂商动态--2026-08-27">AI 厂商动态 | 2026-08-27</a></li><li class="depth-1"><a href="#-本周概览" data-for="-本周概览">📊 本周概览</a></li><li class="depth-1"><a href="#-国际厂商动态" data-for="-国际厂商动态">🌍 国际厂商动态</a></li><li class="depth-2"><a href="#anthropic" data-for="anthropic">Anthropic</a></li><li class="depth-2"><a href="#openai" data-for="openai">OpenAI</a></li><li class="depth-2"><a href="#google-deepmind" data-for="google-deepmind">Google DeepMind</a></li><li class="depth-2"><a href="#meta-ai" data-for="meta-ai">Meta AI</a></li><li class="depth-2"><a href="#spacexai-xai" data-for="spacexai-xai">SpaceXAI (xAI)</a></li><li class="depth-1"><a href="#-国内厂商动态" data-for="-国内厂商动态">🇨🇳 国内厂商动态</a></li><li class="depth-2"><a href="#中国模型主导-openrouter-平台" data-for="中国模型主导-openrouter-平台">中国模型主导 OpenRouter 平台</a></li><li class="depth-2"><a href="#deepseek深度求索" data-for="deepseek深度求索">DeepSeek（深度求索）</a></li><li class="depth-2"><a href="#zai智谱-ai" data-for="zai智谱-ai">Z.ai（智谱 AI）</a></li><li class="depth-2"><a href="#月之暗面moonshot-ai" data-for="月之暗面moonshot-ai">月之暗面（Moonshot AI）</a></li><li class="depth-2"><a href="#minimax" data-for="minimax">MiniMax</a></li><li class="depth-2"><a href="#行业观察" data-for="行业观察">行业观察</a></li><li class="depth-1"><a href="#-行业趋势" data-for="-行业趋势">📈 行业趋势</a></li><li class="depth-2"><a href="#商业化加速" data-for="商业化加速">商业化加速</a></li><li class="depth-2"><a href="#技术路线分化" data-for="技术路线分化">技术路线分化</a></li><li class="depth-2"><a href="#地缘政治影响" data-for="地缘政治影响">地缘政治影响</a></li><li class="depth-2"><a href="#垂直应用深化" data-for="垂直应用深化">垂直应用深化</a></li><li class="depth-1"><a href="#️-风险与争议" data-for="️-风险与争议">⚠️ 风险与争议</a></li><li class="depth-2"><a href="#监管压力" data-for="监管压力">监管压力</a></li><li class="depth-2"><a href="#技术验证争议" data-for="技术验证争议">技术验证争议</a></li><li class="depth-2"><a href="#商业模式挑战" data-for="商业模式挑战">商业模式挑战</a></li><li class="depth-1"><a href="#-展望" data-for="-展望">🔮 展望</a></li><li class="depth-2"><a href="#短期1-3-个月" data-for="短期1-3-个月">短期（1-3 个月）</a></li><li class="depth-2"><a href="#中期6-12-个月" data-for="中期6-12-个月">中期（6-12 个月）</a></li><li class="depth-2"><a href="#长期1-2-年" data-for="长期1-2-年">长期（1-2 年）</a></li><li class="depth-1"><a href="#-数据来源" data-for="-数据来源">📚 数据来源</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>

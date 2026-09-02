@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr"><head><title>2026-07-19</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="飞哥的笔记"/><meta property="og:title" content="2026-07-19"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="2026-07-19"/><meta name="twitter:description" content="AI 厂商动态 | 2026-07-19 🌟 本周重点 本周 AI 行业进入”价格战白热化 + 中国冲击波”阶段： Moonshot Kimi K3 震撼发布：性能直逼 GPT-5.6 和 Claude Fable 5，导致智谱 AI 股价暴跌 21.9%、MiniMax 跌 13.8% OpenAI GPT-5.6 正式 GA：flagship 推理模型 Sol 全面上线，配合 ChatGPT Work 推出 Google Gemini 延迟：内部目标未达标，编码能力落后，OpenAI/Anthropic 持续领先 DeepSeek IPO 准备：估值 $74B，计划 2027 年上市 A..."/><meta property="og:description" content="AI 厂商动态 | 2026-07-19 🌟 本周重点 本周 AI 行业进入”价格战白热化 + 中国冲击波”阶段： Moonshot Kimi K3 震撼发布：性能直逼 GPT-5.6 和 Claude Fable 5，导致智谱 AI 股价暴跌 21.9%、MiniMax 跌 13.8% OpenAI GPT-5.6 正式 GA：flagship 推理模型 Sol 全面上线，配合 ChatGPT Work 推出 Google Gemini 延迟：内部目标未达标，编码能力落后，OpenAI/Anthropic 持续领先 DeepSeek IPO 准备：估值 $74B，计划 2027 年上市 A..."/><meta property="og:image:alt" content="AI 厂商动态 | 2026-07-19 🌟 本周重点 本周 AI 行业进入”价格战白热化 + 中国冲击波”阶段： Moonshot Kimi K3 震撼发布：性能直逼 GPT-5.6 和 Claude Fable 5，导致智谱 AI 股价暴跌 21.9%、MiniMax 跌 13.8% OpenAI GPT-5.6 正式 GA：flagship 推理模型 Sol 全面上线，配合 ChatGPT Work 推出 Google Gemini 延迟：内部目标未达标，编码能力落后，OpenAI/Anthropic 持续领先 DeepSeek IPO 准备：估值 $74B，计划 2027 年上市 A..."/><meta property="twitter:domain" content="notes.leaf.pp.ua"/><meta property="og:url" content="https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-07-19"/><meta property="twitter:url" content="https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-07-19"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="AI 厂商动态 | 2026-07-19 🌟 本周重点 本周 AI 行业进入”价格战白热化 + 中国冲击波”阶段： Moonshot Kimi K3 震撼发布：性能直逼 GPT-5.6 和 Claude Fable 5，导致智谱 AI 股价暴跌 21.9%、MiniMax 跌 13.8% OpenAI GPT-5.6 正式 GA：flagship 推理模型 Sol 全面上线，配合 ChatGPT Work 推出 Google Gemini 延迟：内部目标未达标，编码能力落后，OpenAI/Anthropic 持续领先 DeepSeek IPO 准备：估值 $74B，计划 2027 年上市 A..."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2xvbmdmZWloYW8vLmhlcm1lcy93b3Jrc3BhY2UvcXVhcnR6LW5vdGVzL3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7O0FBSUY7RUFDRTtFQUNBO0VBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwYW5kLWJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nOiAwLjRyZW07XG4gIG1hcmdpbjogMC4zcmVtO1xuICByaWdodDogMDsgLy8gTk9URTogcmlnaHQgd2lsbCBiZSBzZXQgaW4gbWVybWFpZC5pbmxpbmUudHNcbiAgY29sb3I6IHZhcigtLWdyYXkpO1xuICBib3JkZXItY29sb3I6IHZhcigtLWRhcmspO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gIGJvcmRlcjogMXB4IHNvbGlkO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHRyYW5zaXRpb246IDAuMnM7XG5cbiAgJiA+IHN2ZyB7XG4gICAgZmlsbDogdmFyKC0tbGlnaHQpO1xuICAgIGZpbHRlcjogY29udHJhc3QoMC4zKTtcbiAgfVxuXG4gICY6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItY29sb3I6IHZhcigtLXNlY29uZGFyeSk7XG4gIH1cblxuICAmOmZvY3VzIHtcbiAgICBvdXRsaW5lOiAwO1xuICB9XG59XG5cbnByZSB7XG4gICY6aG92ZXIgPiAuZXhwYW5kLWJ1dHRvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xuICB9XG59XG5cbiNtZXJtYWlkLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29udGFpbjogbGF5b3V0O1xuICB6LWluZGV4OiA5OTk7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoNHB4KTtcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xuXG4gICYuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICAmID4gI21lcm1haWQtc3BhY2Uge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGhlaWdodDogODB2aDtcbiAgICB3aWR0aDogODB2dztcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRlbnQge1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://notes.leaf.pp.ua/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-07-19-og-image.webp"/><meta property="og:image:url" content="https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-07-19-og-image.webp"/><meta name="twitter:image" content="https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-07-19-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="claw_notes/vendor-watch/2026-07-19"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">飞哥的笔记</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>搜索</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="搜索些什么" placeholder="搜索些什么"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="暗色模式"><title>暗色模式</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="亮色模式"><title>亮色模式</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="阅读模式"><title>阅读模式</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1153"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>探索</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1153" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../claw_notes/">Claw Notes</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../claw_notes/vendor-watch/">vendor watch</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>2026 07 19</a></div></nav><h1 class="article-title">2026-07-19</h1><p show-comma="true" class="content-meta"><time datetime="2026-07-19T04:06:15.000Z">2026年7月19日</time><span>16分钟阅读</span></p></div></div><article class="popover-hint"><h1 id="ai-厂商动态--2026-07-19">AI 厂商动态 | 2026-07-19<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai-厂商动态--2026-07-19" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="-本周重点">🌟 本周重点<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-本周重点" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>本周 AI 行业进入”价格战白热化 + 中国冲击波”阶段：</p>
+<ul>
+<li><strong>Moonshot Kimi K3 震撼发布</strong>：性能直逼 GPT-5.6 和 Claude Fable 5，导致智谱 AI 股价暴跌 21.9%、MiniMax 跌 13.8%</li>
+<li><strong>OpenAI GPT-5.6 正式 GA</strong>：flagship 推理模型 Sol 全面上线，配合 ChatGPT Work 推出</li>
+<li><strong>Google Gemini 延迟</strong>：内部目标未达标，编码能力落后，OpenAI/Anthropic 持续领先</li>
+<li><strong>DeepSeek IPO 准备</strong>：估值 $74B，计划 2027 年上市</li>
+<li><strong>Anthropic-Meta 计算合作谈判</strong>：双方探讨 GPU 容量共享</li>
+</ul>
+<hr/>
+<h2 id="-国际厂商动态">🏢 国际厂商动态<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-国际厂商动态" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="anthropic">Anthropic<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#anthropic" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Claude Fable 5 重新部署（7月5日）</strong></p>
+<ul>
+<li>官方公告：<a href="https://www.anthropic.com/news/redeploying-fable-5" class="external">https://www.anthropic.com/news/redeploying-fable-5<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>7月1日起恢复 Claude Fable 5 部署，出口管制解除</li>
+<li>更新网络安全防护措施，确保 Mythos-class 模型安全使用</li>
+</ul>
+<p><strong>Claude Science 工作台正式上线（7月5日）</strong></p>
+<ul>
+<li>官方公告：<a href="https://www.anthropic.com/news/claude-science-ai-workbench" class="external">https://www.anthropic.com/news/claude-science-ai-workbench<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>为科学家定制的 AI 工作台，集成常用研究工具和包</li>
+<li>生成可审计的产出物，支持科研全流程</li>
+</ul>
+<p><strong>Claude for Teachers 教育版推出（7月15日）</strong></p>
+<ul>
+<li>官方公告：<a href="https://www.anthropic.com/news/claude-for-teachers" class="external">https://www.anthropic.com/news/claude-for-teachers<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>面向教师的专门版本，支持教育场景应用</li>
+</ul>
+<p><strong>反思功能 Beta 上线（7月12日）</strong></p>
+<ul>
+<li>官方公告：<a href="https://www.anthropic.com/news/reflect-with-claude" class="external">https://www.anthropic.com/news/reflect-with-claude<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>新功能：帮助用户反思和优化 Claude 使用方式</li>
+<li>基于用户访谈发现的需求开发</li>
+</ul>
+<p><strong>全局工作空间研究（7月5日）</strong></p>
+<ul>
+<li>研究论文：<a href="https://www.anthropic.com/research/global-workspace" class="external">https://www.anthropic.com/research/global-workspace<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>可解释性研究：探索 Claude 内部思考机制</li>
+</ul>
+<p><strong>Claude Corps 国家奖学金计划（6月19日）</strong></p>
+<ul>
+<li>官方公告：<a href="https://www.anthropic.com/news/claude-corps" class="external">https://www.anthropic.com/news/claude-corps<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>面向职业早期人士的奖学金项目，推广 AI 应用</li>
+</ul>
+<p><strong>竞争压力与估值担忧</strong></p>
+<ul>
+<li>Crypto Briefing 报道（7月14日）：AI 行业整体面临估值压力</li>
+<li>Anthropic 面临来自中国厂商（Kimi K3）的竞争冲击</li>
+<li>Business Insider 分析：下一个 Anthropic 级别的投资机会更难找到</li>
+</ul>
+<hr/>
+<h3 id="openai">OpenAI<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#openai" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>GPT-5.6 正式发布（7月12日）</strong></p>
+<ul>
+<li>官方公告：<a href="https://openai.com/index/gpt-5-6/" class="external">https://openai.com/index/gpt-5-6/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>核心卖点：每个 token 更强智能、每美元更高性能、按需扩展能力</li>
+<li>旗舰推理模型 GPT-5.6 Sol 开始全面推出</li>
+<li>面向复杂工作：编码、研究、科学等场景</li>
+</ul>
+<p><strong>ChatGPT Work 代理推出（7月12日）</strong></p>
+<ul>
+<li>官方公告：<a href="https://openai.com/index/chatgpt-for-your-most-ambitious-work/" class="external">https://openai.com/index/chatgpt-for-your-most-ambitious-work/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>可跨应用和文件执行操作的代理</li>
+<li>能持续工作数小时完成项目，将目标转化为完整解决方案</li>
+</ul>
+<p><strong>GPT-Live 语音模型发布（7月12日）</strong></p>
+<ul>
+<li>官方公告：<a href="https://openai.com/index/introducing-gpt-live/" class="external">https://openai.com/index/introducing-gpt-live/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>新一代语音模型，实现自然的人机交互</li>
+<li>已整合到 ChatGPT Voice 中</li>
+</ul>
+<p><strong>ChatGPT 桌面端体验更新</strong></p>
+<ul>
+<li>更简单的 Chat 和 Work 模式切换</li>
+<li>更好的对话管理功能</li>
+<li>Admin API 扩展和分析功能增强（7月16日）</li>
+</ul>
+<p><strong>Apple 诉讼案</strong></p>
+<ul>
+<li>多家媒体报道：Apple 起诉 OpenAI 涉嫌商业机密盗窃</li>
+</ul>
+<p><strong>Altman 警告 Sol 模型”小故障”</strong></p>
+<ul>
+<li>Axios 报道（7月14日）：Sam Altman 提醒用户新旗舰模型可能存在”hiccups”</li>
+</ul>
+<hr/>
+<h3 id="google--deepmind">Google / DeepMind<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#google--deepmind" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Gemini 英国扩展（7月15日）</strong></p>
+<ul>
+<li>官方博客：Chrome 中的 Gemini 最新 AI 功能向英国用户推出</li>
+<li>从今天开始向英国用户开放</li>
+</ul>
+<p><strong>NotebookLM → Gemini Notebook 改名（7月17日）</strong></p>
+<ul>
+<li>品牌重塑：更深度的 Google 整合</li>
+<li>提供安全的云计算环境</li>
+<li>保持独立产品定位</li>
+</ul>
+<p><strong>Google Vids 更新（7月17日）</strong></p>
+<ul>
+<li>Gemini Omni 和个人头像功能</li>
+<li>视频创建更加便捷，支持日常语言生成和编辑高质量片段</li>
+</ul>
+<p><strong>Waze 新定制功能 + Gemini 更新（7月14日）</strong></p>
+<ul>
+<li>摩托车模式、语音提示减少等功能</li>
+<li>更多灵活性和定制选项</li>
+</ul>
+<p><strong>印度 AI 承诺深化（7月15日）</strong></p>
+<ul>
+<li>Google I/O Connect India：教育、健康、语言、云计算领域公告</li>
+<li>帮助印度生态系统构建本土 AI</li>
+</ul>
+<p><strong>东南亚 Gemini 应用活跃用户翻倍</strong>（7月15日）</p>
+<ul>
+<li>过去一年活跃用户数量增长超过一倍</li>
+<li>聊天机器人在该地区的应用情况概览</li>
+</ul>
+<p><strong>Gemini 延迟引发落后担忧（7月17日）</strong></p>
+<ul>
+<li>CNBC 报道：Google 编码能力受挫，内部瓶颈加剧</li>
+<li>OpenAI、Anthropic 和 Meta 持续施压</li>
+<li>Yahoo Finance：Gemini 未达内部目标，发布推迟</li>
+<li>AI 研究人员：Gemini 最强卖点是查询 Google 搜索数据，但 Anthropic 和 OpenAI 在最强模型构建上领先</li>
+</ul>
+<p><strong>DeepMind CEO 呼吁独立标准机构监管前沿 AI（7月14日）</strong></p>
+<ul>
+<li>TechCrunch 报道：Demis Hassabis 呼吁建立更”系统化”的 AI 监管方法</li>
+<li>由行业资助、技术专家组成、向美国政府负责</li>
+<li>Axios 独家：DeepMind 扩展生物安全工作，加强 AI 安全推进</li>
+</ul>
+<p><strong>三巨头 CEO 对监管达成共识（7月16日）</strong></p>
+<ul>
+<li>Axios Behind the Curtain：Google DeepMind、OpenAI、Anthropic 三家 CEO 对前沿 AI 紧急监管达成共识</li>
+<li>过去五周内各发布详细立场文件，与华盛顿两次干预限制前沿模型访问同步</li>
+<li>Meta 的 Mark Zuckerberg 也在准备相关文件</li>
+</ul>
+<hr/>
+<h3 id="meta--hugging-face">Meta / Hugging Face<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#meta--hugging-face" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>官方域名窗口内未检索到重大发布</strong></p>
+<p>从 Tavily 查询结果来看，Meta 和 Hugging Face 官方域名（ai.meta.com / huggingface.co / llama.com）在 7 月 12-19 日窗口内未返回重大新闻发布。</p>
+<p>Hugging Face 平台上出现的模型更新（如 furiosa-ai 编译模型、prism-ml Bonsai 模型、unsloth inkling-GGUF）均为第三方开发者上传，非 Meta 官方 Llama 新版本。</p>
+<p><strong>跨厂商报道中的 Meta 动态</strong>：</p>
+<ul>
+<li><strong>价格竞争</strong>（Axios 7月13日）：Meta 将价格作为差异化因素，Zuckerberg 承诺比 OpenAI 低得多的成本</li>
+<li><strong>Anthropic-Meta 合作谈判</strong>（多家媒体报道）：双方探讨 GPU 计算容量共享协议</li>
+<li><strong>Instagram AI 功能争议</strong>（TechCrunch 报道）：Meta 因用户反弹移除 Instagram 上有争议的 AI 功能</li>
+</ul>
+<hr/>
+<h2 id="-国内厂商动态">🇨🇳 国内厂商动态<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-国内厂商动态" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="moonshot-ai月之暗面">Moonshot AI（月之暗面）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#moonshot-ai月之暗面" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Kimi K3 震撼发布（7月16-17日）</strong></p>
+<p>这是本周最具冲击力的事件，多家国际主流媒体同步报道：</p>
+<p><strong>性能表现</strong>：</p>
+<ul>
+<li>Gizmodo（7月16日）：Kimi K3 展示与 Anthropic Fable 和 OpenAI GPT-5.6 相媲美的能力</li>
+<li>Axios（7月16日）：开源 Kimi 模型以前沿级结果震撼 AI 界</li>
+<li>CNBC（7月17日）：Moonshot AI 推出 Kimi 模型，称可与 OpenAI、Anthropic 竞争</li>
+<li>BBC（7月17日）：中国 Moonshot AI 声称 Kimi K3 可与 OpenAI 和 Anthropic 竞争</li>
+<li>New York Post（7月17日）：中国 AI 公司 Moonshot 推出强大模型，能力接近 Anthropic、OpenAI</li>
+</ul>
+<p><strong>第三方评估</strong>：</p>
+<ul>
+<li>Artificial Analysis 和 Arena.ai 独立基准测试显示：Kimi K3 与美国领先模型（OpenAI GPT、Anthropic Claude）表现相当</li>
+<li>在 web 界面工程方面排名第一，超越 GPT-5.6 和 Claude Opus 4.8</li>
+</ul>
+<p><strong>竞争定位</strong>：</p>
+<ul>
+<li>Moonshot 官方：K3 整体仍略逊于 Anthropic Claude Fable 5 和 OpenAI GPT-5.6 Sol（最强专有模型）</li>
+<li>但在编码和 agentic 任务基准上击败次级系统 Claude Opus 4.8 和 GPT-5.5</li>
+</ul>
+<p><strong>市场影响</strong>：</p>
+<ul>
+<li>Business Insider（7月17日）：Kimi K3 发布后，中国 AI 竞品股价大跌
+<ul>
+<li>Z.ai（6月刚发布新模型）：周五暴跌 28%</li>
+<li>MiniMax Group：下跌 16%</li>
+</ul>
+</li>
+<li>CNBC 引述分析：K3 提高了中国 AI 模型的能力上限</li>
+</ul>
+<p><strong>争议与担忧</strong>：</p>
+<ul>
+<li>Anthropic 今年 2 月曾指控 DeepSeek、Moonshot 和 MiniMax 使用”distillation”技术非法提取 Claude 能力以改进自家模型</li>
+<li>Greenwich Time 报道：如果 Kimi K3 在真实环境中表现与基准测试一致，将挑战”美国在前沿 AI 开发上领先中国 6-12 个月”的普遍观点</li>
+<li>Gizmodo：美国 AI 实验室”明显担忧”，CEO 们游说华盛顿反对开放权重模型（主要由中国公司领导），证明他们视其为严重竞争威胁</li>
+</ul>
+<p><strong>定价优势</strong>：</p>
+<ul>
+<li>作为开源模型，Kimi K3 成本显著低于美国公司，挑战美国 AI 公司商业模式</li>
+</ul>
+<hr/>
+<h3 id="deepseek深度求索">DeepSeek（深度求索）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#deepseek深度求索" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>IPO 准备 + 新一轮融资（7月14-15日）</strong></p>
+<p><strong>融资与估值</strong>：</p>
+<ul>
+<li>TechCrunch（7月14日）：DeepSeek 据报正在洽谈融资 $1.5B，随后 IPO</li>
+<li>Reuters（7月15日）：DeepSeek 在境内 IPO 前以 $74B 估值融资</li>
+<li>Bloomberg（7月14日）：DeepSeek 准备 IPO，最早今年提交申请</li>
+</ul>
+<p><strong>IPO 时间表</strong>：</p>
+<ul>
+<li>杭州总部的 DeepSeek 已开始规划在大陆上市</li>
+<li>目标今年提交申请文件，2027 年上市</li>
+<li>正在与投资银行洽谈</li>
+</ul>
+<p><strong>竞争环境</strong>：</p>
+<ul>
+<li>Reuters 指出：保持 AI 前沿的成本急剧上升，迫使战略转变</li>
+<li>DeepSeek 过去一年面临来自字节跳动、阿里巴巴等科技巨头，以及 Z.ai 等资金充足的 AI 初创公司的激烈竞争</li>
+</ul>
+<hr/>
+<h3 id="智谱-ai">智谱 AI<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#智谱-ai" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>GLM-5.2 免费模型试用（7月13日）</strong></p>
+<ul>
+<li>Business Insider 报道：试用中国热门免费 AI，等待痛苦但回答令人印象深刻</li>
+<li>文章作者 Katherine Li 测试 GLM-5.2，体验类似 DeepSeek 的既视感</li>
+<li>模型有效但需要耐心</li>
+</ul>
+<p><strong>市场影响</strong>：</p>
+<ul>
+<li>CNBC 报道提到：Kimi K3 发布后智谱 AI（Z.ai）股价周五暴跌 28%</li>
+<li>6月刚发布新模型的 Z.ai 受到 Moonshot Kimi K3 直接冲击</li>
+</ul>
+<hr/>
+<h3 id="其他国内厂商">其他国内厂商<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#其他国内厂商" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>本周查询结果中阿里云、百度、MiniMax、字节跳动、腾讯等厂商未出现窗口内（7月12-19日）官方重大发布。</p>
+<p><strong>MiniMax 市场影响</strong>：</p>
+<ul>
+<li>CNBC：Kimi K3 发布后 MiniMax Group 股价下跌 16%</li>
+</ul>
+<hr/>
+<h2 id="-行业趋势">💡 行业趋势<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-行业趋势" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="价格战加剧">价格战加剧<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#价格战加剧" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Axios C-Suite（7月13日）报道 4 大 AI 动向，其中价格竞争成为焦点：</p>
+<ul>
+<li>OpenAI 预算模型 Luna 价格仅为前代的五分之一</li>
+<li>Grok 4.5 价格不到 Anthropic 同类 Opus 模型的一半</li>
+<li>Meta 将价格作为差异化因素，Zuckerberg 承诺比 OpenAI 低得多的成本</li>
+</ul>
+<h3 id="xai--grok-动态">xAI / Grok 动态<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#xai--grok-动态" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Grok 4.5 发布与排名（7月8日）</strong></p>
+<ul>
+<li>Fourweekmba 报道：Grok 4.5 和”计算 + 追踪”范式</li>
+<li>在 Cursor session 数据上训练，基于 V9 1.5T 基础模型</li>
+<li>Artificial Analysis 独立排名：
+<ul>
+<li>总体第 4 名</li>
+<li><strong>agentic tool use 第 1 名</strong>（针对其训练追踪目标的特定能力）</li>
+</ul>
+</li>
+</ul>
+<p><strong>价格优势</strong>：</p>
+<ul>
+<li>Axios 报道：Grok 4.5 成本不到 Anthropic 同类 Opus 模型的一半</li>
+</ul>
+<h3 id="ai-监管与行业共识">AI 监管与行业共识<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai-监管与行业共识" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>三巨头 CEO 立场趋同（7月16日）</strong></p>
+<ul>
+<li>Axios Behind the Curtain：Google DeepMind、OpenAI、Anthropic 三家 CEO 对前沿 AI 紧急监管需求达成共识</li>
+<li>过去五周内各自发布详细立场文件</li>
+<li>与华盛顿两次干预限制/延迟前沿模型访问同步发生</li>
+<li>Meta 的 Mark Zuckerberg 也在准备相关立场文件</li>
+</ul>
+<p><strong>Hassabis 呼吁独立标准机构（7月14日）</strong></p>
+<ul>
+<li>TechCrunch：DeepMind CEO 呼吁建立独立标准机构监管前沿 AI</li>
+<li>提议：由行业资助、技术专家组成、向美国政府负责的”系统化”监管方法</li>
+<li>对 Trump 政府行政命令持乐观态度</li>
+</ul>
+<h3 id="投资与估值">投资与估值<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#投资与估值" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>下一个 Anthropic 更难找到（7月16日）</strong></p>
+<ul>
+<li>Business Insider 深度分析：在 AI 时代押注初创公司大获成功将更困难</li>
+<li>尽管 Anthropic 在二级市场估值 $1.2T，看似稳赚投资，但实际过程远非”写支票看钱翻倍”那么简单</li>
+<li>硅谷可能暂时感受不到这一变化的影响</li>
+</ul>
+<hr/>
+<h2 id="-数据与观察">📊 数据与观察<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-数据与观察" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="中国-ai-冲击波">中国 AI 冲击波<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#中国-ai-冲击波" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Kimi K3 的发布标志着中国 AI 厂商首次在性能基准上接近美国顶级实验室：</p>
+<ul>
+<li>如果真实环境表现与基准一致，将颠覆”美国领先 6-12 个月”的行业共识</li>
+<li>开源 + 低成本策略对美国闭源商业模式构成直接挑战</li>
+<li>美国实验室 CEO 游说反对开放权重模型，证明他们视中国厂商为严重威胁</li>
+</ul>
+<h3 id="国内厂商分化">国内厂商分化<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#国内厂商分化" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>领先者</strong>：Moonshot Kimi K3 实现突破，DeepSeek $74B 估值准备 IPO</li>
+<li><strong>受挫者</strong>：Z.ai（智谱）跌 28%、MiniMax 跌 16%，显示头部效应加剧</li>
+<li>资本向头部集中，中游厂商面临生存压力</li>
+</ul>
+<h3 id="监管加速">监管加速<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#监管加速" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>三大 AI 巨头（Google DeepMind / OpenAI / Anthropic）罕见同步推动监管立场，结合华盛顿两次干预行动，显示：</p>
+<ul>
+<li>行业自律意识增强</li>
+<li>前沿 AI 安全风险引发高度重视</li>
+<li>政府与企业在监管框架上加速对话</li>
+</ul>
+<hr/>
+<h2 id="-相关链接">🔗 相关链接<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-相关链接" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="anthropic-官方">Anthropic 官方<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#anthropic-官方" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="https://www.anthropic.com/news/redeploying-fable-5" class="external">Redeploying Claude Fable 5<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.anthropic.com/news/claude-science-ai-workbench" class="external">Claude Science AI Workbench<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.anthropic.com/news/claude-for-teachers" class="external">Claude for Teachers<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.anthropic.com/news/reflect-with-claude" class="external">Reflect with Claude<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.anthropic.com/research/global-workspace" class="external">Global Workspace Research<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.anthropic.com/news/claude-corps" class="external">Claude Corps Fellowship<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="openai-官方">OpenAI 官方<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#openai-官方" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="https://openai.com/index/gpt-5-6/" class="external">GPT-5.6 Announcement<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://openai.com/index/chatgpt-for-your-most-ambitious-work/" class="external">ChatGPT for Your Most Ambitious Work<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://openai.com/index/introducing-gpt-live/" class="external">Introducing GPT-Live<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://help.openai.com/en/articles/9624314-model-release-notes" class="external">Model Release Notes<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="google-官方博客">Google 官方博客<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#google-官方博客" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="https://blog.google/products-and-platforms/platforms/chrome/gemini-uk/" class="external">Expanding Gemini in Chrome to UK<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://blog.google/products-and-platforms/ai/gemini-notebook/" class="external">NotebookLM is now Gemini Notebook<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="重点媒体报道">重点媒体报道<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#重点媒体报道" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="https://www.axios.com/2026/07/16/moonshot-kimi-ai-china-model-openai-anthropic" class="external">Axios: China’s Kimi K3 stuns AI world<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.cnbc.com/2026/07/17/moonshot-ai-kimi-k3-model-openai-anthropic-china.html" class="external">CNBC: Moonshot AI unveils Kimi model<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.bbc.com/news/articles/cy9w4q8pgp0o" class="external">BBC: China’s Moonshot AI claims Kimi K3 can rival OpenAI and Anthropic<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.reuters.com/legal/transactional/chinas-deepseek-raise-fresh-capital-74-billion-valuation-ahead-onshore-ipo-2026-07-15/" class="external">Reuters: DeepSeek to raise capital at $74B valuation<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://techcrunch.com/2026/07/14/deepseek-reportedly-in-talks-to-raise-1-5b-then-ipo/" class="external">TechCrunch: DeepSeek in talks to raise $1.5B, then IPO<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.axios.com/2026/07/16/ai-regulations-openai-anthropic-google" class="external">Axios: AI godfathers converge on regulations<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<hr/>
+<p><em>本报告基于 Tavily API 搜索结果整理，时间窗口：2026-07-12 至 2026-07-19</em></p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>关系图谱</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-626" aria-expanded="true"><h3>目录</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#ai-厂商动态--2026-07-19" data-for="ai-厂商动态--2026-07-19">AI 厂商动态 | 2026-07-19</a></li><li class="depth-1"><a href="#-本周重点" data-for="-本周重点">🌟 本周重点</a></li><li class="depth-1"><a href="#-国际厂商动态" data-for="-国际厂商动态">🏢 国际厂商动态</a></li><li class="depth-2"><a href="#anthropic" data-for="anthropic">Anthropic</a></li><li class="depth-2"><a href="#openai" data-for="openai">OpenAI</a></li><li class="depth-2"><a href="#google--deepmind" data-for="google--deepmind">Google / DeepMind</a></li><li class="depth-2"><a href="#meta--hugging-face" data-for="meta--hugging-face">Meta / Hugging Face</a></li><li class="depth-1"><a href="#-国内厂商动态" data-for="-国内厂商动态">🇨🇳 国内厂商动态</a></li><li class="depth-2"><a href="#moonshot-ai月之暗面" data-for="moonshot-ai月之暗面">Moonshot AI（月之暗面）</a></li><li class="depth-2"><a href="#deepseek深度求索" data-for="deepseek深度求索">DeepSeek（深度求索）</a></li><li class="depth-2"><a href="#智谱-ai" data-for="智谱-ai">智谱 AI</a></li><li class="depth-2"><a href="#其他国内厂商" data-for="其他国内厂商">其他国内厂商</a></li><li class="depth-1"><a href="#-行业趋势" data-for="-行业趋势">💡 行业趋势</a></li><li class="depth-2"><a href="#价格战加剧" data-for="价格战加剧">价格战加剧</a></li><li class="depth-2"><a href="#xai--grok-动态" data-for="xai--grok-动态">xAI / Grok 动态</a></li><li class="depth-2"><a href="#ai-监管与行业共识" data-for="ai-监管与行业共识">AI 监管与行业共识</a></li><li class="depth-2"><a href="#投资与估值" data-for="投资与估值">投资与估值</a></li><li class="depth-1"><a href="#-数据与观察" data-for="-数据与观察">📊 数据与观察</a></li><li class="depth-2"><a href="#中国-ai-冲击波" data-for="中国-ai-冲击波">中国 AI 冲击波</a></li><li class="depth-2"><a href="#国内厂商分化" data-for="国内厂商分化">国内厂商分化</a></li><li class="depth-2"><a href="#监管加速" data-for="监管加速">监管加速</a></li><li class="depth-1"><a href="#-相关链接" data-for="-相关链接">🔗 相关链接</a></li><li class="depth-2"><a href="#anthropic-官方" data-for="anthropic-官方">Anthropic 官方</a></li><li class="depth-2"><a href="#openai-官方" data-for="openai-官方">OpenAI 官方</a></li><li class="depth-2"><a href="#google-官方博客" data-for="google-官方博客">Google 官方博客</a></li><li class="depth-2"><a href="#重点媒体报道" data-for="重点媒体报道">重点媒体报道</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>

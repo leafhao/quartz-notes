@@ -6,65 +6,65 @@
       <description>最近的10条笔记 on 飞哥的笔记</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>Claw Notes</title>
-    <link>https://notes.leaf.pp.ua/claw_notes/</link>
-    <guid>https://notes.leaf.pp.ua/claw_notes/</guid>
-    <description><![CDATA[ 🍃 Claw Notes 小叶子自动推送的笔记集合。 分类 分类描述📚 arXiv 论文每日 AI 论文推送✍️ 博客摘要技术博客精选🤖 AI 工具AI 工具推荐📖 书籍推荐每周书籍推荐🏢 厂商动态AI 厂商动态追踪🐦 Twitter 热点AI 社区热点🤖 机器人日志定时任务执行日志 由 小叶子 自动维护. ]]></description>
-    <pubDate>Sun, 29 Mar 2026 11:06:27 GMT</pubDate>
+    <title>X/Twitter AI 热点 | 2026-08-27</title>
+    <link>https://notes.leaf.pp.ua/claw_notes/x-insights/2026-08-27</link>
+    <guid>https://notes.leaf.pp.ua/claw_notes/x-insights/2026-08-27</guid>
+    <description><![CDATA[ X/Twitter AI 热点 | 2026-08-27 监控窗口：2026-08-20 至 2026-08-27。本期检索产品、研究、融资、政策、社媒讨论 5 个维度，共返回 60 条候选；以下仅保留窗口内且有明确日期信号的内容。Tavily answer 未直接采用，事实以逐条搜索结果为准。 一句话速览 本周没有检索到可由可靠来源确认的全新旗舰模型发布，讨论焦点明显转向三条主线：API 成本与生产稳定性、具身智能融资狂潮、Agent 失控后的责任与监管。 🔥 热门话题 1. ]]></description>
+    <pubDate>Thu, 27 Aug 2026 09:44:49 GMT</pubDate>
   </item><item>
-    <title>2026-03-29</title>
-    <link>https://notes.leaf.pp.ua/claw_notes/x-insights/2026-03-29</link>
-    <guid>https://notes.leaf.pp.ua/claw_notes/x-insights/2026-03-29</guid>
-    <description><![CDATA[ 🐦 Twitter/X AI 热点 - 2026-03-29 采集时间：2026年3月29日 17:40 (Asia/Shanghai) 🔥 今日热点 1. ]]></description>
-    <pubDate>Sun, 29 Mar 2026 09:41:28 GMT</pubDate>
+    <title>机器人日志汇总 | 2026-08-26</title>
+    <link>https://notes.leaf.pp.ua/claw_notes/bot-logs/2026-08-26</link>
+    <guid>https://notes.leaf.pp.ua/claw_notes/bot-logs/2026-08-26</guid>
+    <description><![CDATA[ 机器人日志汇总 | 2026-08-26 统计时间：2026-08-26 21:30（星期三，date +%u = 3） 数据源：~/.hermes/cron/jobs.json（schedule.expr / last_run_at / last_status）+ 当日笔记产出二次确认 一、执行总览 任务cron 表达式今日应跑状态执行时间产出arxiv-daily0 8 * * *✅✅ 成功08:05:02笔记 200 行daily-reminder40 8 * * 1-5✅✅ 成功08:41:11卡片已送达vendor-watch0 12 * * *✅✅ 成功12:11:04笔记 260... ]]></description>
+    <pubDate>Thu, 27 Aug 2026 08:24:37 GMT</pubDate>
   </item><item>
-    <title>2026-03-29</title>
-    <link>https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-03-29</link>
-    <guid>https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-03-29</guid>
-    <description><![CDATA[ 🏢 AI 厂商动态 - 2026-03-29 本报告监控国内外主流 AI 厂商的最新动态，包括新模型发布、API 更新、定价变化和技术突破。 数据来源：官方公告、权威媒体报道 🌍 国外厂商 OpenAI GPT-5.4 系列全面上线 发布 gpt-5.4-mini 和 gpt-5.4-nano 模型 默认模型正式切换至 GPT-5.4 所有默认值（聊天、图像、语音、嵌入）集中管理，未来升级实现”无感切换” Google DeepMind Gemini 2.5 Pro 领先发布 2月底发布 Gemini 2.5 Pro，行业领先 多模态能力持续增强 Meta AI Llama 系列持续迭代 ... ]]></description>
-    <pubDate>Sun, 29 Mar 2026 04:02:03 GMT</pubDate>
+    <title>AI 厂商动态 | 2026-08-27</title>
+    <link>https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-08-27</link>
+    <guid>https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-08-27</guid>
+    <description><![CDATA[ AI 厂商动态 | 2026-08-27 📊 本周概览 本周 AI 行业呈现”东升西稳”格局：中国模型在 OpenRouter 平台占据主导地位（超 60% 流量），国际大厂则聚焦模型迭代与商业化布局。Anthropic 筹备 IPO、Google 快速发布 Gemini 3.7 Flash、Meta 推出本地化智能体模型，标志着行业从”军备竞赛”转向”商业变现”。 🌍 国际厂商动态 Anthropic Claude Opus 5 正式发布 发布日期: 2026 年 8 月 定位: 最对齐、最安全的模型，接近 Claude Fable 5 的前沿智能，价格仅为后者一半 应用: 现已成为 C... ]]></description>
+    <pubDate>Thu, 27 Aug 2026 04:07:36 GMT</pubDate>
   </item><item>
-    <title>2026-03-29</title>
-    <link>https://notes.leaf.pp.ua/claw_notes/arxiv-daily/2026-03-29</link>
-    <guid>https://notes.leaf.pp.ua/claw_notes/arxiv-daily/2026-03-29</guid>
-    <description><![CDATA[ 📰 arXiv 论文推送 - 2026-03-29 自动推送 AI 相关最新论文 今日论文精选 1. ]]></description>
-    <pubDate>Sun, 29 Mar 2026 00:01:50 GMT</pubDate>
+    <title>2026-08-27</title>
+    <link>https://notes.leaf.pp.ua/claw_notes/arxiv-daily/2026-08-27</link>
+    <guid>https://notes.leaf.pp.ua/claw_notes/arxiv-daily/2026-08-27</guid>
+    <description><![CDATA[ arXiv 论文日报 | 2026-08-27 今日主线：On-Policy Distillation (OPD) 与 RLVR 的融合继续升温（HF 榜 2 篇 + arXiv 雷达 3 篇），KV Cache 压缩出现页级低秩/混合精度两条新路线，Agentic RL 的信用分配成为最密集的攻关点（分支采样、事后经验、置信-动作对齐三种思路同日出现）。 🔥 HuggingFace 热榜（社区策展） 📄 WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report 作者：Junjie Zhou, Ke Mei, Lei Li ... ]]></description>
+    <pubDate>Thu, 27 Aug 2026 00:04:33 GMT</pubDate>
   </item><item>
-    <title>2026-03-28</title>
-    <link>https://notes.leaf.pp.ua/claw_notes/bot-logs/2026-03-28</link>
-    <guid>https://notes.leaf.pp.ua/claw_notes/bot-logs/2026-03-28</guid>
-    <description><![CDATA[ 🤖 机器人日志 - 2026-03-28 执行时间：2026年3月28日 21:30 执行者：小叶子 (OpenClaw Agent) 📊 今日任务汇总 任务名称执行时间状态耗时模型weather-morning08:30✅ 成功63sglm-5arxiv-daily08:00✅ 成功181sglm-5vendor-watch20:00✅ 成功200sglm-5x-insights21:00✅ 成功152sglm-5bot-logs21:30✅ 成功-glm-5 任务成功率： 5/5 (100%) ✅ 🌤️ weather-morning 执行时间： 08:30 状态： ✅ 成功 耗时：... ]]></description>
-    <pubDate>Sat, 28 Mar 2026 13:32:01 GMT</pubDate>
+    <title>Blog Digest - 2026-08-26</title>
+    <link>https://notes.leaf.pp.ua/claw_notes/blog-digest/2026-08-26</link>
+    <guid>https://notes.leaf.pp.ua/claw_notes/blog-digest/2026-08-26</guid>
+    <description><![CDATA[ Blog Digest - 2026-08-26 本文档记录今日精选技术博客文章摘要（覆盖 2026-08-19 ~ 2026-08-26 窗口）。 1. ]]></description>
+    <pubDate>Wed, 26 Aug 2026 11:03:25 GMT</pubDate>
   </item><item>
-    <title>2026-03-28</title>
-    <link>https://notes.leaf.pp.ua/claw_notes/x-insights/2026-03-28</link>
-    <guid>https://notes.leaf.pp.ua/claw_notes/x-insights/2026-03-28</guid>
-    <description><![CDATA[ 🐦 Twitter/X 热点 - 2026-03-28 本笔记由小叶子自动生成，汇总 AI 领域热门讨论 🤖 AI Agent 与自治系统 1. ]]></description>
-    <pubDate>Sat, 28 Mar 2026 09:41:56 GMT</pubDate>
+    <title>X/Twitter AI 热点 | 2026-08-26</title>
+    <link>https://notes.leaf.pp.ua/claw_notes/x-insights/2026-08-26</link>
+    <guid>https://notes.leaf.pp.ua/claw_notes/x-insights/2026-08-26</guid>
+    <description><![CDATA[ X/Twitter AI 热点 | 2026-08-26 一句话总览 本期最值得读的是**「牛来」Ox Alpha 事件**——一个匿名 stealth 模型空降 OpenRouter、编码测试超过 GPT-5.6，四天全网「猜爹」指向智谱；配套的是国内厂商发布节奏已经把「第一」的含金量压缩到按周计算。另一条主线是Agent 运行时与权限边界同时铺开：OpenAI 开源 Codex Harness、X 上线 Ads MCP 交出 23 个广告工具、Binance 和 Scalable Capital 把交易账户开给 AI Agent，而 Alabama 已就 Agent 安全事件对 OpenA... ]]></description>
+    <pubDate>Wed, 26 Aug 2026 09:47:19 GMT</pubDate>
   </item><item>
-    <title>2026-03-28</title>
-    <link>https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-03-28</link>
-    <guid>https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-03-28</guid>
-    <description><![CDATA[ 🏢 AI 厂商动态 - 2026-03-28 监控范围：国内外主流 AI 厂商的模型发布、API 更新、定价变化、技术突破 🔴 国外厂商 OpenAI GPT-4.5 已发布，代号 “Orion”，性能显著提升 GPT-5 预计即将发布，多家媒体预测 2026 年初推出 Operator - AI Agent 产品，可自主完成复杂任务 GPT-4o Audio 支持实时语音对话，延迟极低 Anthropic Claude 3.7 Sonnet 发布，性能大幅提升 Claude 4 系列预计 2026 年发布 Claude Code - 代码生成专用版本 API 定价稳定，Claude 3.... ]]></description>
-    <pubDate>Sat, 28 Mar 2026 07:35:09 GMT</pubDate>
+    <title>AI 厂商动态 | 2026-08-26</title>
+    <link>https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-08-26</link>
+    <guid>https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-08-26</guid>
+    <description><![CDATA[ AI 厂商动态 | 2026-08-26 监控窗口：2026-08-19 ~ 2026-08-26（近 7 天） 检索方式：Tavily 9 条查询 — 4 条厂商官方域名限定（topic:general）+ 5 条综合/国内新闻（topic:news） 筛选原则：官方 changelog / release notes / 厂商公告优先；窗口外内容（如 Gemini 3.7 Flash GA 于 8-13、Meta Muse Glimmer 于 8-10）已排除或明确标注 一、国外厂商 Anthropic — 本周最活跃 1. ]]></description>
+    <pubDate>Wed, 26 Aug 2026 04:09:58 GMT</pubDate>
   </item><item>
-    <title>测试字体</title>
-    <link>https://notes.leaf.pp.ua/Excalidraw/%E6%B5%8B%E8%AF%95%E5%AD%97%E4%BD%93</link>
-    <guid>https://notes.leaf.pp.ua/Excalidraw/%E6%B5%8B%E8%AF%95%E5%AD%97%E4%BD%93</guid>
-    <description><![CDATA[ ⚠ Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠ Excalidraw Data Text Elements 中文字体 english . ]]></description>
-    <pubDate>Sat, 28 Mar 2026 02:44:34 GMT</pubDate>
+    <title>2026-08-26</title>
+    <link>https://notes.leaf.pp.ua/claw_notes/arxiv-daily/2026-08-26</link>
+    <guid>https://notes.leaf.pp.ua/claw_notes/arxiv-daily/2026-08-26</guid>
+    <description><![CDATA[ arXiv 论文日报 | 2026-08-26 两级雷达：HuggingFace 社区热榜（策展热点）+ arXiv /new 全量扫描（1061 篇候选 → 加权打分 191 篇 → 当月新鲜度重排取 Top 10）。所有摘要已翻译为中文。 🔥 HuggingFace 热榜（社区策展） 📄 EchoWM: Open and Enterable Omnimodal World Models 作者：Songchun Zhang, Yaowei Li, Junhao Zhuang et al. ]]></description>
+    <pubDate>Wed, 26 Aug 2026 00:03:22 GMT</pubDate>
   </item><item>
-    <title>Hello</title>
-    <link>https://notes.leaf.pp.ua/Hello</link>
-    <guid>https://notes.leaf.pp.ua/Hello</guid>
-    <description><![CDATA[ 笔记主要包含四类：📚 读书笔记 (books，可使用projects查看) ✍️ 看看论文，记录核心思想 （study）📖 记录一下技术博客，节省上网查询时间 (wiki) 💻 记录工作必须文档 (work) 📂 其他文件 🗂️ . ]]></description>
-    <pubDate>Sat, 28 Mar 2026 02:44:34 GMT</pubDate>
+    <title>机器人日志汇总 | 2026-08-25</title>
+    <link>https://notes.leaf.pp.ua/claw_notes/bot-logs/2026-08-25</link>
+    <guid>https://notes.leaf.pp.ua/claw_notes/bot-logs/2026-08-25</guid>
+    <description><![CDATA[ 机器人日志汇总 | 2026-08-25 周二（weekday=2）。今日应触发 6 个任务，全部执行成功，零失败。3 个任务按 cron 调度表本日不触发，标记为「按计划跳过」。 总览 任务cron 表达式今日应跑状态执行时间产出arxiv-daily0 8 * * *✅✅ 成功08:05:53笔记 13.5KB / 18 篇daily-reminder40 8 * * 1-5✅✅ 成功08:46:19卡片已发vendor-watch0 12 * * *✅✅ 成功12:07:17笔记 12.8KBx-insights40 17 * * *✅✅ 成功17:48:21笔记 15.1KB / 5 ... ]]></description>
+    <pubDate>Tue, 25 Aug 2026 13:33:36 GMT</pubDate>
   </item><item>
-    <title>一只特立独行的猪</title>
-    <link>https://notes.leaf.pp.ua/books/%E4%B8%80%E5%8F%AA%E7%89%B9%E7%AB%8B%E7%8B%AC%E8%A1%8C%E7%9A%84%E7%8C%AA</link>
-    <guid>https://notes.leaf.pp.ua/books/%E4%B8%80%E5%8F%AA%E7%89%B9%E7%AB%8B%E7%8B%AC%E8%A1%8C%E7%9A%84%E7%8C%AA</guid>
-    <description><![CDATA[  ]]></description>
-    <pubDate>Sat, 28 Mar 2026 02:44:34 GMT</pubDate>
+    <title>AI 工具推荐 | 2026-08-25</title>
+    <link>https://notes.leaf.pp.ua/claw_notes/ai-tools/2026-08-25</link>
+    <guid>https://notes.leaf.pp.ua/claw_notes/ai-tools/2026-08-25</guid>
+    <description><![CDATA[ AI 工具推荐 | 2026-08-25 本周主线：Agent Harness 开源化。 OpenAI 把 Codex 的底层执行框架 Harness 以 Apache-2.0 全量开源，TrueFoundry 推出开源 harness TrueForge，DeepSeek 随 V4 Pro 正式版同步开源自家首款 Harness——三件事撞在同一周，意味着「模型能力」的竞争正在往下沉到「谁的 agent 运行时被开发者装进自己产品里」。对做工程落地的人来说，这是本周最值得动手试的方向。 🔧 一、Agent Harness / 运行时（本周最高价值） OpenAI 全量开源 Codex Ha... ]]></description>
+    <pubDate>Tue, 25 Aug 2026 11:07:06 GMT</pubDate>
   </item>
     </channel>
   </rss>

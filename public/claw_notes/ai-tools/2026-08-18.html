@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr"><head><title>AI 工具推荐 | 2026-08-18</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="飞哥的笔记"/><meta property="og:title" content="AI 工具推荐 | 2026-08-18"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="AI 工具推荐 | 2026-08-18"/><meta name="twitter:description" content="AI 工具推荐 | 2026-08-18 📊 本期概览 监控品类: 7 个（coding / image / writing / media / framework / devtool / china） 查询返回: 84 条结果（coding 12 / image 11 / writing 2 / media 12 / framework 12 / devtool 10 / china 25） 时间窗口: 最近 7 天（2026-08-11 至 2026-08-18） 🔧 代码工具（Coding Tools） 🆕 新发布 1."/><meta property="og:description" content="AI 工具推荐 | 2026-08-18 📊 本期概览 监控品类: 7 个（coding / image / writing / media / framework / devtool / china） 查询返回: 84 条结果（coding 12 / image 11 / writing 2 / media 12 / framework 12 / devtool 10 / china 25） 时间窗口: 最近 7 天（2026-08-11 至 2026-08-18） 🔧 代码工具（Coding Tools） 🆕 新发布 1."/><meta property="og:image:alt" content="AI 工具推荐 | 2026-08-18 📊 本期概览 监控品类: 7 个（coding / image / writing / media / framework / devtool / china） 查询返回: 84 条结果（coding 12 / image 11 / writing 2 / media 12 / framework 12 / devtool 10 / china 25） 时间窗口: 最近 7 天（2026-08-11 至 2026-08-18） 🔧 代码工具（Coding Tools） 🆕 新发布 1."/><meta property="twitter:domain" content="notes.leaf.pp.ua"/><meta property="og:url" content="https://notes.leaf.pp.ua/claw_notes/ai-tools/2026-08-18"/><meta property="twitter:url" content="https://notes.leaf.pp.ua/claw_notes/ai-tools/2026-08-18"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="AI 工具推荐 | 2026-08-18 📊 本期概览 监控品类: 7 个（coding / image / writing / media / framework / devtool / china） 查询返回: 84 条结果（coding 12 / image 11 / writing 2 / media 12 / framework 12 / devtool 10 / china 25） 时间窗口: 最近 7 天（2026-08-11 至 2026-08-18） 🔧 代码工具（Coding Tools） 🆕 新发布 1."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2xvbmdmZWloYW8vLmhlcm1lcy93b3Jrc3BhY2UvcXVhcnR6LW5vdGVzL3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7O0FBSUY7RUFDRTtFQUNBO0VBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwYW5kLWJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nOiAwLjRyZW07XG4gIG1hcmdpbjogMC4zcmVtO1xuICByaWdodDogMDsgLy8gTk9URTogcmlnaHQgd2lsbCBiZSBzZXQgaW4gbWVybWFpZC5pbmxpbmUudHNcbiAgY29sb3I6IHZhcigtLWdyYXkpO1xuICBib3JkZXItY29sb3I6IHZhcigtLWRhcmspO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gIGJvcmRlcjogMXB4IHNvbGlkO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHRyYW5zaXRpb246IDAuMnM7XG5cbiAgJiA+IHN2ZyB7XG4gICAgZmlsbDogdmFyKC0tbGlnaHQpO1xuICAgIGZpbHRlcjogY29udHJhc3QoMC4zKTtcbiAgfVxuXG4gICY6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItY29sb3I6IHZhcigtLXNlY29uZGFyeSk7XG4gIH1cblxuICAmOmZvY3VzIHtcbiAgICBvdXRsaW5lOiAwO1xuICB9XG59XG5cbnByZSB7XG4gICY6aG92ZXIgPiAuZXhwYW5kLWJ1dHRvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xuICB9XG59XG5cbiNtZXJtYWlkLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29udGFpbjogbGF5b3V0O1xuICB6LWluZGV4OiA5OTk7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoNHB4KTtcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xuXG4gICYuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICAmID4gI21lcm1haWQtc3BhY2Uge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGhlaWdodDogODB2aDtcbiAgICB3aWR0aDogODB2dztcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRlbnQge1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://notes.leaf.pp.ua/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://notes.leaf.pp.ua/claw_notes/ai-tools/2026-08-18-og-image.webp"/><meta property="og:image:url" content="https://notes.leaf.pp.ua/claw_notes/ai-tools/2026-08-18-og-image.webp"/><meta name="twitter:image" content="https://notes.leaf.pp.ua/claw_notes/ai-tools/2026-08-18-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="claw_notes/ai-tools/2026-08-18"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">飞哥的笔记</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>搜索</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="搜索些什么" placeholder="搜索些什么"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="暗色模式"><title>暗色模式</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="亮色模式"><title>亮色模式</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="阅读模式"><title>阅读模式</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-279"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>探索</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-279" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../claw_notes/">Claw Notes</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../claw_notes/ai-tools/">ai tools</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>AI 工具推荐 | 2026 08 18</a></div></nav><h1 class="article-title">AI 工具推荐 | 2026-08-18</h1><p show-comma="true" class="content-meta"><time datetime="2026-08-18T11:07:14.000Z">2026年8月18日</time><span>22分钟阅读</span></p><ul class="tags"><li><a href="../../tags/ai-tools" class="internal tag-link">ai-tools</a></li><li><a href="../../tags/coding" class="internal tag-link">coding</a></li><li><a href="../../tags/image" class="internal tag-link">image</a></li><li><a href="../../tags/writing" class="internal tag-link">writing</a></li><li><a href="../../tags/media" class="internal tag-link">media</a></li><li><a href="../../tags/framework" class="internal tag-link">framework</a></li><li><a href="../../tags/devtools" class="internal tag-link">devtools</a></li><li><a href="../../tags/china" class="internal tag-link">china</a></li></ul></div></div><article class="popover-hint"><h1 id="ai-工具推荐--2026-08-18">AI 工具推荐 | 2026-08-18<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai-工具推荐--2026-08-18" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="-本期概览">📊 本期概览<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-本期概览" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>监控品类</strong>: 7 个（coding / image / writing / media / framework / devtool / china）</li>
+<li><strong>查询返回</strong>: 84 条结果（coding 12 / image 11 / writing 2 / media 12 / framework 12 / devtool 10 / china 25）</li>
+<li><strong>时间窗口</strong>: 最近 7 天（2026-08-11 至 2026-08-18）</li>
+</ul>
+<h2 id="-代码工具coding-tools">🔧 代码工具（Coding Tools）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-代码工具coding-tools" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="-新发布">🆕 新发布<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-新发布" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>1. Hindsight 达成 20,000 GitHub Stars 里程碑</strong>（2026-08-04）</p>
+<ul>
+<li>集成生态持续扩张：GitHub Copilot（CLI 和 VS Code）、Aider、Zed、OpenHands、Continue.dev、Cursor（插件和 CLI）、Cline、Windsurf、Composio、Zapier、Obsidian、Haystack、Microsoft Agent Framework 等</li>
+<li>2026年8月发布 v0.9.x 版本，引入 Knowledge Pages 功能</li>
+<li>来源：<a href="https://www.linkedin.com/pulse/20000-stars-how-hindsight-got-here-version-vectorizeio-ctjec" class="external">LinkedIn<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>2. CodeRabbit 推出 AI 功能优先处理 PR</strong>（2026-08-11）</p>
+<ul>
+<li>新增 AI 驱动的变更管理能力，帮助团队优先处理大量 AI 生成的代码 PR</li>
+<li>针对 AI 生成代码过载问题提供 agentic 解决方案</li>
+<li>来源：<a href="https://www.infoworld.com/article/4208611/coderabbit-targets-ai-generated-code-overload-with-agentic-change-management.html" class="external">InfoWorld<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>3. CodeBuddy 全面升级至 DeepSeek-V4-Pro</strong>（2026-08-13）</p>
+<ul>
+<li>WorkBuddy、IDE、插件、CLI 产品线全线升级到 DeepSeek-V4-Pro 官方版</li>
+<li>提供更强的代码生成和理解能力</li>
+<li>来源：<a href="https://news.aibase.com/news/30317" class="external">AIBase News<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="-趋势洞察">📈 趋势洞察<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-趋势洞察" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>长期记忆成为编码 AI 关键特性</strong>（2026-08）</p>
+<ul>
+<li>GitHub Copilot 引入按用户的记忆功能和长期记忆插件</li>
+<li>Cursor 和 Cline 强调多租户模式和 agent 记忆系统</li>
+<li>Continue 新增构建和读取自身知识库的能力</li>
+<li><strong>共同趋势</strong>：从单次交互转向连续性、上下文感知的编码辅助</li>
+</ul>
+<p><strong>安全性成为 AI 编程工具焦点</strong>（2026-08-13）</p>
+<ul>
+<li>6000 条 Reddit 评论揭示 AI 编程助手安全问题：Cursor 事故报告最多</li>
+<li>Blacklight 安全工具发现 Codex、Claude Code、Cursor Artifacts 存在 token 和会话数据泄露风险（2026-08-16）</li>
+<li>来源：<a href="https://cybersecuritynews.com/blacklight-toolkit" class="external">Cybersecurity News<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> / <a href="https://thehackernews.com/expert-insights/2026/08/why-your-ai-developer-tools-might-be.html" class="external">The Hacker News<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="-横向对比">🆚 横向对比<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-横向对比" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>2026 年 AI 编程工具排名</strong>（按工作流）</p>
+<ul>
+<li><strong>Cursor</strong>: 综合能力最强，适合完整开发流程</li>
+<li><strong>Claude Code</strong>: 擅长复杂推理和架构设计</li>
+<li><strong>GitHub Copilot</strong>: 企业级最成熟，生态最完善</li>
+<li><strong>Windsurf / Cline / Continue.dev</strong>: 各有特色的轻量级选择</li>
+<li>来源：<a href="https://fluxgrowth.io/best-ai-coding-tools-2026-ranked-by-workflow" class="external">Fluxgrowth<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>Cursor vs Windsurf 对比热度持续</strong></p>
+<ul>
+<li>Instagram 上 AI 工具对比账号持续发布两者对决内容</li>
+<li>社区投票显示两者各有拥趸，选择更多取决于个人习惯</li>
+<li>来源：<a href="https://www.instagram.com/p/Db8ix-Ijy1L" class="external">Instagram<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h2 id="-图像生成image-generation">🎨 图像生成（Image Generation）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-图像生成image-generation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="-横向对比更新">📊 横向对比更新<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-横向对比更新" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>2026 年 AI 图像生成器最佳选择</strong>（2026-08-17）</p>
+<ul>
+<li><strong>Midjourney</strong>: 艺术性和电影级视觉效果首选</li>
+<li><strong>DALL-E 3</strong>: 易用性和提示词理解最佳</li>
+<li><strong>Stable Diffusion</strong>: 可定制性无与伦比</li>
+<li><strong>FLUX</strong>: 高质量逼真图像</li>
+<li><strong>Ideogram</strong>: 可读文本生成最佳</li>
+<li><strong>Nano Banana 2</strong>: 整体准确性最强，真实物体和风格渲染最一致</li>
+<li><strong>Seedream</strong>: 排版和 CapCut 集成最佳，文本拼写和放置完美</li>
+<li><strong>Recraft V4 Pro</strong>: 设计工作流优化</li>
+<li>来源：<a href="https://aifinityhub.com/ai-image-generator-comparison" class="external">AI Affinity Hub<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> / <a href="https://buffer.com/resources/ai-image-generator" class="external">Buffer<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="️-风险警示">⚠️ 风险警示<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-风险警示" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>AI 图像生成器成为零售欺诈新工具</strong>（2026-08-13）</p>
+<ul>
+<li>Midjourney、Stable Diffusion、DALL-E 被用于生成虚假退货照片</li>
+<li>零售商面临新型欺诈风险，需要升级防御措施</li>
+<li>来源：<a href="https://en.softonic.com/articles/midjourney-stable-diffusion-and-dall-e-now-pose-a-new-retail-fraud-risk-fake-return-photos" class="external">Softonic<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="-行业应用">🎬 行业应用<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-行业应用" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>VFX 公司 DNEG 大规模采用生成式 AI</strong></p>
+<ul>
+<li>孟买分部招聘要求提及使用 Photoshop、Procreate、3D 软件，结合 Midjourney、Stable Diffusion、DALL-E、Runway、Krea、Luma、Veo 3、ChatGPT 等工具</li>
+<li>概念艺术创作全面拥抱 AI 工作流</li>
+<li>来源：<a href="https://3dvf.com/en/the-odyssey-ramayana-masters-of-the-universe-dneg-unveils-a-new-vfx-showreel" class="external">3DVF<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>华纳兄弟《超级少女》Lobo 特辑因 AI 概念艺术撤回</strong>（2026-08-14）</p>
+<ul>
+<li>AI 概念艺术绕过公司政策引发争议</li>
+<li>Diffusion 模型（Stable Diffusion、Midjourney、DALL-E 3 背后技术）工作原理受到关注</li>
+<li>来源：<a href="https://www.techtimes.com/articles/324464/20260814/warner-pulled-supergirls-lobo-featurette-ai-concept-art-bypassed-policy.htm" class="external">Tech Times<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h2 id="-写作工具writing-tools">📝 写作工具（Writing Tools）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-写作工具writing-tools" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="-即将发布">🔮 即将发布<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-即将发布" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Anthropic Claude 预期更新</strong>（2026-08）</p>
+<ul>
+<li>以伦理和透明响应著称的 LLM</li>
+<li>即将在生产力领域推出新功能</li>
+<li>来源：<a href="https://qz.com/time-saver-ai-productivity-tools" class="external">Quartz<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>Notion AI 集成深化</strong>（2026-08）</p>
+<ul>
+<li>自动化任务和运营改进建议能力增强</li>
+<li>团队协作工作区 AI 能力持续升级</li>
+<li>来源：<a href="https://accessipos.com/upcoming-ipos" class="external">Access IPOs<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="-工具清单">📋 工具清单<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-工具清单" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>10 个实际节省时间的 AI 生产力工具</strong>（2026-08-13）</p>
+<ul>
+<li>自动处理会议、日程安排、研究、写作</li>
+<li>每周释放实际小时数，无需增加新的忙碌工作</li>
+<li>包含 Grammarly（AI 写作助手）、Superhuman Email、Coda（AI 团队工作区）、Go（AI 生产力助手）</li>
+<li>来源：<a href="https://qz.com/time-saver-ai-productivity-tools" class="external">Quartz<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="-产品定位">💡 产品定位<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-产品定位" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Gemini Notebook 聚焦文档查询</strong></p>
+<ul>
+<li>针对特定文档的查询优化</li>
+<li>与 ChatGPT、Claude、Perplexity 形成差异化定位</li>
+</ul>
+<h2 id="-音视频生成media-generation">🎬 音视频生成（Media Generation）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-音视频生成media-generation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="-音乐生成">🎵 音乐生成<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-音乐生成" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Suno AI 9月3日重大更新预告</strong>（2026-08-12）</p>
+<ul>
+<li>即将进行重大变更，创作者制定应对计划</li>
+<li>来源：<a href="https://www.youtube.com/watch?v=qGTCS4mwEpg" class="external">YouTube - Music Tech Info<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>AI 音乐生成工具 2026 更新汇总</strong>（2026-08-12）</p>
+<ul>
+<li><strong>Stable Audio 3 Small</strong>: 从 11 秒跃升至最多 2 分钟（10 倍增长）</li>
+<li><strong>Stable Audio 3 Medium</strong>: 处理长达 6 分 20 秒的复杂曲目</li>
+<li><strong>Suno 新模型</strong>: 控制能力增强</li>
+<li>来源：<a href="https://agentiveaiagents.com/ai-music-generation-tools-2026-updates" class="external">Agentive AI Agents<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>MiniMax Music 3.0 开源权重发布</strong>（2026-08-14）</p>
+<ul>
+<li>开放权重 AI 歌曲模型</li>
+<li>从概念和歌词生成完整歌曲</li>
+<li>来源：<a href="https://pexo.ai/blog/ai-video-statistics-7652" class="external">Pexo<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="-视频生成">🎥 视频生成<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-视频生成" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>11 个最佳 AI 视频生成器对比</strong>（2026-08-14）</p>
+<ul>
+<li><strong>Kling AI</strong>: 速度和视觉质量提升，电影级和逼真视频</li>
+<li><strong>Google Veo</strong>: 持续提供高质量 AI 视频生成，快速周转</li>
+<li><strong>Runway</strong>: 专业和创意视频工具，特定镜头控制需求</li>
+<li><strong>Pika</strong>: 持续迭代中</li>
+<li><strong>Sora</strong>: OpenAI 视频生成旗舰（访问受限）</li>
+<li>来源：<a href="https://www.heygen.com/blog/free-ai-video-generators" class="external">HeyGen<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>AI 视频统计 2026</strong>（2026-08-14）</p>
+<ul>
+<li>合成视频占比持续增长</li>
+<li>观众辨识能力分析</li>
+<li>来源：<a href="https://pexo.ai/blog/ai-video-statistics-7652" class="external">Pexo<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="-成本优化">💰 成本优化<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-成本优化" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>订阅整合趋势</strong>（Alex Mehr, Ph.D. 分享）</p>
+<ul>
+<li>取消 $306/月的多个 AI 视频订阅</li>
+<li>单一工具 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">8/</span><span class="mord cjk_fallback">月替代所有（</span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord mathnormal">u</span><span class="mord mathnormal">n</span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span>35、Sora <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">20</span><span class="mord cjk_fallback">、</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mord mathnormal">eo</span></span></span></span>25 等）</li>
+<li>行业进入成本效率竞争阶段</li>
+<li>来源：<a href="https://www.facebook.com/realDrMehr/posts/1603336511164463" class="external">Facebook<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="-工具推荐清单">📱 工具推荐清单<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-工具推荐清单" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>11 个 2026 年必知 AI 工具</strong>（Instagram 热传）</p>
+<ul>
+<li>ChatGPT / Perplexity / ElevenLabs / Canva AI / Pika / Suno / Luma / Runway / Midjourney / GitHub Copilot / Sora</li>
+<li>覆盖对话、研究、语音、设计、视频、音乐、3D、代码生成全场景</li>
+<li>来源：<a href="https://www.instagram.com/reel/Db7fUgePanG" class="external">Instagram<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> / <a href="https://www.threads.com/@codzlearner/video/DcJZmutmiIu" class="external">Threads<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="-行业动态">🏢 行业动态<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-行业动态" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>NVIDIA 2026 Runway AI 电影节</strong>（2026-08-14）</p>
+<ul>
+<li>AI 成为媒体和娱乐的新计算模型</li>
+<li>行业领袖聚焦 AI 在创意产业的应用</li>
+<li>来源：<a href="https://www.facebook.com/NVIDIA/posts/1523797963120290" class="external">Facebook - NVIDIA<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h2 id="-ai-agent-框架framework">🤖 AI Agent 框架（Framework）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-ai-agent-框架framework" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="-2026-年框架排名按-github-stars">📊 2026 年框架排名（按 GitHub Stars）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-2026-年框架排名按-github-stars" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>最受欢迎的 AI Agent 框架</strong>（2026-08-11）</p>
+<ul>
+<li><strong>AutoGen</strong>: 60.4k stars - 多 agent 对话，Microsoft 整合进 Agent Framework</li>
+<li><strong>CrewAI</strong>: 56.9k stars - 快速基于角色的多 agent 团队协调</li>
+<li><strong>LlamaIndex</strong>: 51.6k stars - 数据连接和 RAG 优化</li>
+<li><strong>LangGraph</strong>: 39.5k stars - 有状态、分支工作流最成熟</li>
+<li>来源：<a href="https://unifiedplatforms.com/blogs/digital-marketing/agentic-ai-frameworks-compared" class="external">Unified Platforms<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="-选型关键洞察">🔑 选型关键洞察<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-选型关键洞察" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>热度 ≠ 生产就绪</strong></p>
+<ul>
+<li>LangGraph 是复杂有状态工作流的最佳实战选择</li>
+<li>CrewAI 擅长快速角色型多 agent 团队协调</li>
+<li>Microsoft 将 AutoGen 整合进更广泛的 Agent Framework，路线图和维护状态很重要</li>
+</ul>
+<p><strong>轻量级趋势</strong></p>
+<ul>
+<li>优先考虑最小构建块的团队倾向：OpenAI Agents SDK、Google ADK、Microsoft Semantic Kernel</li>
+<li>适合需要完全控制和定制的场景</li>
+<li>来源：<a href="https://www.dataiku.com/blog/ai-agent-frameworks" class="external">Dataiku<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="-企业级框架对比">📚 企业级框架对比<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-企业级框架对比" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>2026 年企业洞察</strong>（2026-08-12）</p>
+<ul>
+<li>主流 10 大框架：LangGraph、CrewAI、AutoGen、OpenAI Agents SDK、Microsoft Semantic Kernel、LlamaIndex、Haystack、Hugging Face smolagents、PydanticAI、LangChain</li>
+<li>选择标准：生产就绪度 > 流行度</li>
+<li>企业部署需要 LangSmith / Semantic Kernel 遥测（运行正确性）+ Dataiku Agent Management（业务目标达成）双层监控</li>
+<li>来源：<a href="https://www.moxo.com/blog/agentic-ai-framework-comparison" class="external">Moxo<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="-学习资源">🎓 学习资源<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-学习资源" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Agentic AI 3.0 学习系列</strong>（2026-07-26）</p>
+<ul>
+<li>Agent 工作流：推理 → 工具选择 → 执行</li>
+<li>LangChain Agent 与工具交互机制</li>
+<li>来源：<a href="https://www.linkedin.com/posts/ujjwal-dhiman_ai-aiagents-langchain-activity-7493622063753203712-Jd2x" class="external">LinkedIn - Ujjwal Dhiman<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>多 Agent AI 系统免费大师课</strong>（2026-08-20）</p>
+<ul>
+<li>从 RAG 管道到多 Agent AI 系统</li>
+<li>学习 CrewAI、Agentic RAG、AI 编排模式</li>
+<li>来源：<a href="https://www.facebook.com/InterviewKickstart/posts/1540145201457765" class="external">Facebook - Interview Kickstart<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="-工具集成">🔧 工具集成<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-工具集成" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Swiss Cyber Institute AI Agents 培训</strong></p>
+<ul>
+<li>连接 AI 模型与现有工具、数据、服务</li>
+<li>实时会议和动手项目</li>
+<li>来源：<a href="https://www.facebook.com/swisscyberinstitute/posts/1347431280895745" class="external">Facebook - Swiss Cyber Institute<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h2 id="️-开发工具devtools">🛠️ 开发工具（DevTools）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-开发工具devtools" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="-重大发布">🆕 重大发布<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-重大发布" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Nutanix 开源 MCP Server for NCP</strong>（2026-08-12）</p>
+<ul>
+<li>为 Nutanix Cloud Platform (NCP) 推出开源 MCP server</li>
+<li>使 AI agents 和开发工具能通过 Nutanix Prism v4 API 与 NCP 交互</li>
+<li>IT 团队可在大型混合多云环境中安全高效地自动化日常云操作</li>
+<li>来源：<a href="https://www.itweb.co.za/article/nutanix-puts-agentic-ai-into-action-for-enterprises/GxwQDM1DPlV7lPVo" class="external">IT Web<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>Anthropic Agent Skills 引入</strong>（2026-08-15）</p>
+<ul>
+<li>基于文件系统的资源，为 Claude agent 提供领域专业知识</li>
+<li>增强专业任务能力</li>
+<li>截至 2026年8月，Skills 可在四个平台运行：Claude.ai（网页/桌面）、VS Code 插件、IDE 集成、API</li>
+<li>来源：<a href="https://tech-insider.org/au/how-to-use-claude-skills-2026" class="external">Tech Insider<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>MCP SDK v2 Beta 无状态版本</strong>（2026-08-12）</p>
+<ul>
+<li>Model Context Protocol 推出无状态版本</li>
+<li>开发者质疑”这是否又变回了普通 API”</li>
+<li>架构设计权衡讨论激烈</li>
+<li>来源：<a href="https://www.infoq.com/news/2026/08/mcp-stateless-gateway" class="external">InfoQ<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="-竞品动态">🆚 竞品动态<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-竞品动态" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>DeepSeek Harness 开源发布</strong>（2026-08-13）</p>
+<ul>
+<li>作为 Claude Code 的开源竞品推出</li>
+<li>同时推出 V4-Pro API 版本，价格上调</li>
+<li><strong>模型选择</strong>: DeepSeek、Anthropic、OpenAI 和自定义兼容端点</li>
+<li><strong>可扩展性</strong>: 卓越，几乎所有方面可配置</li>
+<li>对比 Claude（主要 Claude，包括 Bedrock、Google Cloud、Microsoft 托管）和 OpenAI CLI（主要 OpenAI 模型，开源 CLI 可配置）</li>
+<li>来源：<a href="https://venturebeat.com/technology/deepseek-harness-launches-as-open-source-rival-to-claude-code-alongside-v4-pro-on-api-with-higher-prices" class="external">VentureBeat<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="️-安全警示">⚠️ 安全警示<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-安全警示" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Blacklight 发现主流 AI 开发工具安全漏洞</strong>（2026-08-13/16）</p>
+<ul>
+<li>Codex、Claude Code、Cursor Artifacts 存在 token 和会话数据暴露</li>
+<li>AI 开发工具可能成为最大安全风险</li>
+<li>来源：<a href="https://cybersecuritynews.com/blacklight-toolkit" class="external">Cybersecurity News<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> / <a href="https://thehackernews.com/expert-insights/2026/08/why-your-ai-developer-tools-might-be.html" class="external">The Hacker News<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>GhostJacking AI 攻击</strong>（2026-08-10）</p>
+<ul>
+<li>EtherHiding ClickFix</li>
+<li>Cursor CLI 漏洞</li>
+<li>AI Agent 生命周期风险</li>
+<li>Agent 治理需要全局可见性</li>
+<li>来源：<a href="https://thehackernews.com/2026/08/threatsday-ghostjacking-ai-attacks.html" class="external">The Hacker News<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="-企业级-ai-agent">🏢 企业级 AI Agent<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-企业级-ai-agent" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Meta Coding Agent: Muse Code</strong>（2026-08-05）</p>
+<ul>
+<li>T3 Code 开发者 Theo 深度评测</li>
+<li>快速、便宜，但尚未完全生产就绪</li>
+<li>Meta 终端 agent 与现有工具对比</li>
+<li>来源：<a href="https://finance.biggo.com/podcast/1e4bc1739e6c1fa0" class="external">BigGo Finance<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>Microsoft CTO Kevin Scott 谈 Agent 互联网愿景</strong>（2026-08）</p>
+<ul>
+<li>构建面向 Agent 的互联网基础设施</li>
+<li>截至 2026年8月，机制和功能现状：
+<ul>
+<li><strong>可访问性树 / ARIA 标签</strong>: 标记页面组件，告诉 agent 点击位置和原因 - 已被最佳浏览器 agent 使用</li>
+<li>行业需要成为传道者推动标准化</li>
+</ul>
+</li>
+<li>来源：<a href="https://finance.biggo.com/podcast/4727cfa1620d4da9" class="external">BigGo Finance<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="-基础设施">🔧 基础设施<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-基础设施" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Microsoft Exchange CU1 延期</strong>（2026-08-17）</p>
+<ul>
+<li>微软竞相验证 AI 发现的漏洞</li>
+<li>AI 在安全测试中的角色扩大</li>
+<li>CIO 应分离 CU1 就绪状态与 Microsoft 发布日历</li>
+<li>来源：<a href="https://www.computerworld.com/article/4210454/exchange-cu1-delayed-further-as-microsoft-races-to-verify-ai-found-flaws.html" class="external">ComputerWorld<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>NVIDIA 与本地 AI 社区推动开源模型和智能 Agent</strong>（2026-08-11）</p>
+<ul>
+<li>开源生态让 AI 爱好者和开发者更容易构建本地 AI</li>
+<li>来源：<a href="https://blogs.nvidia.com/blog/local-ai-open-source-models-agents-nemotron" class="external">NVIDIA Blog<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>Cloudflare 股价表现</strong>（2026-08-17）</p>
+<ul>
+<li>市值 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">111.8</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">，股价区间</span></span></span></span>315.19 - $331.83</li>
+<li>AI 基础设施提供商持续受关注</li>
+<li>来源：<a href="https://finance.biggo.com/quote/NET" class="external">BigGo Finance<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h2 id="-国产-ai-工具china-ai-tools">🇨🇳 国产 AI 工具（China AI Tools）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-国产-ai-工具china-ai-tools" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="-重大发布-1">🆕 重大发布<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-重大发布-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>1. Kimi Code 强势登场</strong></p>
+<ul>
+<li><strong>形态</strong>: CLI + VS Code 插件双形态</li>
+<li><strong>性能</strong>: K3 模型在编程基准测试中超越其他模型</li>
+<li><strong>定价</strong>: ¥49/月起（基础订阅），API 按需计费</li>
+<li>提供订阅模式和 API 定价灵活选择</li>
+<li>来源：多家媒体报道</li>
+</ul>
+<p><strong>2. 字节跳动 TRAE Work</strong>（Devin Desktop 前身 Windsurf IDE）</p>
+<ul>
+<li>2025年12月被 Cognition 收购，2026年6月更名 Devin Desktop</li>
+<li>核心能力迁移至 Devin 引擎</li>
+<li>基于 VS Code 编辑器，Tab 补全流畅</li>
+<li>来源：<a href="https://m.sohu.com/a/1062833410_114822" class="external">搜狐<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="-集体涨价潮">💰 集体涨价潮<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-集体涨价潮" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>DeepSeek 涨价预告</strong>（2026-08-11）</p>
+<ul>
+<li>API 定价页预告近期整体涨价，“预计涨幅较大”</li>
+<li><strong>V4 Pro 正式版定价</strong>（2026-08-12）：
+<ul>
+<li>输入: ¥0.025/百万 tokens（缓存命中）、¥3/百万 tokens（缓存未命中）</li>
+<li>输出: ¥6/百万 tokens</li>
+<li>V4 Pro 输出和输入（未命中）是 V4 Flash 的 <strong>3 倍</strong></li>
+</ul>
+</li>
+<li>来源：<a href="https://m.36kr.com/p/3943380778908807" class="external">36氪<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>阿里千问办公助理收费上线</strong>（2026-08-11）</p>
+<ul>
+<li><strong>会员套餐三档</strong>：
+<ul>
+<li>旗舰: ¥128/月、¥1499/年</li>
+<li>精英: ¥49/月、¥568/年</li>
+<li>高级: ¥200/年</li>
+</ul>
+</li>
+<li><strong>视频生成额度</strong>: 10-500 个对应 ¥26-¥968</li>
+<li>8月7日推出办公助理及多项新功能，支持最新旗舰模型 Qwen3.8</li>
+<li>来源：<a href="https://m.sohu.com/a/1063630120_116132" class="external">搜狐<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> / <a href="https://www.163.com/dy/article/L4G8DQDA0556LAPK.html" class="external">网易<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>腾讯混元大模型 API 最高涨幅</strong></p>
+<ul>
+<li>2026 年以来国产 AI 大模型集体涨价</li>
+<li>行业尚未形成标准化结果定价体系</li>
+<li>来源：<a href="https://m.jiemian.com/article/14927831.html" class="external">界面新闻<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="-企业级-ai-办公">🏢 企业级 AI 办公<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-企业级-ai-办公" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>华为云 OfficeClaw 升级为 OfficeAce</strong></p>
+<ul>
+<li>企业办公 AI 能力升级</li>
+<li>来源：<a href="https://m.sohu.com/a/1063630120_116132" class="external">搜狐<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>智谱 ZCode 全面升级</strong>（2026-08）</p>
+<ul>
+<li>GLM-5.2 模型能力增强（2026-06 发布）</li>
+<li>获高盛覆盖研报关注</li>
+<li>来源：<a href="https://car.tom.com/202608/1396337395.html" class="external">TOM汽车<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> / <a href="https://cj.sina.cn/articles/view/5953190046/162d6789e06703piqi" class="external">新浪财经<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>BAT 在 AI 办公的困境</strong>（2026-08）</p>
+<ul>
+<li><strong>阿里</strong>: 千问办公定位企业级，但定制化成本黑洞、规模化部署挑战</li>
+<li><strong>百度</strong>: 文心一言核心 AI 业务收入 Q1 达 ¥136 亿（同比增长 49%），占总营收首次突破 50%</li>
+<li><strong>腾讯</strong>: 混元大模型、微信 AI 助手、游戏 AI 创作、腾讯会议 AI 全线推进</li>
+<li>三种主流定价模式（按账号订阅、按 Token 计费、项目制买断）各有致命缺陷</li>
+<li>来源：<a href="https://m.jiemian.com/article/14927831.html" class="external">界面新闻<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> / <a href="https://cj.sina.cn/articles/view/5953190046/162d6789e06703piqi" class="external">新浪财经<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="-开源与生态">🌐 开源与生态<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-开源与生态" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>阿里云 8 月密集发布</strong>（2026-08）</p>
+<ul>
+<li>瓴羊 QuickBI 完成 AI 原生架构升级</li>
+<li>Wan3.0 视频生成模型启动公测</li>
+<li>CosyVoiceStudio 一站式 AI 语音生产力平台上线</li>
+<li>Meoo（秒悟）AI 应用创作平台团队版正式上线</li>
+<li>灵骏真武 M890 超节点实例正式上线（乌兰察布地域）</li>
+<li><strong>Qwen3.8 系列模型正式开源</strong></li>
+<li>“不换基座，换打法”策略</li>
+<li>来源：<a href="https://xinwen.bjd.com.cn/content/s6a81de33e4b03fa51a82fe96.html" class="external">北京日报<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>Meta 发布轻量化 AI 模型</strong>（2026-08）</p>
+<ul>
+<li>单张显卡即可运行</li>
+<li>降低 AI 应用门槛</li>
+<li>来源：<a href="https://m.sohu.com/a/1063630120_116132" class="external">搜狐<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="-行业洞察">📊 行业洞察<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-行业洞察" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>AI 省下的时间，请用来把车造好</strong>（2026-08-14）</p>
+<ul>
+<li>国产 AI 能力快速迭代（智谱 GLM-5.2 / 月之暗面 Kimi K3 / DeepSeek）</li>
+<li>警示：避免把 AI 当成内卷工具</li>
+<li>来源：<a href="https://car.tom.com/202608/1396337395.html" class="external">TOM汽车<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>中美 AI 剧本彻底互换</strong>（2026-08-18）</p>
+<ul>
+<li>中国大模型企业纷纷涨价</li>
+<li>美国方面定价策略调整</li>
+<li>行业进入商业化深水区</li>
+<li>来源：<a href="https://m.36kr.com/p/3943380778908807" class="external">36氪<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>AI 应用周度观察</strong>（2026-08-10 至 2026-08-16）</p>
+<ul>
+<li>百度核心 AI 业务占比首次突破 50%</li>
+<li>腾讯持续投入混元大模型和全产品线 AI 集成</li>
+<li>行业从技术竞争转向商业化落地竞争</li>
+<li>来源：<a href="https://cj.sina.cn/articles/view/5953190046/162d6789e06703piqi" class="external">新浪财经<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="️-垂直领域工具">🛠️ 垂直领域工具<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-垂直领域工具" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Shotlab 一站式 AI 全能创作平台</strong>（2026-08-14）</p>
+<ul>
+<li>新片场社区支持自然语言搜索高品质视频场景图片</li>
+<li>社区作品视频截图优质，满足各种场景需求</li>
+<li>用户有好参考图，视频生成效果和效率有保障</li>
+<li>来源：<a href="https://www.csdn.net/article/2026-08-14/163760464" class="external">CSDN<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>U-Claw 虾盘项目更新</strong>（2026-06-19）</p>
+<ul>
+<li>OpenClaw AI 助手离线安装 U 盘</li>
+<li>一键装好 Claude Code/Codex/OpenClaw，无需联网即插即用</li>
+<li>Electron 桌面版已归档，专注便携 U 盘版</li>
+<li>来源：<a href="https://github.com/dongsheng123132/u-claw" class="external">GitHub<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="-学习资源-1">🎓 学习资源<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-学习资源-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>晓白和林亦：学做 AI 视频从这五个账号开始</strong>（2026-08-11）</p>
+<ul>
+<li>太空 3D 打印肝肾组织等前沿应用案例</li>
+<li>来源：<a href="https://www.instagram.com/reel/DcBW2jBpKJ7" class="external">Instagram<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>AI 编程工具全盘点</strong>（2026-08-14）</p>
+<ul>
+<li>国内外 20 款编程软件综合评测</li>
+<li>Devin Desktop、TRAE Work、Cursor 等主流工具对比</li>
+<li>来源：<a href="https://m.sohu.com/a/1062833410_114822" class="external">搜狐<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h3 id="-社区讨论">💬 社区讨论<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-社区讨论" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>老范赛博吃播：从俄餐聊到国产算力</strong></p>
+<ul>
+<li>威士忌火焰牛排、土豆沙拉、奶油烤杂拌分享</li>
+<li>Codex 自动整理 Midjourney 风格码、生成提示词、批量下载图片工作流</li>
+<li>GPT Image 2 精修流程</li>
+<li>极氪车机锁定利益逻辑、国内高端显卡渠道与算力缺口</li>
+<li>Kimi K3、DeepSeek、梁文锋访谈带来的行业压力</li>
+<li>芯片制程、AI Agent 产品竞争、北京线下聚餐和潮流讨论</li>
+<li>来源：<a href="https://music.youtube.com/playlist?list=PLEpazxzSpsG0YT9_Y1dvm0i-t46XuLVgA" class="external">YouTube Music<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<h2 id="-核心观察">📌 核心观察<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-核心观察" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="-热点趋势">🔥 热点趋势<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-热点趋势" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>编程 AI 进入长期记忆时代</strong> - 从单次交互转向连续性上下文感知</li>
+<li><strong>AI 图像生成器双刃剑</strong> - 创意工具 vs 欺诈风险的平衡</li>
+<li><strong>音视频生成成本大战</strong> - 从 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">306/</span><span class="mord cjk_fallback">月多订阅到</span></span></span></span>8/月单工具整合</li>
+<li><strong>AI Agent 框架百花齐放</strong> - 热度与生产就绪度的分离，企业需要监控双层（运行 + 业务目标）</li>
+<li><strong>开发工具安全成为焦点</strong> - 主流 AI 编程工具相继爆出 token 和会话泄露漏洞</li>
+<li><strong>国产 AI 集体涨价</strong> - 商业化深水区，定价体系尚未统一</li>
+<li><strong>MCP 生态爆发</strong> - Nutanix、Anthropic Agent Skills、MCP SDK v2 Beta 密集发布</li>
+</ol>
+<h3 id="️-风险提示">⚠️ 风险提示<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-风险提示" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>安全漏洞</strong>: Codex、Claude Code、Cursor 存在数据泄露风险，企业部署需加强安全审计</li>
+<li><strong>版权争议</strong>: AI 生成内容的版权归属问题持续发酵（华纳《超级少女》案例）</li>
+<li><strong>欺诈风险</strong>: AI 图像生成器被用于零售欺诈，需要新的防御措施</li>
+<li><strong>成本不确定性</strong>: 国产大模型定价体系未稳定，企业预算规划需留余量</li>
+</ul>
+<h3 id="-选型建议">🎯 选型建议<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-选型建议" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>编程工具</strong></p>
+<ul>
+<li>综合能力: Cursor</li>
+<li>复杂推理: Claude Code</li>
+<li>企业级: GitHub Copilot</li>
+<li>安全优先: 等待 Blacklight 披露漏洞修复后再部署</li>
+</ul>
+<p><strong>图像生成</strong></p>
+<ul>
+<li>艺术创作: Midjourney</li>
+<li>易用性: DALL-E 3</li>
+<li>定制化: Stable Diffusion</li>
+<li>文本嵌入: Ideogram</li>
+</ul>
+<p><strong>视频生成</strong></p>
+<ul>
+<li>电影级: Kling AI</li>
+<li>快速周转: Google Veo</li>
+<li>专业控制: Runway</li>
+</ul>
+<p><strong>Agent 框架</strong></p>
+<ul>
+<li>复杂工作流: LangGraph</li>
+<li>快速团队协调: CrewAI</li>
+<li>企业级: 需要双层监控（LangSmith/Semantic Kernel + Dataiku Agent Management）</li>
+</ul>
+<p><strong>国产工具</strong></p>
+<ul>
+<li>编程: Kimi Code（性价比高）</li>
+<li>大模型: Qwen3.8（开源）、GLM-5.2（企业级）、DeepSeek V4 Pro（性能强但贵）</li>
+<li>办公: 千问办公助理（企业定制成本需评估）</li>
+</ul>
+<hr/>
+<h2 id="-数据来源">📝 数据来源<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-数据来源" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>查询执行时间: 2026-08-18 周二</li>
+<li>数据源: Tavily API (7 品类查询)</li>
+<li>时间窗口: 最近 7 天（2026-08-11 至 2026-08-18）</li>
+<li>查询模式: <code>topic: &quot;news&quot;</code> + <code>days: 7</code> + 拆品类 + 不限域名（devtool/china 除外）</li>
+<li>原始数据: /tmp/tavily/aitools_*.json</li>
+</ul>
+<hr/>
+<blockquote>
+<p>本笔记由 Hermes Agent 自动生成，数据来源于 Tavily API 搜索结果。</p>
+</blockquote></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>关系图谱</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-64" aria-expanded="true"><h3>目录</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#ai-工具推荐--2026-08-18" data-for="ai-工具推荐--2026-08-18">AI 工具推荐 | 2026-08-18</a></li><li class="depth-1"><a href="#-本期概览" data-for="-本期概览">📊 本期概览</a></li><li class="depth-1"><a href="#-代码工具coding-tools" data-for="-代码工具coding-tools">🔧 代码工具（Coding Tools）</a></li><li class="depth-2"><a href="#-新发布" data-for="-新发布">🆕 新发布</a></li><li class="depth-2"><a href="#-趋势洞察" data-for="-趋势洞察">📈 趋势洞察</a></li><li class="depth-2"><a href="#-横向对比" data-for="-横向对比">🆚 横向对比</a></li><li class="depth-1"><a href="#-图像生成image-generation" data-for="-图像生成image-generation">🎨 图像生成（Image Generation）</a></li><li class="depth-2"><a href="#-横向对比更新" data-for="-横向对比更新">📊 横向对比更新</a></li><li class="depth-2"><a href="#️-风险警示" data-for="️-风险警示">⚠️ 风险警示</a></li><li class="depth-2"><a href="#-行业应用" data-for="-行业应用">🎬 行业应用</a></li><li class="depth-1"><a href="#-写作工具writing-tools" data-for="-写作工具writing-tools">📝 写作工具（Writing Tools）</a></li><li class="depth-2"><a href="#-即将发布" data-for="-即将发布">🔮 即将发布</a></li><li class="depth-2"><a href="#-工具清单" data-for="-工具清单">📋 工具清单</a></li><li class="depth-2"><a href="#-产品定位" data-for="-产品定位">💡 产品定位</a></li><li class="depth-1"><a href="#-音视频生成media-generation" data-for="-音视频生成media-generation">🎬 音视频生成（Media Generation）</a></li><li class="depth-2"><a href="#-音乐生成" data-for="-音乐生成">🎵 音乐生成</a></li><li class="depth-2"><a href="#-视频生成" data-for="-视频生成">🎥 视频生成</a></li><li class="depth-2"><a href="#-成本优化" data-for="-成本优化">💰 成本优化</a></li><li class="depth-2"><a href="#-工具推荐清单" data-for="-工具推荐清单">📱 工具推荐清单</a></li><li class="depth-2"><a href="#-行业动态" data-for="-行业动态">🏢 行业动态</a></li><li class="depth-1"><a href="#-ai-agent-框架framework" data-for="-ai-agent-框架framework">🤖 AI Agent 框架（Framework）</a></li><li class="depth-2"><a href="#-2026-年框架排名按-github-stars" data-for="-2026-年框架排名按-github-stars">📊 2026 年框架排名（按 GitHub Stars）</a></li><li class="depth-2"><a href="#-选型关键洞察" data-for="-选型关键洞察">🔑 选型关键洞察</a></li><li class="depth-2"><a href="#-企业级框架对比" data-for="-企业级框架对比">📚 企业级框架对比</a></li><li class="depth-2"><a href="#-学习资源" data-for="-学习资源">🎓 学习资源</a></li><li class="depth-2"><a href="#-工具集成" data-for="-工具集成">🔧 工具集成</a></li><li class="depth-1"><a href="#️-开发工具devtools" data-for="️-开发工具devtools">🛠️ 开发工具（DevTools）</a></li><li class="depth-2"><a href="#-重大发布" data-for="-重大发布">🆕 重大发布</a></li><li class="depth-2"><a href="#-竞品动态" data-for="-竞品动态">🆚 竞品动态</a></li><li class="depth-2"><a href="#️-安全警示" data-for="️-安全警示">⚠️ 安全警示</a></li><li class="depth-2"><a href="#-企业级-ai-agent" data-for="-企业级-ai-agent">🏢 企业级 AI Agent</a></li><li class="depth-2"><a href="#-基础设施" data-for="-基础设施">🔧 基础设施</a></li><li class="depth-1"><a href="#-国产-ai-工具china-ai-tools" data-for="-国产-ai-工具china-ai-tools">🇨🇳 国产 AI 工具（China AI Tools）</a></li><li class="depth-2"><a href="#-重大发布-1" data-for="-重大发布-1">🆕 重大发布</a></li><li class="depth-2"><a href="#-集体涨价潮" data-for="-集体涨价潮">💰 集体涨价潮</a></li><li class="depth-2"><a href="#-企业级-ai-办公" data-for="-企业级-ai-办公">🏢 企业级 AI 办公</a></li><li class="depth-2"><a href="#-开源与生态" data-for="-开源与生态">🌐 开源与生态</a></li><li class="depth-2"><a href="#-行业洞察" data-for="-行业洞察">📊 行业洞察</a></li><li class="depth-2"><a href="#️-垂直领域工具" data-for="️-垂直领域工具">🛠️ 垂直领域工具</a></li><li class="depth-2"><a href="#-学习资源-1" data-for="-学习资源-1">🎓 学习资源</a></li><li class="depth-2"><a href="#-社区讨论" data-for="-社区讨论">💬 社区讨论</a></li><li class="depth-1"><a href="#-核心观察" data-for="-核心观察">📌 核心观察</a></li><li class="depth-2"><a href="#-热点趋势" data-for="-热点趋势">🔥 热点趋势</a></li><li class="depth-2"><a href="#️-风险提示" data-for="️-风险提示">⚠️ 风险提示</a></li><li class="depth-2"><a href="#-选型建议" data-for="-选型建议">🎯 选型建议</a></li><li class="depth-1"><a href="#-数据来源" data-for="-数据来源">📝 数据来源</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr"><head><title>2026-08-07</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="飞哥的笔记"/><meta property="og:title" content="2026-08-07"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="2026-08-07"/><meta name="twitter:description" content="arXiv 论文日报 | 2026-08-07 🔥 HuggingFace 热榜（社区策展） 📄 ABSeeker: 用答案回溯信用分配训练长程搜索智能体 作者：Yijun Lu, Rui Ye, Jiajun Wang et al."/><meta property="og:description" content="arXiv 论文日报 | 2026-08-07 🔥 HuggingFace 热榜（社区策展） 📄 ABSeeker: 用答案回溯信用分配训练长程搜索智能体 作者：Yijun Lu, Rui Ye, Jiajun Wang et al."/><meta property="og:image:alt" content="arXiv 论文日报 | 2026-08-07 🔥 HuggingFace 热榜（社区策展） 📄 ABSeeker: 用答案回溯信用分配训练长程搜索智能体 作者：Yijun Lu, Rui Ye, Jiajun Wang et al."/><meta property="twitter:domain" content="notes.leaf.pp.ua"/><meta property="og:url" content="https://notes.leaf.pp.ua/claw_notes/arxiv-daily/2026-08-07"/><meta property="twitter:url" content="https://notes.leaf.pp.ua/claw_notes/arxiv-daily/2026-08-07"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="arXiv 论文日报 | 2026-08-07 🔥 HuggingFace 热榜（社区策展） 📄 ABSeeker: 用答案回溯信用分配训练长程搜索智能体 作者：Yijun Lu, Rui Ye, Jiajun Wang et al."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2xvbmdmZWloYW8vLmhlcm1lcy93b3Jrc3BhY2UvcXVhcnR6LW5vdGVzL3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7O0FBSUY7RUFDRTtFQUNBO0VBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwYW5kLWJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nOiAwLjRyZW07XG4gIG1hcmdpbjogMC4zcmVtO1xuICByaWdodDogMDsgLy8gTk9URTogcmlnaHQgd2lsbCBiZSBzZXQgaW4gbWVybWFpZC5pbmxpbmUudHNcbiAgY29sb3I6IHZhcigtLWdyYXkpO1xuICBib3JkZXItY29sb3I6IHZhcigtLWRhcmspO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gIGJvcmRlcjogMXB4IHNvbGlkO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHRyYW5zaXRpb246IDAuMnM7XG5cbiAgJiA+IHN2ZyB7XG4gICAgZmlsbDogdmFyKC0tbGlnaHQpO1xuICAgIGZpbHRlcjogY29udHJhc3QoMC4zKTtcbiAgfVxuXG4gICY6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItY29sb3I6IHZhcigtLXNlY29uZGFyeSk7XG4gIH1cblxuICAmOmZvY3VzIHtcbiAgICBvdXRsaW5lOiAwO1xuICB9XG59XG5cbnByZSB7XG4gICY6aG92ZXIgPiAuZXhwYW5kLWJ1dHRvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xuICB9XG59XG5cbiNtZXJtYWlkLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29udGFpbjogbGF5b3V0O1xuICB6LWluZGV4OiA5OTk7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoNHB4KTtcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xuXG4gICYuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICAmID4gI21lcm1haWQtc3BhY2Uge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGhlaWdodDogODB2aDtcbiAgICB3aWR0aDogODB2dztcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRlbnQge1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://notes.leaf.pp.ua/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://notes.leaf.pp.ua/claw_notes/arxiv-daily/2026-08-07-og-image.webp"/><meta property="og:image:url" content="https://notes.leaf.pp.ua/claw_notes/arxiv-daily/2026-08-07-og-image.webp"/><meta name="twitter:image" content="https://notes.leaf.pp.ua/claw_notes/arxiv-daily/2026-08-07-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="claw_notes/arxiv-daily/2026-08-07"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">飞哥的笔记</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>搜索</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="搜索些什么" placeholder="搜索些什么"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="暗色模式"><title>暗色模式</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="亮色模式"><title>亮色模式</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="阅读模式"><title>阅读模式</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-578"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>探索</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-578" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../claw_notes/">Claw Notes</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../claw_notes/arxiv-daily/">arxiv daily</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>2026 08 07</a></div></nav><h1 class="article-title">2026-08-07</h1><p show-comma="true" class="content-meta"><time datetime="2026-08-07T00:04:28.000Z">2026年8月07日</time><span>21分钟阅读</span></p><ul class="tags"><li><a href="../../tags/智能体RL" class="internal tag-link">智能体RL</a></li><li><a href="../../tags/后训练" class="internal tag-link">后训练</a></li><li><a href="../../tags/多任务RL" class="internal tag-link">多任务RL</a></li><li><a href="../../tags/因果推理" class="internal tag-link">因果推理</a></li><li><a href="../../tags/能力评估" class="internal tag-link">能力评估</a></li><li><a href="../../tags/多模态" class="internal tag-link">多模态</a></li><li><a href="../../tags/KVCache" class="internal tag-link">KVCache</a></li><li><a href="../../tags/量化" class="internal tag-link">量化</a></li><li><a href="../../tags/投机解码" class="internal tag-link">投机解码</a></li><li><a href="../../tags/RL训练效率" class="internal tag-link">RL训练效率</a></li><li><a href="../../tags/奖励稀疏" class="internal tag-link">奖励稀疏</a></li><li><a href="../../tags/推理优化" class="internal tag-link">推理优化</a></li><li><a href="../../tags/部署" class="internal tag-link">部署</a></li><li><a href="../../tags/记忆" class="internal tag-link">记忆</a></li><li><a href="../../tags/智能体" class="internal tag-link">智能体</a></li><li><a href="../../tags/长上下文" class="internal tag-link">长上下文</a></li><li><a href="../../tags/合成数据" class="internal tag-link">合成数据</a></li><li><a href="../../tags/RLVR" class="internal tag-link">RLVR</a></li><li><a href="../../tags/长程推理" class="internal tag-link">长程推理</a></li><li><a href="../../tags/新架构" class="internal tag-link">新架构</a></li><li><a href="../../tags/拒答校准" class="internal tag-link">拒答校准</a></li></ul></div></div><article class="popover-hint"><h1 id="arxiv-论文日报--2026-08-07">arXiv 论文日报 | 2026-08-07<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#arxiv-论文日报--2026-08-07" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="-huggingface-热榜社区策展">🔥 HuggingFace 热榜（社区策展）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-huggingface-热榜社区策展" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="-abseeker-用答案回溯信用分配训练长程搜索智能体">📄 <a href="https://arxiv.org/abs/2608.05102" class="external">ABSeeker: 用答案回溯信用分配训练长程搜索智能体<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-abseeker-用答案回溯信用分配训练长程搜索智能体" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>作者</strong>：Yijun Lu, Rui Ye, Jiajun Wang et al.</li>
+<li><strong>关键词</strong>：长程智能体, 信用分配, SFT+RL, 搜索检索</li>
+<li><strong>摘要</strong>：长程搜索智能体需要多步顺序动作来搜索、检索、验证并整合证据以得出最终答案。现有训练方法在 SFT 和 RL 阶段都把轨迹内所有步骤等同对待，无法区分真正有用的动作和无效动作。本文提出答案回溯的信用分配机制，从最终答案反向定位关键决策步，对不同步骤施加差异化监督权重。</li>
+<li><strong>票数</strong>：54 👍</li>
+</ul>
+<h3 id="-多模态预训练的物理学知识流动模态协同早期统一与配方">📄 <a href="https://arxiv.org/abs/2608.05000" class="external">多模态预训练的”物理学”：知识流动、模态协同、早期统一与配方<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-多模态预训练的物理学知识流动模态协同早期统一与配方" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>作者</strong>：Junlin Han, Shengbang Tong, David Fan et al.</li>
+<li><strong>关键词</strong>：多模态预训练, 模态协同, 统一架构, 训练配方</li>
+<li><strong>摘要</strong>：视觉是推进基础模型的关键维度，业界正转向原生统一的多模态预训练，但设计空间和模态在统一训练中如何交互的底层机制仍未被充分探索。本文通过系统性实证研究给出了清晰结论：知识如何在模态间流动、何时进行早期统一最有效、以及可复用的训练配方。对做预训练的团队参考价值很高。</li>
+<li><strong>票数</strong>：41 👍</li>
+</ul>
+<h3 id="-个性化的幻象llm-如何编造用户画像以及自我监控为何会误导">📄 <a href="https://arxiv.org/abs/2608.04570" class="external">个性化的幻象：LLM 如何编造用户画像，以及自我监控为何会误导<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-个性化的幻象llm-如何编造用户画像以及自我监控为何会误导" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>作者</strong>：Yushi Sun, Yanjie Zhang, Rui Sheng et al.</li>
+<li><strong>关键词</strong>：个性化, 持久记忆, 过度推断, MirageBench</li>
+<li><strong>摘要</strong>：带持久记忆的个性化 LLM 部署越来越广，但其用户模型的忠实度从未被检验。本文研究”过度推断”（over-inference, OI）现象——LLM 编造超出证据支持范围的用户属性。提出 MirageBench，包含 150 个跨刻板印象、反刻板印象与中性设定的人格画像。结论是：让模型自我监控反而会加剧误导。</li>
+<li><strong>票数</strong>：37 👍</li>
+</ul>
+<h3 id="-onedayagent-面向自主智能体的长程测试框架">📄 <a href="https://arxiv.org/abs/2608.05013" class="external">OneDayAgent: 面向自主智能体的长程测试框架<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-onedayagent-面向自主智能体的长程测试框架" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>作者</strong>：Jingsheng Zheng, Xinyuan Fang, Jintian Zhang et al.</li>
+<li><strong>关键词</strong>：长程智能体, 跨环境, 多模态, 评测框架</li>
+<li><strong>摘要</strong>：LLM 智能体越来越多地应用于横跨工作、学习、生活的开放式日常请求。这类任务是长程、跨环境、多模态的，迫使智能体在大量步骤中保持目标与约束，同时应对异构工具和附件。本文构建了统一的长程测试环境，把此前分散研究的各个能力维度整合到同一评测轴上。</li>
+<li><strong>票数</strong>：28 👍</li>
+</ul>
+<h3 id="-gdpevo-在真实商业任务上评估智能体自进化">📄 <a href="https://arxiv.org/abs/2608.03764" class="external">GDPevo: 在真实商业任务上评估智能体自进化<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-gdpevo-在真实商业任务上评估智能体自进化" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>作者</strong>：Leijun Zhou, Zhihao Liu, Xiang Qu et al.</li>
+<li><strong>关键词</strong>：自进化, 持久状态, 商业任务, 评测设计</li>
+<li><strong>摘要</strong>：智能体自进化指从历史经验更新持久状态，并复用它更高效地解决相关任务。评估自进化很困难：现有基准对经济价值高的任务域覆盖有限，且训练/测试任务的设计往往无法保证测试期收益真实归因于自进化。本文用真实商业任务重新设计了评测协议。</li>
+<li><strong>票数</strong>：21 👍</li>
+</ul>
+<h3 id="-走向技能原生-llm用技能熵评测与训练长程推理">📄 <a href="https://arxiv.org/abs/2608.05139" class="external">走向技能原生 LLM：用技能熵评测与训练长程推理<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-走向技能原生-llm用技能熵评测与训练长程推理" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>作者</strong>：Yinghui He, Ling Yang, Jiarui Liu et al.</li>
+<li><strong>关键词</strong>：技能熵, 跨技能长程任务, 推理链, 训练信号</li>
+<li><strong>摘要</strong>：近期 LLM 的长程推理要求模型在一条推理链内切换不同技能，比如先做数学推导、再用结果规划日程。作者称这类问题为”跨技能长程任务”：多步任务的各步需要不同推理技能且相互依赖。提出”技能熵”作为同时可用于评测和训练的量化指标。</li>
+<li><strong>票数</strong>：20 👍</li>
+</ul>
+<h3 id="-当教师误导时伪信号感知的-on-policy-蒸馏">📄 <a href="https://arxiv.org/abs/2608.03632" class="external">当教师误导时：伪信号感知的 On-Policy 蒸馏<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-当教师误导时伪信号感知的-on-policy-蒸馏" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>作者</strong>：Yinuo Jiang, Yongjie Ye, Zhou Tao et al.</li>
+<li><strong>关键词</strong>：OPD, 伪信号, 选择性蒸馏, token 级监督</li>
+<li><strong>摘要</strong>：On-Policy 蒸馏（OPD）用密集的 token 级教师信号监督学生采样的轨迹来迁移能力。近期选择性 OPD 方法通过优先选取自信、信息量大或可学习的信号来改进这一过程，但这些假设忽略了一个根本失效模式：教师本身可能依赖伪相关信号。本文显式建模并过滤教师的伪信号。</li>
+<li><strong>票数</strong>：19 👍</li>
+</ul>
+<h3 id="-skill-kd-llm-智能体的对比式技能蒸馏">📄 <a href="https://arxiv.org/abs/2607.28048" class="external">SKILL-KD: LLM 智能体的对比式技能蒸馏<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-skill-kd-llm-智能体的对比式技能蒸馏" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>关键词</strong>：技能蒸馏, 对比学习, 智能体提示</li>
+<li><strong>摘要</strong>：基于技能的提示已成为提升 LLM 智能体的实用手段，但现有技能获取方法往往把技能当作经验摘要或记忆条目处理，缺少可判别的表示。本文用对比学习蒸馏技能，让相似情境下的技能表示靠近、不同情境下拉远，从而提升技能检索的准确性。</li>
+<li><strong>票数</strong>：9 👍</li>
+</ul>
+<h3 id="-focusmem-在隐式-gui-记忆中分解内容读出与信任">📄 <a href="https://arxiv.org/abs/2608.04530" class="external">FocusMem: 在隐式 GUI 记忆中分解内容、读出与信任<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-focusmem-在隐式-gui-记忆中分解内容读出与信任" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>关键词</strong>：GUI 智能体, 隐式记忆, 记忆信任度</li>
+<li><strong>摘要</strong>：GUI 智能体既要记住早期任务的有用经验，也要记住当前交互中未完成的进度。隐式记忆通过压缩多模态轨迹提供了紧凑方案，但难以判断哪部分记忆可信。本文把记忆分解为内容、读出机制、信任度三个正交因子，分别优化。</li>
+<li><strong>票数</strong>：10 👍</li>
+</ul>
+<h3 id="-k-exaone-20-技术报告">📄 <a href="https://arxiv.org/abs/2608.04505" class="external">K-EXAONE 2.0 技术报告<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-k-exaone-20-技术报告" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>作者</strong>：Eunbi Choi, Kibong Choi, Sehyun Chun et al.</li>
+<li><strong>关键词</strong>：MoE, 模型升级(upcycle), 750B 总参数, 开放权重</li>
+<li><strong>摘要</strong>：LG AI Research 发布的开放权重多语言基础模型。<strong>没有从零训练，而是对 K-EXAONE 做架构扩展升级（upcycle）</strong>，得到总参数 750B 的 MoE 模型。对关注”如何低成本把 dense 模型升级为 MoE”的团队是很实用的一手工程报告。</li>
+<li><strong>票数</strong>：12 👍</li>
+</ul>
+<h3 id="-当记忆说谎vlm-智能体空间记忆陈旧化的实证研究">📄 <a href="https://arxiv.org/abs/2608.04574" class="external">当记忆说谎：VLM 智能体空间记忆陈旧化的实证研究<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-当记忆说谎vlm-智能体空间记忆陈旧化的实证研究" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>关键词</strong>：VLM 智能体, 空间记忆, 记忆陈旧, 冲突检测</li>
+<li><strong>摘要</strong>：带记忆增强的 VLM 智能体依赖持久空间知识行动，但环境变化时这些知识会静默陈旧。本文研究：当智能体必须调和一条自信的记忆断言与相矛盾的当前观测时会发生什么，以及现有模型能否在错误演变成安全风险前捕捉到这个冲突。结论偏悲观。</li>
+<li><strong>票数</strong>：12 👍</li>
+</ul>
+<h3 id="-poly-opd-异构多教师-on-policy-蒸馏能力可选的流模型">📄 <a href="https://arxiv.org/abs/2608.04349" class="external">Poly-OPD: 异构多教师 On-Policy 蒸馏，能力可选的流模型<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-poly-opd-异构多教师-on-policy-蒸馏能力可选的流模型" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>关键词</strong>：多教师 OPD, 异构教师, 能力选择</li>
+<li><strong>摘要</strong>：领先的开源文生图模型往往各有互补优势：一个在偏好对齐的美学上领先，另一个更忠实地遵循组合式指令。本文提出异构多教师 OPD 框架，让学生按需选择继承哪种能力，而不是被单一教师的偏好锁定。<strong>多教师 OPD 的思路可迁移到纯文本 LLM 蒸馏</strong>。</li>
+<li><strong>票数</strong>：7 👍</li>
+</ul>
+<hr/>
+<h2 id="-arxiv-关键词雷达新方向探测">🔍 arXiv 关键词雷达（新方向探测）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-arxiv-关键词雷达新方向探测" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="-look-ahead-before-you-distill-智能体-opd-中教师引导的未来轨迹验证">📄 <a href="https://arxiv.org/abs/2608.01953" class="external">Look Ahead Before You Distill: 智能体 OPD 中教师引导的未来轨迹验证<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-look-ahead-before-you-distill-智能体-opd-中教师引导的未来轨迹验证" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>作者</strong>：Chishui Chen, Yaoyou Fan et al.</li>
+<li><strong>提交日期</strong>：2026-08-06</li>
+<li><strong>摘要</strong>：On-policy 蒸馏（OPD）在学生访问的状态上提供教师监督，缩小训练与推理的分布差距。但在多轮智能体任务中，学生的偏离会随时间累积，轨迹逐渐远离教师监督有效的状态区域。本文在施加教师信号前先”向前看”验证未来轨迹质量，避免在已经跑偏的状态上强行蒸馏。</li>
+<li><strong>方向标签</strong>：#OPD <a href="../.././../tags/智能体RL" class="tag-link internal alias" data-slug="tags/智能体RL">智能体RL</a> <a href="../.././../tags/后训练" class="tag-link internal alias" data-slug="tags/后训练">后训练</a></li>
+</ul>
+<h3 id="-multi-task-grpo-跨任务可靠的-llm-推理">📄 <a href="https://arxiv.org/abs/2602.05547" class="external">Multi-Task GRPO: 跨任务可靠的 LLM 推理<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-multi-task-grpo-跨任务可靠的-llm-推理" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>作者</strong>：Shyam Sundhar Ramesh, Xiaotong Ji et al.</li>
+<li><strong>提交日期</strong>：2026-08-06</li>
+<li><strong>摘要</strong>：基于 GRPO 的 RL 后训练被广泛用于提升单个推理任务表现，但真实部署要求跨多样任务的稳定性能。GRPO 直接多任务化常导致结果失衡——某些任务主导优化、其他任务被压制。本文分析了失衡的根源并给出任务级 advantage 归一化方案。<strong>做多任务 GRPO 训练的必读</strong>。</li>
+<li><strong>方向标签</strong>：#GRPO <a href="../.././../tags/后训练" class="tag-link internal alias" data-slug="tags/后训练">后训练</a> <a href="../.././../tags/多任务RL" class="tag-link internal alias" data-slug="tags/多任务RL">多任务RL</a></li>
+</ul>
+<h3 id="-后训练能把-llm-变成因果推理者吗">📄 <a href="https://arxiv.org/abs/2602.06337" class="external">后训练能把 LLM 变成因果推理者吗？<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-后训练能把-llm-变成因果推理者吗" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>作者</strong>：Junqi Chen, Sirui Chen et al.</li>
+<li><strong>提交日期</strong>：2026-08-06</li>
+<li><strong>摘要</strong>：因果推断对决策至关重要但对非专家很难。LLM 在此领域显示潜力，但精确因果估计能力仍有限，且后训练对这些能力的影响尚未被充分探索。本文系统评估了 SFT / RL 各类后训练手段对因果推理能力的实际增益边界。</li>
+<li><strong>方向标签</strong>：#后训练 <a href="../.././../tags/因果推理" class="tag-link internal alias" data-slug="tags/因果推理">因果推理</a> <a href="../.././../tags/能力评估" class="tag-link internal alias" data-slug="tags/能力评估">能力评估</a></li>
+</ul>
+<h3 id="-opd-v-带模态平衡的视觉-on-policy-自蒸馏">📄 <a href="https://arxiv.org/abs/2608.05131" class="external">OPD-V: 带模态平衡的视觉 On-Policy 自蒸馏<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-opd-v-带模态平衡的视觉-on-policy-自蒸馏" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>作者</strong>：Aniri, Jinhe Bi et al.</li>
+<li><strong>提交日期</strong>：2026-08-06</li>
+<li><strong>摘要</strong>：On-Policy 自蒸馏（OPSD）已成为标准后训练方法，但直接应用到多模态模型时会出现模态失衡——文本侧信号压过视觉侧。本文引入模态平衡的 OPSD 变体，显式约束两侧梯度贡献比例。</li>
+<li><strong>方向标签</strong>：#OPD <a href="../.././../tags/多模态" class="tag-link internal alias" data-slug="tags/多模态">多模态</a> <a href="../.././../tags/后训练" class="tag-link internal alias" data-slug="tags/后训练">后训练</a></li>
+</ul>
+<h3 id="-spend-bits-where-queries-look-注意力保持变换的-kv-cache-向量量化">📄 <a href="https://arxiv.org/abs/2608.04074" class="external">Spend Bits Where Queries Look: 注意力保持变换的 KV Cache 向量量化<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-spend-bits-where-queries-look-注意力保持变换的-kv-cache-向量量化" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>作者</strong>：Samuel Fernández-Menduiña, Amir Ziashahabi et al.</li>
+<li><strong>提交日期</strong>：2026-08-06</li>
+<li><strong>摘要</strong>：长上下文 LLM 解码每一步都要读 KV cache，加载耗时超过在其上计算注意力的耗时，所以吞吐是带宽受限的。减小 cache 尺寸能同时提升解码速度和服务容量。挑战在于压缩的同时保持精度——本文按”query 实际关注的位置”分配比特预算，配合注意力保持变换做向量量化。<strong>推理优化方向今日最实用的一篇</strong>。</li>
+<li><strong>方向标签</strong>：#推理优化 <a href="../.././../tags/KVCache" class="tag-link internal alias" data-slug="tags/KVCache">KVCache</a> <a href="../.././../tags/量化" class="tag-link internal alias" data-slug="tags/量化">量化</a></li>
+</ul>
+<h3 id="-specroll-投机式-rl-rollout-的快慢验证器反馈自适应">📄 <a href="https://arxiv.org/abs/2608.04962" class="external">SpecRoll: 投机式 RL Rollout 的快慢验证器反馈自适应<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-specroll-投机式-rl-rollout-的快慢验证器反馈自适应" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>作者</strong>：Nhat Minh Pham, Duy Tung Doan et al.</li>
+<li><strong>提交日期</strong>：2026-08-06</li>
+<li><strong>摘要</strong>：RL 后训练提升 LLM 推理能力，但自回归 rollout 生成仍是主要效率瓶颈。投机解码能加速生成，但在 RL 中应用很困难，因为目标策略在持续更新、草稿模型会迅速失配。本文用快慢双验证器反馈机制让草稿模型跟上策略漂移。<strong>把 RL 训练吞吐和投机解码结合的少见工作</strong>。</li>
+<li><strong>方向标签</strong>：#推理优化 <a href="../.././../tags/投机解码" class="tag-link internal alias" data-slug="tags/投机解码">投机解码</a> <a href="../.././../tags/RL训练效率" class="tag-link internal alias" data-slug="tags/RL训练效率">RL训练效率</a></li>
+</ul>
+<h3 id="-agentic-rl-中的观测校准自蒸馏">📄 <a href="https://arxiv.org/abs/2608.04788" class="external">Agentic RL 中的观测校准自蒸馏<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-agentic-rl-中的观测校准自蒸馏" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>作者</strong>：Yi Yang, Cong Qin et al.</li>
+<li><strong>提交日期</strong>：2026-08-06</li>
+<li><strong>摘要</strong>：LLM 智能体通常用稀疏的轨迹级奖励做 RL 训练，这对”单个 token 该更新多强”几乎没有指导。On-Policy 自蒸馏（OPSD）通过在特权信息下重新打分生成 token 来缓解，本文进一步用真实观测结果校准这个打分，避免自蒸馏放大模型自身偏差。</li>
+<li><strong>方向标签</strong>：#OPD <a href="../.././../tags/智能体RL" class="tag-link internal alias" data-slug="tags/智能体RL">智能体RL</a> <a href="../.././../tags/奖励稀疏" class="tag-link internal alias" data-slug="tags/奖励稀疏">奖励稀疏</a></li>
+</ul>
+<h3 id="-recurrent-residual-quantization-llm-的渐进式多精度表示">📄 <a href="https://arxiv.org/abs/2608.04048" class="external">Recurrent Residual Quantization: LLM 的渐进式多精度表示<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-recurrent-residual-quantization-llm-的渐进式多精度表示" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>作者</strong>：Yu Luo, Bo Dong et al.</li>
+<li><strong>提交日期</strong>：2026-08-06</li>
+<li><strong>摘要</strong>：在多样部署约束下服务 LLM 需要在精度、显存占用、吞吐之间灵活取舍。但传统量化方法通常每个目标比特宽度都要一个独立 checkpoint。本文提出循环残差量化，<strong>一份权重支持多个比特宽度渐进解码</strong>——想要更高精度就多读几层残差。工程上很有吸引力。</li>
+<li><strong>方向标签</strong>：#量化 <a href="../.././../tags/推理优化" class="tag-link internal alias" data-slug="tags/推理优化">推理优化</a> <a href="../.././../tags/部署" class="tag-link internal alias" data-slug="tags/部署">部署</a></li>
+</ul>
+<h3 id="-hierarchical-graph-memory-路径级定位与重写的-llm-智能体图记忆">📄 <a href="https://arxiv.org/abs/2608.05095" class="external">Hierarchical Graph Memory: 路径级定位与重写的 LLM 智能体图记忆<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-hierarchical-graph-memory-路径级定位与重写的-llm-智能体图记忆" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>作者</strong>：Xiawei Yue, Boran Wang et al.</li>
+<li><strong>提交日期</strong>：2026-08-06</li>
+<li><strong>摘要</strong>：长期推理智能体需要能随时间高效有效更新的记忆。图记忆近期被用于为多跳检索和推理提供结构化组织，但现有方法在新事实到达时更新粒度太粗。本文做到路径级定位与重写，只改动受影响的子路径而非重建整图。</li>
+<li><strong>方向标签</strong>：#长上下文 <a href="../.././../tags/记忆" class="tag-link internal alias" data-slug="tags/记忆">记忆</a> <a href="../.././../tags/智能体" class="tag-link internal alias" data-slug="tags/智能体">智能体</a></li>
+</ul>
+<h3 id="-memsif-从结构化交互到-llm-智能体的双轨事实记忆">📄 <a href="https://arxiv.org/abs/2608.01742" class="external">MemSIF: 从结构化交互到 LLM 智能体的双轨事实记忆<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-memsif-从结构化交互到-llm-智能体的双轨事实记忆" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>作者</strong>：YuFei Luo, Xiucheng Xu et al.</li>
+<li><strong>提交日期</strong>：2026-08-06</li>
+<li><strong>摘要</strong>：长期记忆对长程交互的 LLM 智能体至关重要。本文把现有记忆系统的诸多缺陷归因于两类反复出现的错配模式：时序-结构错配（TSM）和延迟效用错配。提出双轨事实记忆分别处理这两类问题。</li>
+<li><strong>方向标签</strong>：#记忆 <a href="../.././../tags/智能体" class="tag-link internal alias" data-slug="tags/智能体">智能体</a> <a href="../.././../tags/长上下文" class="tag-link internal alias" data-slug="tags/长上下文">长上下文</a></li>
+</ul>
+<h3 id="-ringsql-text-to-sql-强化学习的模式无关合成数据生成">📄 <a href="https://arxiv.org/abs/2601.05451" class="external">RingSQL: Text-to-SQL 强化学习的模式无关合成数据生成<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-ringsql-text-to-sql-强化学习的模式无关合成数据生成" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>作者</strong>：Marko Sterbentz, Kevin Cushing et al.</li>
+<li><strong>提交日期</strong>：2026-08-06</li>
+<li><strong>摘要</strong>：text-to-SQL 的近期进展由更大模型、更好数据集和 RLVR 等新训练方法驱动。但高质量训练数据稀缺仍在制约进步，而 RLVR 对此格外敏感——噪声数据会产生虚假奖励。本文提出模式无关的合成数据生成流程，保证奖励信号可验证。<strong>RLVR 数据工程的好参考</strong>。</li>
+<li><strong>方向标签</strong>：#数据工程 <a href="../.././../tags/合成数据" class="tag-link internal alias" data-slug="tags/合成数据">合成数据</a> <a href="../.././../tags/RLVR" class="tag-link internal alias" data-slug="tags/RLVR">RLVR</a></li>
+</ul>
+<h3 id="-argus-面向长程推理的通用智能体运行时">📄 <a href="https://arxiv.org/abs/2608.05144" class="external">Argus: 面向长程推理的通用智能体运行时<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-argus-面向长程推理的通用智能体运行时" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>作者</strong>：Boxiu Li, Zimo Wen et al.</li>
+<li><strong>提交日期</strong>：2026-08-06</li>
+<li><strong>摘要</strong>：长程推理需要一个能”在证据支持当前路线时坚持、在测量揭示失败或隐藏约束时转向”的智能体运行时。本文提出 Argus——一个持久、自进化的运行时，由 Manager、Planner、Engineer 等角色协作，把”何时坚持何时转向”做成显式机制。</li>
+<li><strong>方向标签</strong>：#智能体 <a href="../.././../tags/长程推理" class="tag-link internal alias" data-slug="tags/长程推理">长程推理</a> <a href="../.././../tags/新架构" class="tag-link internal alias" data-slug="tags/新架构">新架构</a></li>
+</ul>
+<h3 id="-teaching-mllms-to-say-no-拒答校准-grpo-做泛化指代表达理解">📄 <a href="https://arxiv.org/abs/2608.04698" class="external">Teaching MLLMs to Say No: 拒答校准 GRPO 做泛化指代表达理解<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-teaching-mllms-to-say-no-拒答校准-grpo-做泛化指代表达理解" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>作者</strong>：Xuzheng Yang, Jun Ling et al.</li>
+<li><strong>提交日期</strong>：2026-08-06</li>
+<li><strong>摘要</strong>：本文处理泛化指代表达理解（GREC）任务：目标存在时定位它，不存在时必须拒绝输出。虽然多模态 LLM 有进展，但”该拒答时仍强行输出”是普遍失效模式。本文用拒答校准的 GRPO 变体显式训练拒答能力。<strong>拒答校准的 GRPO reward 设计思路可迁移到纯文本幻觉抑制</strong>。</li>
+<li><strong>方向标签</strong>：#GRPO <a href="../.././../tags/多模态" class="tag-link internal alias" data-slug="tags/多模态">多模态</a> <a href="../.././../tags/拒答校准" class="tag-link internal alias" data-slug="tags/拒答校准">拒答校准</a></li>
+</ul>
+<hr/>
+<h2 id="-今日统计">📊 今日统计<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-今日统计" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>总推送</strong>：24 篇</li>
+<li><strong>HF 热榜</strong>：12 篇</li>
+<li><strong>arXiv 雷达</strong>：12 篇</li>
+<li><strong>历史去重</strong>：5 篇（1 HF + 4 arXiv，历史库 143 个 ID）</li>
+<li><strong>HF-arXiv 交叉去重</strong>：11 篇</li>
+<li><strong>arXiv 候选池</strong>：754 条原始 → 545 去重 → 530 过滤后 → 119 正分 → 精选 12</li>
+</ul>
+<h3 id="今日热点方向分布">今日热点方向分布<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#今日热点方向分布" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>方向</th><th>篇数</th><th>说明</th></tr></thead><tbody><tr><td>On-Policy 蒸馏 (OPD/OPSD)</td><td>6</td><td>今日最密集方向，涌现”教师质量”新问题域</td></tr><tr><td>智能体记忆与长程推理</td><td>7</td><td>图记忆/双轨事实/记忆陈旧化多路并进</td></tr><tr><td>推理优化（KV Cache/量化/投机）</td><td>3</td><td>均为可直接落地的工程方案</td></tr><tr><td>GRPO/后训练</td><td>4</td><td>多任务失衡、因果推理、拒答校准</td></tr><tr><td>数据工程</td><td>1</td><td>RLVR 合成数据可验证性</td></tr><tr><td>多模态预训练</td><td>2</td><td>含系统性”训练配方”实证研究</td></tr></tbody></table></div>
+<h3 id="值得优先读的三篇">值得优先读的三篇<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#值得优先读的三篇" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>[2608.04074] KV Cache 向量量化</strong> — 长上下文推理带宽瓶颈的直接解法，按 query 关注分布分配比特</li>
+<li><strong>[2602.05547] Multi-Task GRPO</strong> — 多任务 GRPO 失衡的根因分析 + 修正方案，做 RL 后训练直接用得上</li>
+<li><strong>[2608.05000] 多模态预训练的物理学</strong> — 系统性实证 + 可复用训练配方，预训练团队参考价值高</li>
+</ol>
+<h3 id="趋势观察">趋势观察<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#趋势观察" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>OPD 方向正在从”怎么蒸”转向”教师可不可信”。</strong> 今日 6 篇 OPD 论文里有 3 篇（伪信号感知、未来轨迹验证、观测校准）都在攻击同一个盲区：现有选择性 OPD 假设教师信号是对的，只挑”自信/有信息量”的 token，但教师本身可能依赖伪相关、或在学生已跑偏的状态上给出无意义监督。这是一个值得跟踪的问题域转移。</p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>关系图谱</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-213" aria-expanded="true"><h3>目录</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#arxiv-论文日报--2026-08-07" data-for="arxiv-论文日报--2026-08-07">arXiv 论文日报 | 2026-08-07</a></li><li class="depth-1"><a href="#-huggingface-热榜社区策展" data-for="-huggingface-热榜社区策展">🔥 HuggingFace 热榜（社区策展）</a></li><li class="depth-2"><a href="#-abseeker-用答案回溯信用分配训练长程搜索智能体" data-for="-abseeker-用答案回溯信用分配训练长程搜索智能体">📄 ABSeeker: 用答案回溯信用分配训练长程搜索智能体</a></li><li class="depth-2"><a href="#-多模态预训练的物理学知识流动模态协同早期统一与配方" data-for="-多模态预训练的物理学知识流动模态协同早期统一与配方">📄 多模态预训练的”物理学”：知识流动、模态协同、早期统一与配方</a></li><li class="depth-2"><a href="#-个性化的幻象llm-如何编造用户画像以及自我监控为何会误导" data-for="-个性化的幻象llm-如何编造用户画像以及自我监控为何会误导">📄 个性化的幻象：LLM 如何编造用户画像，以及自我监控为何会误导</a></li><li class="depth-2"><a href="#-onedayagent-面向自主智能体的长程测试框架" data-for="-onedayagent-面向自主智能体的长程测试框架">📄 OneDayAgent: 面向自主智能体的长程测试框架</a></li><li class="depth-2"><a href="#-gdpevo-在真实商业任务上评估智能体自进化" data-for="-gdpevo-在真实商业任务上评估智能体自进化">📄 GDPevo: 在真实商业任务上评估智能体自进化</a></li><li class="depth-2"><a href="#-走向技能原生-llm用技能熵评测与训练长程推理" data-for="-走向技能原生-llm用技能熵评测与训练长程推理">📄 走向技能原生 LLM：用技能熵评测与训练长程推理</a></li><li class="depth-2"><a href="#-当教师误导时伪信号感知的-on-policy-蒸馏" data-for="-当教师误导时伪信号感知的-on-policy-蒸馏">📄 当教师误导时：伪信号感知的 On-Policy 蒸馏</a></li><li class="depth-2"><a href="#-skill-kd-llm-智能体的对比式技能蒸馏" data-for="-skill-kd-llm-智能体的对比式技能蒸馏">📄 SKILL-KD: LLM 智能体的对比式技能蒸馏</a></li><li class="depth-2"><a href="#-focusmem-在隐式-gui-记忆中分解内容读出与信任" data-for="-focusmem-在隐式-gui-记忆中分解内容读出与信任">📄 FocusMem: 在隐式 GUI 记忆中分解内容、读出与信任</a></li><li class="depth-2"><a href="#-k-exaone-20-技术报告" data-for="-k-exaone-20-技术报告">📄 K-EXAONE 2.0 技术报告</a></li><li class="depth-2"><a href="#-当记忆说谎vlm-智能体空间记忆陈旧化的实证研究" data-for="-当记忆说谎vlm-智能体空间记忆陈旧化的实证研究">📄 当记忆说谎：VLM 智能体空间记忆陈旧化的实证研究</a></li><li class="depth-2"><a href="#-poly-opd-异构多教师-on-policy-蒸馏能力可选的流模型" data-for="-poly-opd-异构多教师-on-policy-蒸馏能力可选的流模型">📄 Poly-OPD: 异构多教师 On-Policy 蒸馏，能力可选的流模型</a></li><li class="depth-1"><a href="#-arxiv-关键词雷达新方向探测" data-for="-arxiv-关键词雷达新方向探测">🔍 arXiv 关键词雷达（新方向探测）</a></li><li class="depth-2"><a href="#-look-ahead-before-you-distill-智能体-opd-中教师引导的未来轨迹验证" data-for="-look-ahead-before-you-distill-智能体-opd-中教师引导的未来轨迹验证">📄 Look Ahead Before You Distill: 智能体 OPD 中教师引导的未来轨迹验证</a></li><li class="depth-2"><a href="#-multi-task-grpo-跨任务可靠的-llm-推理" data-for="-multi-task-grpo-跨任务可靠的-llm-推理">📄 Multi-Task GRPO: 跨任务可靠的 LLM 推理</a></li><li class="depth-2"><a href="#-后训练能把-llm-变成因果推理者吗" data-for="-后训练能把-llm-变成因果推理者吗">📄 后训练能把 LLM 变成因果推理者吗？</a></li><li class="depth-2"><a href="#-opd-v-带模态平衡的视觉-on-policy-自蒸馏" data-for="-opd-v-带模态平衡的视觉-on-policy-自蒸馏">📄 OPD-V: 带模态平衡的视觉 On-Policy 自蒸馏</a></li><li class="depth-2"><a href="#-spend-bits-where-queries-look-注意力保持变换的-kv-cache-向量量化" data-for="-spend-bits-where-queries-look-注意力保持变换的-kv-cache-向量量化">📄 Spend Bits Where Queries Look: 注意力保持变换的 KV Cache 向量量化</a></li><li class="depth-2"><a href="#-specroll-投机式-rl-rollout-的快慢验证器反馈自适应" data-for="-specroll-投机式-rl-rollout-的快慢验证器反馈自适应">📄 SpecRoll: 投机式 RL Rollout 的快慢验证器反馈自适应</a></li><li class="depth-2"><a href="#-agentic-rl-中的观测校准自蒸馏" data-for="-agentic-rl-中的观测校准自蒸馏">📄 Agentic RL 中的观测校准自蒸馏</a></li><li class="depth-2"><a href="#-recurrent-residual-quantization-llm-的渐进式多精度表示" data-for="-recurrent-residual-quantization-llm-的渐进式多精度表示">📄 Recurrent Residual Quantization: LLM 的渐进式多精度表示</a></li><li class="depth-2"><a href="#-hierarchical-graph-memory-路径级定位与重写的-llm-智能体图记忆" data-for="-hierarchical-graph-memory-路径级定位与重写的-llm-智能体图记忆">📄 Hierarchical Graph Memory: 路径级定位与重写的 LLM 智能体图记忆</a></li><li class="depth-2"><a href="#-memsif-从结构化交互到-llm-智能体的双轨事实记忆" data-for="-memsif-从结构化交互到-llm-智能体的双轨事实记忆">📄 MemSIF: 从结构化交互到 LLM 智能体的双轨事实记忆</a></li><li class="depth-2"><a href="#-ringsql-text-to-sql-强化学习的模式无关合成数据生成" data-for="-ringsql-text-to-sql-强化学习的模式无关合成数据生成">📄 RingSQL: Text-to-SQL 强化学习的模式无关合成数据生成</a></li><li class="depth-2"><a href="#-argus-面向长程推理的通用智能体运行时" data-for="-argus-面向长程推理的通用智能体运行时">📄 Argus: 面向长程推理的通用智能体运行时</a></li><li class="depth-2"><a href="#-teaching-mllms-to-say-no-拒答校准-grpo-做泛化指代表达理解" data-for="-teaching-mllms-to-say-no-拒答校准-grpo-做泛化指代表达理解">📄 Teaching MLLMs to Say No: 拒答校准 GRPO 做泛化指代表达理解</a></li><li class="depth-1"><a href="#-今日统计" data-for="-今日统计">📊 今日统计</a></li><li class="depth-2"><a href="#今日热点方向分布" data-for="今日热点方向分布">今日热点方向分布</a></li><li class="depth-2"><a href="#值得优先读的三篇" data-for="值得优先读的三篇">值得优先读的三篇</a></li><li class="depth-2"><a href="#趋势观察" data-for="趋势观察">趋势观察</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>

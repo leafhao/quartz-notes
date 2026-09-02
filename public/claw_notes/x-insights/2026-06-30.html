@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr"><head><title>2026-06-30</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="飞哥的笔记"/><meta property="og:title" content="2026-06-30"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="2026-06-30"/><meta name="twitter:description" content="X/Twitter AI 热点 | 2026-06-30 监控时间窗口：2026-06-23 至 2026-06-30（最近7天） 📊 本周热点概览 本周 AI 领域的讨论集中在以下几个主题： AI 安全与监管升级 - Apple 提前发布安全更新、美国政府加强模型审查 AI Agent 生态爆发 - Agentic AI 在广告、测试、医疗等垂直领域落地 投资热潮持续 - AI 公司占据 94% 美国风险投资，IPO 浪潮来临 Cannes Lions 2026 - OpenAI、Anthropic 首次参展，营销行业全面拥抱 AI 自进化 AI 研究 - NVIDIA 论文引发 2028..."/><meta property="og:description" content="X/Twitter AI 热点 | 2026-06-30 监控时间窗口：2026-06-23 至 2026-06-30（最近7天） 📊 本周热点概览 本周 AI 领域的讨论集中在以下几个主题： AI 安全与监管升级 - Apple 提前发布安全更新、美国政府加强模型审查 AI Agent 生态爆发 - Agentic AI 在广告、测试、医疗等垂直领域落地 投资热潮持续 - AI 公司占据 94% 美国风险投资，IPO 浪潮来临 Cannes Lions 2026 - OpenAI、Anthropic 首次参展，营销行业全面拥抱 AI 自进化 AI 研究 - NVIDIA 论文引发 2028..."/><meta property="og:image:alt" content="X/Twitter AI 热点 | 2026-06-30 监控时间窗口：2026-06-23 至 2026-06-30（最近7天） 📊 本周热点概览 本周 AI 领域的讨论集中在以下几个主题： AI 安全与监管升级 - Apple 提前发布安全更新、美国政府加强模型审查 AI Agent 生态爆发 - Agentic AI 在广告、测试、医疗等垂直领域落地 投资热潮持续 - AI 公司占据 94% 美国风险投资，IPO 浪潮来临 Cannes Lions 2026 - OpenAI、Anthropic 首次参展，营销行业全面拥抱 AI 自进化 AI 研究 - NVIDIA 论文引发 2028..."/><meta property="twitter:domain" content="notes.leaf.pp.ua"/><meta property="og:url" content="https://notes.leaf.pp.ua/claw_notes/x-insights/2026-06-30"/><meta property="twitter:url" content="https://notes.leaf.pp.ua/claw_notes/x-insights/2026-06-30"/><link rel="icon" href="../../static/icon.png"/><meta name="description" content="X/Twitter AI 热点 | 2026-06-30 监控时间窗口：2026-06-23 至 2026-06-30（最近7天） 📊 本周热点概览 本周 AI 领域的讨论集中在以下几个主题： AI 安全与监管升级 - Apple 提前发布安全更新、美国政府加强模型审查 AI Agent 生态爆发 - Agentic AI 在广告、测试、医疗等垂直领域落地 投资热潮持续 - AI 公司占据 94% 美国风险投资，IPO 浪潮来临 Cannes Lions 2026 - OpenAI、Anthropic 首次参展，营销行业全面拥抱 AI 自进化 AI 研究 - NVIDIA 论文引发 2028..."/><meta name="generator" content="Quartz"/><link href="../../index.css" rel="stylesheet" type="text/css" data-persist="true"/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL1VzZXJzL2xvbmdmZWloYW8vLmhlcm1lcy93b3Jrc3BhY2UvcXVhcnR6LW5vdGVzL3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBSUo7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7O0FBSUY7RUFDRTtFQUNBO0VBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhwYW5kLWJ1dHRvbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nOiAwLjRyZW07XG4gIG1hcmdpbjogMC4zcmVtO1xuICByaWdodDogMDsgLy8gTk9URTogcmlnaHQgd2lsbCBiZSBzZXQgaW4gbWVybWFpZC5pbmxpbmUudHNcbiAgY29sb3I6IHZhcigtLWdyYXkpO1xuICBib3JkZXItY29sb3I6IHZhcigtLWRhcmspO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gIGJvcmRlcjogMXB4IHNvbGlkO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHRyYW5zaXRpb246IDAuMnM7XG5cbiAgJiA+IHN2ZyB7XG4gICAgZmlsbDogdmFyKC0tbGlnaHQpO1xuICAgIGZpbHRlcjogY29udHJhc3QoMC4zKTtcbiAgfVxuXG4gICY6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBib3JkZXItY29sb3I6IHZhcigtLXNlY29uZGFyeSk7XG4gIH1cblxuICAmOmZvY3VzIHtcbiAgICBvdXRsaW5lOiAwO1xuICB9XG59XG5cbnByZSB7XG4gICY6aG92ZXIgPiAuZXhwYW5kLWJ1dHRvbiB7XG4gICAgb3BhY2l0eTogMTtcbiAgICB0cmFuc2l0aW9uOiAwLjJzO1xuICB9XG59XG5cbiNtZXJtYWlkLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgY29udGFpbjogbGF5b3V0O1xuICB6LWluZGV4OiA5OTk7XG4gIGxlZnQ6IDA7XG4gIHRvcDogMDtcbiAgd2lkdGg6IDEwMHZ3O1xuICBoZWlnaHQ6IDEwMHZoO1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBkaXNwbGF5OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoNHB4KTtcbiAgYmFja2dyb3VuZDogcmdiYSgwLCAwLCAwLCAwLjUpO1xuXG4gICYuYWN0aXZlIHtcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIH1cblxuICAmID4gI21lcm1haWQtc3BhY2Uge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiA1MCU7XG4gICAgbGVmdDogNTAlO1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC01MCUsIC01MCUpO1xuICAgIGhlaWdodDogODB2aDtcbiAgICB3aWR0aDogODB2dztcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRlbnQge1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../../prescript.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://notes.leaf.pp.ua/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://notes.leaf.pp.ua/claw_notes/x-insights/2026-06-30-og-image.webp"/><meta property="og:image:url" content="https://notes.leaf.pp.ua/claw_notes/x-insights/2026-06-30-og-image.webp"/><meta name="twitter:image" content="https://notes.leaf.pp.ua/claw_notes/x-insights/2026-06-30-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="claw_notes/x-insights/2026-06-30"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="../..">飞哥的笔记</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>搜索</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="搜索些什么" placeholder="搜索些什么"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="暗色模式"><title>暗色模式</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="亮色模式"><title>亮色模式</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="阅读模式"><title>阅读模式</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1299"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>探索</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1299" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../claw_notes/">Claw Notes</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../../claw_notes/x-insights/">x insights</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>2026 06 30</a></div></nav><h1 class="article-title">2026-06-30</h1><p show-comma="true" class="content-meta"><time datetime="2026-06-30T09:44:34.000Z">2026年6月30日</time><span>12分钟阅读</span></p></div></div><article class="popover-hint"><h1 id="xtwitter-ai-热点--2026-06-30">X/Twitter AI 热点 | 2026-06-30<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#xtwitter-ai-热点--2026-06-30" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p>监控时间窗口：2026-06-23 至 2026-06-30（最近7天）</p>
+</blockquote>
+<h2 id="-本周热点概览">📊 本周热点概览<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-本周热点概览" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>本周 AI 领域的讨论集中在以下几个主题：</p>
+<ol>
+<li><strong>AI 安全与监管升级</strong> - Apple 提前发布安全更新、美国政府加强模型审查</li>
+<li><strong>AI Agent 生态爆发</strong> - Agentic AI 在广告、测试、医疗等垂直领域落地</li>
+<li><strong>投资热潮持续</strong> - AI 公司占据 94% 美国风险投资，IPO 浪潮来临</li>
+<li><strong>Cannes Lions 2026</strong> - OpenAI、Anthropic 首次参展，营销行业全面拥抱 AI</li>
+<li><strong>自进化 AI 研究</strong> - NVIDIA 论文引发 2028 ASI 时间线讨论</li>
+</ol>
+<hr/>
+<h2 id="-产品与技术动态">🔥 产品与技术动态<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-产品与技术动态" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="apple-安全更新ai-网络安全威胁应对">Apple 安全更新：AI 网络安全威胁应对<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#apple-安全更新ai-网络安全威胁应对" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>时间</strong>: 2026-06-29/30<br/>
+<strong>来源</strong>: Reuters, MacRumors, iTnews</p>
+<p>Apple 提前发布 iOS 26.5.2 安全补丁，回应 AI 辅助网络攻击威胁。这是 Apple 首次因 AI 相关安全问题加速更新节奏。</p>
+<ul>
+<li><strong>背景</strong>: AI 工具（如 LLM 驱动的渗透测试系统）使网络攻击更易实施</li>
+<li><strong>影响</strong>: 科技巨头开始将 AI 能力本身视为新型威胁面</li>
+<li><strong>讨论</strong>: 安全研究人员呼吁建立 “AI-adjusted threat model”</li>
+</ul>
+<blockquote>
+<p><strong>链接</strong>:</p>
+<ul>
+<li><a href="https://www.itnews.com.au/news/apple-is-releasing-updates-early-in-response-to-ai-cyber-security-concerns-627025" class="external">Apple releasing updates early due to AI cybersecurity<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.macrumors.com/2026/06/29/apple-ios-26-5-2-early-release/" class="external">iOS 26.5.2 early release analysis<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</blockquote>
+<hr/>
+<h3 id="agentic-ai-落地加速">Agentic AI 落地加速<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#agentic-ai-落地加速" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>时间</strong>: 2026-06-25<br/>
+<strong>来源</strong>: Ad Age</p>
+<p>Agentic AI（自主决策 AI）在程序化广告采购中展现实战价值，不仅节省时间，还优化了媒体采购策略。</p>
+<ul>
+<li><strong>应用场景</strong>: Magnite、MediaOcean、MiQ、PubMatic 等广告平台已集成 Agentic AI</li>
+<li><strong>效果</strong>: 自动化竞价、受众定向、预算分配决策</li>
+<li><strong>趋势</strong>: 从 “AI 辅助” 转向 “AI 自主执行”</li>
+</ul>
+<blockquote>
+<p><strong>链接</strong>: <a href="https://adage.com/technology/ai/aa-agentic-programmatic-buying-magnite-mediaocean-miq-pubmatic/" class="external">How agentic AI is saving more than time in buying ad campaigns<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</blockquote>
+<hr/>
+<h3 id="digna-202606-发布">digna 2026.06 发布<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#digna-202606-发布" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>时间</strong>: 2026-06-25<br/>
+<strong>来源</strong>: Business Insider</p>
+<p>欧洲数据质量与可观测性平台 digna 发布新版本，推出 Python SDK 和 Docker 部署支持。</p>
+<ul>
+<li><strong>新功能</strong>: Python SDK 集成、容器化部署</li>
+<li><strong>定位</strong>: 数据工程师的 AI 数据管道质量保障工具</li>
+</ul>
+<blockquote>
+<p><strong>链接</strong>: <a href="https://markets.businessinsider.com/news/stocks/digna-introduces-python-sdk-and-docker-deployment-in-release-2026-06-1036276360" class="external">digna Python SDK and Docker deployment<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</blockquote>
+<hr/>
+<h2 id="-研究前沿">🧪 研究前沿<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-研究前沿" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="nvidia-红皇后博弈机制ai-自进化新范式">NVIDIA “红皇后博弈机制”：AI 自进化新范式<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nvidia-红皇后博弈机制ai-自进化新范式" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>时间</strong>: 2026-06-28<br/>
+<strong>来源</strong>: KuCoin, The Neuron</p>
+<p>NVIDIA 发表论文提出 Red Queen Game Mechanism (RQGM)，让 AI 系统在对抗中自我进化和评估，实现 AI 生成内容与人类内容的平等对待。</p>
+<ul>
+<li><strong>核心创新</strong>: AI 作为”竞争者”和”评审者”双重角色</li>
+<li><strong>突破</strong>: 解决 LLM 偏好 AI 生成内容的已知缺陷</li>
+<li><strong>争议</strong>: 引发 2028 年实现 ASI (人工超级智能) 的时间线讨论</li>
+</ul>
+<blockquote>
+<p><strong>链接</strong>: <a href="https://www.kucoin.com/news/flash/nvidia-paper-on-ai-self-evolution-sparks-debate-on-2028-asi-timeline" class="external">NVIDIA paper on AI self-evolution sparks debate over 2028 ASI timeline<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</blockquote>
+<hr/>
+<h3 id="openai-发布-sol-terra-luna-模型">OpenAI 发布 Sol, Terra, Luna 模型<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#openai-发布-sol-terra-luna-模型" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>时间</strong>: 2026-06-28<br/>
+<strong>来源</strong>: The Neuron</p>
+<p>OpenAI 推出三个新模型命名，尽管具体细节未完全披露，引发社区对新一代多模态能力的猜测。</p>
+<blockquote>
+<p><strong>链接</strong>: <a href="https://www.theneurondaily.com/p/openai-launched-sol-terra-and-luna-kiiinda" class="external">OpenAI launched Sol, Terra, and Luna… kiiinda<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</blockquote>
+<hr/>
+<h3 id="aipoch-medskillaudit医疗-ai-agent-审计框架">AIPOCH MedSkillAudit：医疗 AI Agent 审计框架<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#aipoch-medskillaudit医疗-ai-agent-审计框架" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>时间</strong>: 2026-06-29/30<br/>
+<strong>来源</strong>: Business Insider</p>
+<p>AIPOCH 与合作伙伴推出 MedSkillAudit，首个针对医疗 AI Agent 的领域特定审计框架。</p>
+<ul>
+<li><strong>目标</strong>: 在部署前评估医疗 AI 系统的技能和安全性</li>
+<li><strong>意义</strong>: 医疗 AI 从 “辅助诊断” 进入 “自主执行” 阶段前的必要基础设施</li>
+</ul>
+<blockquote>
+<p><strong>链接</strong>: <a href="https://markets.businessinsider.com/news/stocks/aipoch-launches-medskillaudit-an-ai-audit-framework-to-evaluate-medical-ai-agent-skills-before-deployment-1036284741" class="external">AIPOCH MedSkillAudit framework<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</blockquote>
+<hr/>
+<h3 id="patronus-ai-融资-50m-构建-ai-agent-压力测试平台">Patronus AI 融资 $50M 构建 AI Agent 压力测试平台<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#patronus-ai-融资-50m-构建-ai-agent-压力测试平台" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>时间</strong>: 2026-06-25<br/>
+<strong>来源</strong>: TechCrunch</p>
+<p>Patronus AI 完成 5000 万美元融资，构建 “数字世界” 对 AI Agent 进行压力测试。</p>
+<ul>
+<li><strong>技术</strong>: 模拟复杂环境测试 AI 决策能力</li>
+<li><strong>市场需求</strong>: 企业部署 Agentic AI 前需要可靠的评估工具</li>
+</ul>
+<blockquote>
+<p><strong>链接</strong>: <a href="https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/" class="external">Patronus AI lands $50M to build digital worlds<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</blockquote>
+<hr/>
+<h2 id="-投资与商业">💰 投资与商业<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-投资与商业" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="ai-公司占据-94-美国风险投资">AI 公司占据 94% 美国风险投资<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai-公司占据-94-美国风险投资" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>时间</strong>: 2026-06（5月数据）<br/>
+<strong>来源</strong>: AlleyWatch</p>
+<p>2026 年 5 月，AI 公司获得美国 94% 的风险投资，409 家获投公司中 193 家为 AI 聚焦型。</p>
+<ul>
+<li><strong>数据</strong>: Q1 2026 全球 AI 融资达 $300B，打破历史纪录</li>
+<li><strong>集中度</strong>: 旧金山湾区仍是绝对中心，但全国初创企业数量更分散</li>
+<li><strong>头部效应</strong>: 4 家公司吸收了 65% 的资金（Anthropic <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">965</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord cjk_fallback">、</span><span class="mord mathnormal">Op</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span></span></span></span>852B、xAI/SpaceX <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">1.75</span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord cjk_fallback">、</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mord mathnormal">a</span><span class="mord mathnormal">t</span><span class="mord mathnormal">ab</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">i</span><span class="mord mathnormal">c</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord mathnormal">s</span></span></span></span>134B）</li>
+</ul>
+<blockquote>
+<p><strong>参考</strong>: <a href="https://alleywatch.com/2026/06/us-venture-capital-statistics-may-2026/" class="external">May 2026 US VC funding report<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</blockquote>
+<hr/>
+<h3 id="ai-ipo-浪潮即将开启">AI IPO 浪潮即将开启<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai-ipo-浪潮即将开启" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>时间</strong>: 2026-06-29<br/>
+<strong>来源</strong>: Beehiiv</p>
+<p>2026 年被视为 AI IPO 元年，从史上最大规模 IPO 到万亿美元估值实验室的上市计划，市场格局正在重塑。</p>
+<ul>
+<li><strong>背景</strong>: OpenAI 考虑 2027 年 IPO 延期，等待监管环境明朗</li>
+<li><strong>影响</strong>: 公开市场定价将首次给 Frontier AI 定价基准</li>
+</ul>
+<blockquote>
+<p><strong>链接</strong>: <a href="https://joeychoy.beehiiv.com/p/the-ai-ipo-wave-is-here-and-it-is-only-just-getting-started" class="external">The AI IPO Wave Is Here<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</blockquote>
+<hr/>
+<h2 id="️-政策与伦理">🛡️ 政策与伦理<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#️-政策与伦理" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="美国政府加强-ai-模型监管">美国政府加强 AI 模型监管<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#美国政府加强-ai-模型监管" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>时间</strong>: 2026-06-26/28<br/>
+<strong>来源</strong>: Forbes, Zamin.uz</p>
+<ul>
+<li><strong>Anthropic Mythos 5</strong>: 华盛顿逐模型审查后放行</li>
+<li><strong>OpenAI GPT-5.6</strong>: 特朗普政府要求延迟发布，OpenAI 考虑 2027 年 IPO 延期</li>
+<li><strong>影响</strong>: AI 实验室的产品节奏开始受政府干预，监管速度追上研发速度</li>
+</ul>
+<blockquote>
+<p><strong>链接</strong>: <a href="https://www.forbes.com/sites/sandycarter/2026/06/28/openai-eyes-2027-ipo-delay-as-washington-clears-anthropics-mythos-5/" class="external">OpenAI Eyes 2027 IPO Delay As Washington Clears Anthropic’s Mythos 5<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</blockquote>
+<hr/>
+<h3 id="南韩放宽-ai-规则但强化监督">南韩放宽 AI 规则但强化监督<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#南韩放宽-ai-规则但强化监督" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>时间</strong>: 2026-06-25（6月22日生效）<br/>
+<strong>来源</strong>: Asian Business Review</p>
+<p>南韩金融监管机构更新 AI 指导方针，建立自律原则，强调 AI 作为辅助工具、人类保留最终决策权。</p>
+<blockquote>
+<p><strong>链接</strong>: <a href="https://asianbusinessreview.com/insurance/news/south-korea-eases-ai-rules-oversight-tightens" class="external">South Korea eases AI rules as oversight tightens<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</blockquote>
+<hr/>
+<h3 id="suny-全系统-ai-政策">SUNY 全系统 AI 政策<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#suny-全系统-ai-政策" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>时间</strong>: 2026-06-26<br/>
+<strong>来源</strong>: EdTech Magazine</p>
+<p>纽约州立大学系统（SUNY）设定 2026-12-31 截止日期，要求各校实施新 AI 指导方针。</p>
+<ul>
+<li><strong>要求</strong>: 明确角色、培训、采购保障措施</li>
+<li><strong>意义</strong>: 公立高等教育系统的 AI 治理范本</li>
+</ul>
+<blockquote>
+<p><strong>链接</strong>: <a href="https://edtechmagazine.com/higher/article/2026/06/suny-ai-policy-higher-ed-it-governance-perfcon" class="external">SUNY’s Systemwide AI Policy<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</blockquote>
+<hr/>
+<h3 id="伦理-ai-从自愿规范转向诉讼与执法">伦理 AI 从自愿规范转向诉讼与执法<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#伦理-ai-从自愿规范转向诉讼与执法" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>时间</strong>: 2026-06-25<br/>
+<strong>来源</strong>: Financial Times</p>
+<p>伦理 AI 框架从自愿性行业准则转向法律诉讼和强制执法，企业面临实质性法律风险。</p>
+<blockquote>
+<p><strong>链接</strong>: <a href="https://www.ft.com/content/64fc2514-c545-49d6-afd4-5c49426824c6" class="external">Ethical AI rows open way to wave of litigation<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</blockquote>
+<hr/>
+<h3 id="中国-zai-声称在网络安全上匹敌-mythos">中国 Z.ai 声称在网络安全上匹敌 Mythos<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#中国-zai-声称在网络安全上匹敌-mythos" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>时间</strong>: 2026-06-28<br/>
+<strong>来源</strong>: The Verge</p>
+<p>中国 AI 公司 Z.ai（GLM-52 模型）宣称在网络安全任务上可与 Anthropic 的 Mythos 模型竞争。</p>
+<blockquote>
+<p><strong>链接</strong>: <a href="https://www.theverge.com/ai-artificial-intelligence/958804/chinas-z-ai-glm-52-mythos-cybersecurity" class="external">China’s Z.ai claims it can match Mythos on cybersecurity<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</blockquote>
+<hr/>
+<h2 id="-行业趋势">🎯 行业趋势<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-行业趋势" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="cannes-lions-2026-ai-成为主角">Cannes Lions 2026: AI 成为主角<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cannes-lions-2026-ai-成为主角" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>时间</strong>: 2026-06-23<br/>
+<strong>来源</strong>: Ad Age</p>
+<p>OpenAI 和 Anthropic 首次参加戛纳国际创意节，标志着 AI 公司正式进入营销行业主流叙事。</p>
+<ul>
+<li><strong>主题</strong>: 从 AI 潜力讨论转向实际使用案例</li>
+<li><strong>趋势</strong>: 品牌对话变得更务实，强调 ROI 和可衡量效果</li>
+</ul>
+<blockquote>
+<p><strong>链接</strong>: <a href="https://adage.com/events-awards/cannes-lions/aa-ai-openai-anthropic-microsoft-brand-usage-2026/" class="external">AI at Cannes—OpenAI and Anthropic join the festival<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</blockquote>
+<hr/>
+<h3 id="ai-供应冲击与品牌相关性">AI “供应冲击”与品牌相关性<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai-供应冲击与品牌相关性" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>时间</strong>: 2026-06-26<br/>
+<strong>来源</strong>: Ad Age</p>
+<p>AI 生成内容的供应激增（“供应冲击”）正在改变品牌策略，催生 “Barbell of Relevance” 理论。</p>
+<ul>
+<li><strong>核心观点</strong>: 内容泛滥时代，真实体验和人际连接价值凸显</li>
+<li><strong>应对</strong>: 品牌需在 AI 生成内容与独特体验之间找到平衡</li>
+</ul>
+<blockquote>
+<p><strong>链接</strong>: <a href="https://adage.com/opinion/aa-ai-oversupply-makes-experiences-more-relevant/" class="external">What AI’s supply shock means for brands<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</blockquote>
+<hr/>
+<h3 id="ai-交易机器人在全球市场普及">AI 交易机器人在全球市场普及<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai-交易机器人在全球市场普及" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>时间</strong>: 2026-06-28<br/>
+<strong>来源</strong>: Business Insider</p>
+<p>零售投资者加速采用 AI 交易机器人，自动化交易在全球市场兴起。</p>
+<blockquote>
+<p><strong>链接</strong>: <a href="https://markets.businessinsider.com/news/stocks/ai-trading-bot-adoption-rises-across-global-markets-as-retail-investors-embrace-automation-1036281021" class="external">AI Trading Bot Adoption Rises Across Global Markets<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</blockquote>
+<hr/>
+<h3 id="企业-ai-支出研究挑战主流叙事">企业 AI 支出研究挑战主流叙事<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#企业-ai-支出研究挑战主流叙事" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>时间</strong>: 2026-06-26<br/>
+<strong>来源</strong>: Business Insider</p>
+<p>RBC 最新研究显示，尽管面临挑战，企业仍愿意增加 AI 支出，但实际收益与预期存在差距。</p>
+<ul>
+<li><strong>关注领域</strong>: 生成式 AI、大语言模型、云计算、半导体、在线搜索、电商、电动车、机器人、自动驾驶</li>
+<li><strong>质疑</strong>: 前沿 AI 的重大飞跃越来越难实现</li>
+</ul>
+<blockquote>
+<p><strong>链接</strong>: <a href="https://www.businessinsider.com/enterprise-ai-spending-grows-openai-leads-rbc-reveals-2026-6" class="external">This new research challenges nearly every big AI narrative of 2026<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</blockquote>
+<hr/>
+<h2 id="-其他值得关注">🧩 其他值得关注<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-其他值得关注" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="quantum-ai-microcities首个-agi-智慧城市临床试验">Quantum AI Microcities：首个 AGI 智慧城市临床试验<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#quantum-ai-microcities首个-agi-智慧城市临床试验" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>时间</strong>: 2026-06-25/28<br/>
+<strong>来源</strong>: Business Insider</p>
+<p>AI Wat QAIAx 项目启动全球首个 AGI 社区临床试验网络，优先面向退伍军人。</p>
+<ul>
+<li><strong>定位</strong>: 探索 AGI 在城市治理中的应用</li>
+<li><strong>争议</strong>: 项目性质和科学严谨性存疑</li>
+</ul>
+<blockquote>
+<p><strong>链接</strong>: <a href="https://markets.businessinsider.com/news/stocks/quantum-ai-microcities-project-launch-first-global-agi-communities-clinical-trial-network-veterans-first-for-america-1036277742" class="external">Quantum AI Microcities Project Launch<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</blockquote>
+<hr/>
+<h3 id="microsoft-研究员用帝国时代2山羊演示-llm-荒谬性">Microsoft 研究员用《帝国时代2》山羊演示 LLM 荒谬性<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#microsoft-研究员用帝国时代2山羊演示-llm-荒谬性" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>时间</strong>: 2026-06-23<br/>
+<strong>来源</strong>: Gizmodo</p>
+<p>一位沮丧的 Microsoft 研究员用游戏中的山羊作为案例，演示大语言模型的局限性和荒谬之处。</p>
+<blockquote>
+<p><strong>链接</strong>: <a href="https://gizmodo.com/frustrated-microsoft-researcher-uses-goats-in-age-of-empires-ii-to-demo-the-absurdity-of-llms-2000775564" class="external">Microsoft Researcher Uses Goats in Age of Empires II to Demo LLM Absurdity<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</blockquote>
+<hr/>
+<h2 id="-总结">📝 总结<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#-总结" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>本周（2026-06-23 至 06-30）AI 领域呈现以下特点：</p>
+<ol>
+<li><strong>安全成为头等大事</strong>: Apple 提前发布补丁、政府加强模型审查，AI 能力本身被视为新威胁面</li>
+<li><strong>Agentic AI 从概念走向落地</strong>: 广告、医疗、测试等垂直领域出现实战产品</li>
+<li><strong>投资热度不减</strong>: AI 公司占据风险投资绝对主导地位，IPO 浪潮蓄势待发</li>
+<li><strong>监管环境收紧</strong>: 美国、韩国、欧洲均加强 AI 治理，企业面临法律风险上升</li>
+<li><strong>研究前沿探索自进化</strong>: NVIDIA、Google DeepMind 等推动 AI 自主改进能力</li>
+</ol>
+<hr/>
+<h2 id="数据来源">数据来源<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#数据来源" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Tavily API 搜索</strong>（2026-06-30 执行）</li>
+<li><strong>时间窗口</strong>: days=7, topic=“news”</li>
+<li><strong>查询维度</strong>: 产品发布、学术研究、创投融资、政策伦理、社交媒体热点</li>
+<li><strong>结果数量</strong>: 5 个查询 × 12 条结果 = 60 条候选，经人工时间窗口核验后筛选</li>
+</ul>
+<hr/>
+<p><strong>完整笔记链接</strong>: <a href="https://notes.leaf.pp.ua/claw_notes/x-insights/2026-06-30" class="external">https://notes.leaf.pp.ua/claw_notes/x-insights/2026-06-30<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>关系图谱</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-772" aria-expanded="true"><h3>目录</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#xtwitter-ai-热点--2026-06-30" data-for="xtwitter-ai-热点--2026-06-30">X/Twitter AI 热点 | 2026-06-30</a></li><li class="depth-1"><a href="#-本周热点概览" data-for="-本周热点概览">📊 本周热点概览</a></li><li class="depth-1"><a href="#-产品与技术动态" data-for="-产品与技术动态">🔥 产品与技术动态</a></li><li class="depth-2"><a href="#apple-安全更新ai-网络安全威胁应对" data-for="apple-安全更新ai-网络安全威胁应对">Apple 安全更新：AI 网络安全威胁应对</a></li><li class="depth-2"><a href="#agentic-ai-落地加速" data-for="agentic-ai-落地加速">Agentic AI 落地加速</a></li><li class="depth-2"><a href="#digna-202606-发布" data-for="digna-202606-发布">digna 2026.06 发布</a></li><li class="depth-1"><a href="#-研究前沿" data-for="-研究前沿">🧪 研究前沿</a></li><li class="depth-2"><a href="#nvidia-红皇后博弈机制ai-自进化新范式" data-for="nvidia-红皇后博弈机制ai-自进化新范式">NVIDIA “红皇后博弈机制”：AI 自进化新范式</a></li><li class="depth-2"><a href="#openai-发布-sol-terra-luna-模型" data-for="openai-发布-sol-terra-luna-模型">OpenAI 发布 Sol, Terra, Luna 模型</a></li><li class="depth-2"><a href="#aipoch-medskillaudit医疗-ai-agent-审计框架" data-for="aipoch-medskillaudit医疗-ai-agent-审计框架">AIPOCH MedSkillAudit：医疗 AI Agent 审计框架</a></li><li class="depth-2"><a href="#patronus-ai-融资-50m-构建-ai-agent-压力测试平台" data-for="patronus-ai-融资-50m-构建-ai-agent-压力测试平台">Patronus AI 融资 $50M 构建 AI Agent 压力测试平台</a></li><li class="depth-1"><a href="#-投资与商业" data-for="-投资与商业">💰 投资与商业</a></li><li class="depth-2"><a href="#ai-公司占据-94-美国风险投资" data-for="ai-公司占据-94-美国风险投资">AI 公司占据 94% 美国风险投资</a></li><li class="depth-2"><a href="#ai-ipo-浪潮即将开启" data-for="ai-ipo-浪潮即将开启">AI IPO 浪潮即将开启</a></li><li class="depth-1"><a href="#️-政策与伦理" data-for="️-政策与伦理">🛡️ 政策与伦理</a></li><li class="depth-2"><a href="#美国政府加强-ai-模型监管" data-for="美国政府加强-ai-模型监管">美国政府加强 AI 模型监管</a></li><li class="depth-2"><a href="#南韩放宽-ai-规则但强化监督" data-for="南韩放宽-ai-规则但强化监督">南韩放宽 AI 规则但强化监督</a></li><li class="depth-2"><a href="#suny-全系统-ai-政策" data-for="suny-全系统-ai-政策">SUNY 全系统 AI 政策</a></li><li class="depth-2"><a href="#伦理-ai-从自愿规范转向诉讼与执法" data-for="伦理-ai-从自愿规范转向诉讼与执法">伦理 AI 从自愿规范转向诉讼与执法</a></li><li class="depth-2"><a href="#中国-zai-声称在网络安全上匹敌-mythos" data-for="中国-zai-声称在网络安全上匹敌-mythos">中国 Z.ai 声称在网络安全上匹敌 Mythos</a></li><li class="depth-1"><a href="#-行业趋势" data-for="-行业趋势">🎯 行业趋势</a></li><li class="depth-2"><a href="#cannes-lions-2026-ai-成为主角" data-for="cannes-lions-2026-ai-成为主角">Cannes Lions 2026: AI 成为主角</a></li><li class="depth-2"><a href="#ai-供应冲击与品牌相关性" data-for="ai-供应冲击与品牌相关性">AI “供应冲击”与品牌相关性</a></li><li class="depth-2"><a href="#ai-交易机器人在全球市场普及" data-for="ai-交易机器人在全球市场普及">AI 交易机器人在全球市场普及</a></li><li class="depth-2"><a href="#企业-ai-支出研究挑战主流叙事" data-for="企业-ai-支出研究挑战主流叙事">企业 AI 支出研究挑战主流叙事</a></li><li class="depth-1"><a href="#-其他值得关注" data-for="-其他值得关注">🧩 其他值得关注</a></li><li class="depth-2"><a href="#quantum-ai-microcities首个-agi-智慧城市临床试验" data-for="quantum-ai-microcities首个-agi-智慧城市临床试验">Quantum AI Microcities：首个 AGI 智慧城市临床试验</a></li><li class="depth-2"><a href="#microsoft-研究员用帝国时代2山羊演示-llm-荒谬性" data-for="microsoft-研究员用帝国时代2山羊演示-llm-荒谬性">Microsoft 研究员用《帝国时代2》山羊演示 LLM 荒谬性</a></li><li class="depth-1"><a href="#-总结" data-for="-总结">📝 总结</a></li><li class="depth-1"><a href="#数据来源" data-for="数据来源">数据来源</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script type="application/javascript" data-persist="true">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module" data-persist="true">function E(a,e){if(!a)return;function t(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function n(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}a?.addEventListener("click",t),window.addCleanup(()=>a?.removeEventListener("click",t)),document.addEventListener("keydown",n),window.addCleanup(()=>document.removeEventListener("keydown",n))}function f(a){for(;a.firstChild;)a.removeChild(a.firstChild)}var m=class{constructor(e,t){this.container=e;this.content=t;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),t=this.onMouseMove.bind(this),n=this.onMouseUp.bind(this),o=this.onTouchStart.bind(this),r=this.onTouchMove.bind(this),i=this.onTouchEnd.bind(this),s=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",t),document.addEventListener("mouseup",n),this.container.addEventListener("touchstart",o,{passive:!1}),document.addEventListener("touchmove",r,{passive:!1}),document.addEventListener("touchend",i),window.addEventListener("resize",s),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",t),()=>document.removeEventListener("mouseup",n),()=>this.container.removeEventListener("touchstart",o),()=>document.removeEventListener("touchmove",r),()=>document.removeEventListener("touchend",i),()=>window.removeEventListener("resize",s))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let t=this.createButton("+",()=>this.zoom(.1)),n=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(n),e.appendChild(o),e.appendChild(t),this.container.appendChild(e)}createButton(e,t){let n=document.createElement("button");return n.textContent=e,n.className="mermaid-control-button",n.addEventListener("click",t),window.addCleanup(()=>n.removeEventListener("click",t)),n}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}onTouchStart(e){if(e.touches.length!==1)return;this.isDragging=!0;let t=e.touches[0];this.startPan={x:t.clientX-this.currentPan.x,y:t.clientY-this.currentPan.y}}onTouchMove(e){if(!this.isDragging||e.touches.length!==1)return;e.preventDefault();let t=e.touches[0];this.currentPan={x:t.clientX-this.startPan.x,y:t.clientY-this.startPan.y},this.updateTransform()}onTouchEnd(){this.isDragging=!1}zoom(e){let t=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),n=this.content.getBoundingClientRect(),o=n.width/2,r=n.height/2,i=t-this.scale;this.currentPan.x-=o*i,this.currentPan.y-=r*i,this.scale=t,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){let t=this.content.querySelector("svg").getBoundingClientRect(),n=t.width/this.scale,o=t.height/this.scale;this.scale=1,this.currentPan={x:(this.container.clientWidth-n)/2,y:(this.container.clientHeight-o)/2},this.updateTransform()}},T=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],y;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;y||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let t=y.default,n=new WeakMap;for(let r of e)n.set(r,r.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let c=n.get(s);c&&(s.innerHTML=c)}let r=T.reduce((s,c)=>(s[c]=window.getComputedStyle(document.documentElement).getPropertyValue(c),s),{}),i=document.documentElement.getAttribute("saved-theme")==="dark";t.initialize({startOnLoad:!1,securityLevel:"loose",theme:i?"dark":"base",themeVariables:{fontFamily:r["--codeFont"],primaryColor:r["--light"],primaryTextColor:r["--darkgray"],primaryBorderColor:r["--tertiary"],lineColor:r["--darkgray"],secondaryColor:r["--secondary"],tertiaryColor:r["--tertiary"],clusterBkg:r["--light"],edgeLabelBackground:r["--highlight"]}}),await t.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let r=0;r<e.length;r++){let v=function(){let g=l.querySelector("#mermaid-space"),h=l.querySelector(".mermaid-content");if(!h)return;f(h);let w=i.querySelector("svg").cloneNode(!0);h.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new m(g,h)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},i=e[r],s=i.parentElement,c=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(c),L=c.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),E(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../../postscript.js" type="module" data-persist="true"></script></html>
