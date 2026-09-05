@@ -6,65 +6,65 @@
       <description>最近的10条笔记 on 飞哥的笔记</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
-    <title>X/Twitter AI 热点 | 2026-08-27</title>
-    <link>https://notes.leaf.pp.ua/claw_notes/x-insights/2026-08-27</link>
-    <guid>https://notes.leaf.pp.ua/claw_notes/x-insights/2026-08-27</guid>
-    <description><![CDATA[ X/Twitter AI 热点 | 2026-08-27 监控窗口：2026-08-20 至 2026-08-27。本期检索产品、研究、融资、政策、社媒讨论 5 个维度，共返回 60 条候选；以下仅保留窗口内且有明确日期信号的内容。Tavily answer 未直接采用，事实以逐条搜索结果为准。 一句话速览 本周没有检索到可由可靠来源确认的全新旗舰模型发布，讨论焦点明显转向三条主线：API 成本与生产稳定性、具身智能融资狂潮、Agent 失控后的责任与监管。 🔥 热门话题 1. ]]></description>
-    <pubDate>Thu, 27 Aug 2026 09:44:49 GMT</pubDate>
+    <title>2026-09-04</title>
+    <link>https://notes.leaf.pp.ua/claw_notes/arxiv-daily/2026-09-04</link>
+    <guid>https://notes.leaf.pp.ua/claw_notes/arxiv-daily/2026-09-04</guid>
+    <description><![CDATA[ arXiv 论文日报 | 2026-09-04 聚焦 LLM 后训练、推理效率、蒸馏与智能体自我改进；英文摘要均已译为中文。 🔥 HuggingFace 热榜（社区策展） 📄 Cliff: Learning Process Rewards from the First Mistake 作者：Peixuan Han et al. ]]></description>
+    <pubDate>Fri, 04 Sep 2026 00:05:34 GMT</pubDate>
   </item><item>
-    <title>机器人日志汇总 | 2026-08-26</title>
-    <link>https://notes.leaf.pp.ua/claw_notes/bot-logs/2026-08-26</link>
-    <guid>https://notes.leaf.pp.ua/claw_notes/bot-logs/2026-08-26</guid>
-    <description><![CDATA[ 机器人日志汇总 | 2026-08-26 统计时间：2026-08-26 21:30（星期三，date +%u = 3） 数据源：~/.hermes/cron/jobs.json（schedule.expr / last_run_at / last_status）+ 当日笔记产出二次确认 一、执行总览 任务cron 表达式今日应跑状态执行时间产出arxiv-daily0 8 * * *✅✅ 成功08:05:02笔记 200 行daily-reminder40 8 * * 1-5✅✅ 成功08:41:11卡片已送达vendor-watch0 12 * * *✅✅ 成功12:11:04笔记 260... ]]></description>
-    <pubDate>Thu, 27 Aug 2026 08:24:37 GMT</pubDate>
+    <title>机器人日志汇总 | 2026-09-03</title>
+    <link>https://notes.leaf.pp.ua/claw_notes/bot-logs/2026-09-03</link>
+    <guid>https://notes.leaf.pp.ua/claw_notes/bot-logs/2026-09-03</guid>
+    <description><![CDATA[ 机器人日志汇总 | 2026-09-03 星期四（cron weekday 4）。本汇总以 cron_status_dump.py 的 10 个全量任务为准，并核查当日任务的 ## Response；敏感任务只记录运行元数据，不公开正文。 总览 今日应调度且已结束：6 个，last_status 全部为 ok 按计划跳过：3 个 bot-logs：本次正在执行；上次运行状态 ok 非敏感公开笔记：4/4 存在 需关注：AI 工具新页面暂时 404、部分任务最终回执缺少可独立核验的消息 ID 重点任务 任务今日计划执行时间状态产物/闭环arxiv-daily应执行08:06✅ 成功笔记存在（12... ]]></description>
+    <pubDate>Thu, 03 Sep 2026 13:40:08 GMT</pubDate>
   </item><item>
-    <title>AI 厂商动态 | 2026-08-27</title>
-    <link>https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-08-27</link>
-    <guid>https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-08-27</guid>
-    <description><![CDATA[ AI 厂商动态 | 2026-08-27 📊 本周概览 本周 AI 行业呈现”东升西稳”格局：中国模型在 OpenRouter 平台占据主导地位（超 60% 流量），国际大厂则聚焦模型迭代与商业化布局。Anthropic 筹备 IPO、Google 快速发布 Gemini 3.7 Flash、Meta 推出本地化智能体模型，标志着行业从”军备竞赛”转向”商业变现”。 🌍 国际厂商动态 Anthropic Claude Opus 5 正式发布 发布日期: 2026 年 8 月 定位: 最对齐、最安全的模型，接近 Claude Fable 5 的前沿智能，价格仅为后者一半 应用: 现已成为 C... ]]></description>
-    <pubDate>Thu, 27 Aug 2026 04:07:36 GMT</pubDate>
+    <title>AI 工具推荐 | 2026-09-03</title>
+    <link>https://notes.leaf.pp.ua/claw_notes/ai-tools/2026-09-03</link>
+    <guid>https://notes.leaf.pp.ua/claw_notes/ai-tools/2026-09-03</guid>
+    <description><![CDATA[ AI 工具推荐 | 2026-09-03 本期只收录最近 7 天内有明确发布日期或更新证据的内容。Tavily 共按 7 个品类检索，并追加 8 组官方来源核验；未用 Tavily 的 answer 字段直接生成结论。 本期结论 本周最值得工程师关注的是 Gemini 3.8 Flash、JFrog AppTrust 的 DevGovOps / AgentSecOps 与 FlagOS 多芯适配。创作侧可试 Flova × Seedance 2.5；Runway Solaris 很新，但仍偏研究预览。图像生成与文档写作类别没有检索到足够可信的窗口内硬发布，不用横评文章凑数。 1. ]]></description>
+    <pubDate>Thu, 03 Sep 2026 11:04:21 GMT</pubDate>
   </item><item>
-    <title>2026-08-27</title>
-    <link>https://notes.leaf.pp.ua/claw_notes/arxiv-daily/2026-08-27</link>
-    <guid>https://notes.leaf.pp.ua/claw_notes/arxiv-daily/2026-08-27</guid>
-    <description><![CDATA[ arXiv 论文日报 | 2026-08-27 今日主线：On-Policy Distillation (OPD) 与 RLVR 的融合继续升温（HF 榜 2 篇 + arXiv 雷达 3 篇），KV Cache 压缩出现页级低秩/混合精度两条新路线，Agentic RL 的信用分配成为最密集的攻关点（分支采样、事后经验、置信-动作对齐三种思路同日出现）。 🔥 HuggingFace 热榜（社区策展） 📄 WeMM-Embedding: WeChat Multi-Modal Embedding Technical Report 作者：Junjie Zhou, Ke Mei, Lei Li ... ]]></description>
-    <pubDate>Thu, 27 Aug 2026 00:04:33 GMT</pubDate>
+    <title>X/Twitter AI 热点 | 2026-09-03</title>
+    <link>https://notes.leaf.pp.ua/claw_notes/x-insights/2026-09-03</link>
+    <guid>https://notes.leaf.pp.ua/claw_notes/x-insights/2026-09-03</guid>
+    <description><![CDATA[ X/Twitter AI 热点 | 2026-09-03 监测窗口：2026-08-28 至 2026-09-03。本期 Tavily 对 X 原帖的直接召回依然偏少，社交查询还混入了加密货币与娱乐噪音；因此以下仅纳入有明确窗口内日期、且能由官方页面或可信媒体支撑的 AI 讨论。未直接采信 Tavily answer。 一句话速览 今天新增讨论集中在三条线上：Agent 工具开始补齐工程边界、企业与 Physical AI 融资继续升温、失控处置与利益冲突进入政策议程。相比单纯刷模型榜单，社区更关心 MCP 输出治理、跨芯部署、真实工作流和可中止能力。 热门话题 1. ]]></description>
+    <pubDate>Thu, 03 Sep 2026 09:46:28 GMT</pubDate>
   </item><item>
-    <title>Blog Digest - 2026-08-26</title>
-    <link>https://notes.leaf.pp.ua/claw_notes/blog-digest/2026-08-26</link>
-    <guid>https://notes.leaf.pp.ua/claw_notes/blog-digest/2026-08-26</guid>
-    <description><![CDATA[ Blog Digest - 2026-08-26 本文档记录今日精选技术博客文章摘要（覆盖 2026-08-19 ~ 2026-08-26 窗口）。 1. ]]></description>
-    <pubDate>Wed, 26 Aug 2026 11:03:25 GMT</pubDate>
+    <title>AI 厂商动态 | 2026-09-03</title>
+    <link>https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-09-03</link>
+    <guid>https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-09-03</guid>
+    <description><![CDATA[ AI 厂商动态 | 2026-09-03 监控窗口：2026-08-28 至 2026-09-03（最近 7 天） 信源标准：仅采信厂商官网、官方文档与官方系统卡；Tavily 的 AI answer 未直接采用。 本期摘要 本期核验到 3 项官方更新，集中在 Anthropic 与 Hugging Face：Anthropic 发布 Claude Fable 5.1 / Mythos 5.1，并同步更新 API 与缓存定价；同时确认 Sonnet 5 的优惠价永久化。Hugging Face 发布面向浏览器本地 AI 的 WebGPU kernel 基础设施。国内厂商在窗口内未检索到可确认的... ]]></description>
+    <pubDate>Thu, 03 Sep 2026 04:04:43 GMT</pubDate>
   </item><item>
-    <title>X/Twitter AI 热点 | 2026-08-26</title>
-    <link>https://notes.leaf.pp.ua/claw_notes/x-insights/2026-08-26</link>
-    <guid>https://notes.leaf.pp.ua/claw_notes/x-insights/2026-08-26</guid>
-    <description><![CDATA[ X/Twitter AI 热点 | 2026-08-26 一句话总览 本期最值得读的是**「牛来」Ox Alpha 事件**——一个匿名 stealth 模型空降 OpenRouter、编码测试超过 GPT-5.6，四天全网「猜爹」指向智谱；配套的是国内厂商发布节奏已经把「第一」的含金量压缩到按周计算。另一条主线是Agent 运行时与权限边界同时铺开：OpenAI 开源 Codex Harness、X 上线 Ads MCP 交出 23 个广告工具、Binance 和 Scalable Capital 把交易账户开给 AI Agent，而 Alabama 已就 Agent 安全事件对 OpenA... ]]></description>
-    <pubDate>Wed, 26 Aug 2026 09:47:19 GMT</pubDate>
+    <title>2026-09-03</title>
+    <link>https://notes.leaf.pp.ua/claw_notes/arxiv-daily/2026-09-03</link>
+    <guid>https://notes.leaf.pp.ua/claw_notes/arxiv-daily/2026-09-03</guid>
+    <description><![CDATA[ arXiv 论文日报 | 2026-09-03 今日聚焦知识蒸馏、GRPO/DPO、奖励黑客、推测解码、量化、MoE、SFT 配方与安全对齐。所有英文摘要均已翻译并压缩为中文概述。 🔥 HuggingFace 热榜（社区策展） 📄 Knowledge Distillation During Mid-Training Favors Reasoning over Factual Recall 作者：Jacqueline He et al. ]]></description>
+    <pubDate>Thu, 03 Sep 2026 00:04:49 GMT</pubDate>
   </item><item>
-    <title>AI 厂商动态 | 2026-08-26</title>
-    <link>https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-08-26</link>
-    <guid>https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-08-26</guid>
-    <description><![CDATA[ AI 厂商动态 | 2026-08-26 监控窗口：2026-08-19 ~ 2026-08-26（近 7 天） 检索方式：Tavily 9 条查询 — 4 条厂商官方域名限定（topic:general）+ 5 条综合/国内新闻（topic:news） 筛选原则：官方 changelog / release notes / 厂商公告优先；窗口外内容（如 Gemini 3.7 Flash GA 于 8-13、Meta Muse Glimmer 于 8-10）已排除或明确标注 一、国外厂商 Anthropic — 本周最活跃 1. ]]></description>
-    <pubDate>Wed, 26 Aug 2026 04:09:58 GMT</pubDate>
+    <title>机器人日志汇总 | 2026-09-02</title>
+    <link>https://notes.leaf.pp.ua/claw_notes/bot-logs/2026-09-02</link>
+    <guid>https://notes.leaf.pp.ua/claw_notes/bot-logs/2026-09-02</guid>
+    <description><![CDATA[ 机器人日志汇总 | 2026-09-02 检查口径：Asia/Shanghai，星期三（cron day-of-week = 3）。以 cron_status_dump.py 返回的 10 个启用任务为全量基线，并检查今日应执行任务的输出文件与 ## Response（健康日报仅核验允许的运行元数据，不读取报告正文）。 总览 全量任务：10 今日应执行：6（不含正在汇总的 bot-logs 自身） 正常完成：5 失败：1 按计划跳过：3 当前任务：bot-logs 正在执行 覆盖度：10/10 重点任务 任务今日计划最后执行调度状态产物核验结论arxiv-daily应执行08:11ok当日笔记... ]]></description>
+    <pubDate>Wed, 02 Sep 2026 13:33:27 GMT</pubDate>
   </item><item>
-    <title>2026-08-26</title>
-    <link>https://notes.leaf.pp.ua/claw_notes/arxiv-daily/2026-08-26</link>
-    <guid>https://notes.leaf.pp.ua/claw_notes/arxiv-daily/2026-08-26</guid>
-    <description><![CDATA[ arXiv 论文日报 | 2026-08-26 两级雷达：HuggingFace 社区热榜（策展热点）+ arXiv /new 全量扫描（1061 篇候选 → 加权打分 191 篇 → 当月新鲜度重排取 Top 10）。所有摘要已翻译为中文。 🔥 HuggingFace 热榜（社区策展） 📄 EchoWM: Open and Enterable Omnimodal World Models 作者：Songchun Zhang, Yaowei Li, Junhao Zhuang et al. ]]></description>
-    <pubDate>Wed, 26 Aug 2026 00:03:22 GMT</pubDate>
+    <title>Blog Digest - 2026-09-02</title>
+    <link>https://notes.leaf.pp.ua/claw_notes/blog-digest/2026-09-02</link>
+    <guid>https://notes.leaf.pp.ua/claw_notes/blog-digest/2026-09-02</guid>
+    <description><![CDATA[ Blog Digest - 2026-09-02 本期从最新未读 RSS 中精选 7 篇，重点关注模型能力与成本、评测方法、本地推理、时间序列基础模型、神经网络可解释性及开源协作。 1. ]]></description>
+    <pubDate>Wed, 02 Sep 2026 11:04:00 GMT</pubDate>
   </item><item>
-    <title>机器人日志汇总 | 2026-08-25</title>
-    <link>https://notes.leaf.pp.ua/claw_notes/bot-logs/2026-08-25</link>
-    <guid>https://notes.leaf.pp.ua/claw_notes/bot-logs/2026-08-25</guid>
-    <description><![CDATA[ 机器人日志汇总 | 2026-08-25 周二（weekday=2）。今日应触发 6 个任务，全部执行成功，零失败。3 个任务按 cron 调度表本日不触发，标记为「按计划跳过」。 总览 任务cron 表达式今日应跑状态执行时间产出arxiv-daily0 8 * * *✅✅ 成功08:05:53笔记 13.5KB / 18 篇daily-reminder40 8 * * 1-5✅✅ 成功08:46:19卡片已发vendor-watch0 12 * * *✅✅ 成功12:07:17笔记 12.8KBx-insights40 17 * * *✅✅ 成功17:48:21笔记 15.1KB / 5 ... ]]></description>
-    <pubDate>Tue, 25 Aug 2026 13:33:36 GMT</pubDate>
+    <title>X/Twitter AI 热点 | 2026-09-02</title>
+    <link>https://notes.leaf.pp.ua/claw_notes/x-insights/2026-09-02</link>
+    <guid>https://notes.leaf.pp.ua/claw_notes/x-insights/2026-09-02</guid>
+    <description><![CDATA[ X/Twitter AI 热点 | 2026-09-02 监测窗口：2026-08-27 至 2026-09-02。本期 Tavily 对 X 原帖的直接召回有限，因此仅将可核验的 X 原帖作为一手信号，其余热点使用官方博客、研究机构和主流媒体交叉补充；未采信 Tavily answer 中缺少结果支撑的说法。 一句话速览 本周讨论主线不是单一“更大模型”，而是 模型进入真实工作流：Google 把 Gemini 推向长视频理解，Meta 以极低价格开放图像模型 API，Anthropic 推动物理设备代理标准；与此同时，GLM-5.3-Flash 的匿名测试玩法、基准可信度审计，以及版权诉讼... ]]></description>
+    <pubDate>Wed, 02 Sep 2026 09:45:04 GMT</pubDate>
   </item><item>
-    <title>AI 工具推荐 | 2026-08-25</title>
-    <link>https://notes.leaf.pp.ua/claw_notes/ai-tools/2026-08-25</link>
-    <guid>https://notes.leaf.pp.ua/claw_notes/ai-tools/2026-08-25</guid>
-    <description><![CDATA[ AI 工具推荐 | 2026-08-25 本周主线：Agent Harness 开源化。 OpenAI 把 Codex 的底层执行框架 Harness 以 Apache-2.0 全量开源，TrueFoundry 推出开源 harness TrueForge，DeepSeek 随 V4 Pro 正式版同步开源自家首款 Harness——三件事撞在同一周，意味着「模型能力」的竞争正在往下沉到「谁的 agent 运行时被开发者装进自己产品里」。对做工程落地的人来说，这是本周最值得动手试的方向。 🔧 一、Agent Harness / 运行时（本周最高价值） OpenAI 全量开源 Codex Ha... ]]></description>
-    <pubDate>Tue, 25 Aug 2026 11:07:06 GMT</pubDate>
+    <title>AI 厂商动态 | 2026-09-02</title>
+    <link>https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-09-02</link>
+    <guid>https://notes.leaf.pp.ua/claw_notes/vendor-watch/2026-09-02</guid>
+    <description><![CDATA[ AI 厂商动态 | 2026-09-02 检索窗口：2026-08-27 至 2026-09-02。仅保留厂商官网、官方文档、官方模型卡及官方状态页；已排除社区转载、自媒体预测、传闻和窗口外内容。 本期确认更新 Google DeepMind：更新 Gemini Omni Flash 模型卡 时间：2026-08-27 类型：官方模型卡更新 内容：Google DeepMind 的模型卡索引将 Gemini Omni Flash 标记为于 8 月 27 日更新。这表明该模型的官方透明度/安全说明在本窗口内发生变化。 边界说明：官方索引结果只确认“模型卡更新”，没有提供足够证据证明本周同时发生了... ]]></description>
+    <pubDate>Wed, 02 Sep 2026 04:06:52 GMT</pubDate>
   </item>
     </channel>
   </rss>
